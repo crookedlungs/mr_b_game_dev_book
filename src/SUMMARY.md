@@ -2,9 +2,9 @@
 
 - [Home](./home.md)
 - [Lessons](./lessons.md)
-  - [Lesson 1](lessons/lesson_1.md)
-  - [Lesson 2](lessons/lesson_2.md)
-  - [Lesson 3](lessons/lesson_3.md)
+  - [Lesson 1 - What is a Game Design Document (GDD)?](lessons/lesson_1.md)
+  - [Lesson 2 - Genre vs. Theme](lessons/lesson_2.md)
+  - [Lesson 3 - Understanding Demographics and Target Audiences in Game Design](lessons/lesson_3.md)
 - [Vocabulary](./vocabulary.md)
   - [Demographic](terms/demographic.md)
   - [Game Design Document](terms/gdd.md)
