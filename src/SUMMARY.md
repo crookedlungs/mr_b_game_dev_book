@@ -1,7 +1,11 @@
 # Summary
 
 - [Vocabulary](./vocabulary.md)
+  - [Demographic](terms/demographic.md)
+  - [Game Design Document](terms/gdd.md)
+  - [Game Mechanics](terms/game_mechanics.md)
   - [Genre](terms/genre.md)
+  - [Target Audience](terms/target_audience.md)
   - [Theme](terms/theme.md)
 - [Genre](genre/genre_overview.md)
   - [Action]()
