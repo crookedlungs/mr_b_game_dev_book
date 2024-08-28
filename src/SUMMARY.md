@@ -1,5 +1,6 @@
 # Summary
 
+- [Home](./home.md)
 - [Vocabulary](./vocabulary.md)
   - [Demographic](terms/demographic.md)
   - [Game Design Document](terms/gdd.md)
