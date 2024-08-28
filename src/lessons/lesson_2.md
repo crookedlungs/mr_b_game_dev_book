@@ -1,5 +1,7 @@
 # Lesson 2 - Genre vs. Theme
 
+Standards: [GPD.1A](../standards.md#gpd1a)
+
 ## Introduction
 
 When designing a video game, two important concepts to understand are [**genre**](../terms/genre.md) and [**theme**](../terms/theme.md). These two ideas help shape the experience that players will have, but they are different in how they influence the game. Let’s explore what each one means and how they work together in game design.

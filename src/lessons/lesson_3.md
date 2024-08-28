@@ -1,5 +1,7 @@
 # Lesson 3: Understanding [Demographics](<../terms/[demographic](../terms/demographic.md).md>) and [Target Audiences](../terms/target_audience.md) in Game Design
 
+Standards:
+
 ## Introduction
 
 When designing a video game, it's important to know who your game is for. Two key concepts that help game designers understand and reach the right players are [**demographics**](<../terms/[demographic](../terms/demographic.md).md>) and [**target audiences**](../terms/target_audience.md). These ideas help shape the design and marketing of a game to make sure it appeals to the people who are most likely to enjoy it.
