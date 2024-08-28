@@ -2,4 +2,4 @@
 
 ## Quick Navigation
 
-[Lessons](./lessons.md) | [Vocabulary](./vocabulary.md) | [Templates](./templates.md)
+[Lessons](./lessons.md) | [Vocabulary](./vocabulary.md) | [Templates](./templates.md) | [Standards](./standards.md)

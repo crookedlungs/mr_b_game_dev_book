@@ -43,3 +43,4 @@
   - [Turn-Based Strategy (TBS)]()
   - [Visual Novel]()
 - [Templates](./templates.md)
+- [Standards](./standards.md)
