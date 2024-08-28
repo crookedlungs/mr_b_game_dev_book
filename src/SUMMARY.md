@@ -8,6 +8,7 @@
 - [Vocabulary](./vocabulary.md)
   - [Demographic](terms/demographic.md)
   - [Game Design Document](terms/gdd.md)
+  - [Game Engine](terms/game_engine.md)
   - [Game Mechanics](terms/game_mechanics.md)
   - [Genre](terms/genre.md)
   - [Target Audience](terms/target_audience.md)
