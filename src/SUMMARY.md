@@ -1,6 +1,8 @@
 # Summary
 
 - [Home](./home.md)
+- [Lessons](./lessons.md)
+  - [Lesson 1](lessons/lesson_1.md)
 - [Vocabulary](./vocabulary.md)
   - [Demographic](terms/demographic.md)
   - [Game Design Document](terms/gdd.md)
@@ -39,3 +41,4 @@
   - [Tower Defense]()
   - [Turn-Based Strategy (TBS)]()
   - [Visual Novel]()
+- [Templates](./templates.md)
