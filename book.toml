@@ -3,8 +3,7 @@ authors = ["crookedlungs"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Mr. B's Game Design Book"
 [output.html]
-additional-js = ["./theme/hints.css"]
-additional-css = ["./theme/hints.js"]
+additional-css = ["./theme/hints.css"]
+additional-js = ["./theme/hints.js"]
 [preprocessor.hints]

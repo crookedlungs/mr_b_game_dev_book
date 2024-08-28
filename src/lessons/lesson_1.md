@@ -1,6 +1,6 @@
 # Lesson 1 - What is a Game Design Document (GDD)?
 
-Standards: [GPD.1A](../standards.md#gpd1a) | [GPD.1B](../standards.md#gpd1b)
+Standards: [GPD.1A](~GPD1A) | [GPD.1B](~GPD1B)
 
 ## What is a Game Design Document?
 

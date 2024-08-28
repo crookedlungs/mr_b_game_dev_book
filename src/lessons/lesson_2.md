@@ -1,6 +1,6 @@
 # Lesson 2 - Genre vs. Theme
 
-Standards: [GPD.1A](../standards.md#gpd1a)
+Standards: [GPD.1A](~GPD1A)
 
 ## Introduction
 
