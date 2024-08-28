@@ -1,7 +1,0 @@
-# Word
-
-## Definition
-
-## Examples
-
--
