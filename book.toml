@@ -1,9 +1,15 @@
 [book]
+title = "Mr. Boswell's Game Design Book"
 authors = ["crookedlungs"]
 language = "en"
 multilingual = false
 src = "src"
+
+[build]
+build-dir = "docs"
+
 [output.html]
 additional-css = ["./theme/hints.css"]
 additional-js = ["./theme/hints.js"]
+
 [preprocessor.hints]
