@@ -1,5 +1,7 @@
 # Lesson 1 - What is a Game Design Document (GDD)?
 
+Standards: [GPD.1A](../standards.md#gpd1a)
+
 ## What is a Game Design Document?
 
 A [**Game Design Document (GDD)**](../terms/gdd.md) is like a blueprint for your game. It’s a detailed guide that explains:
