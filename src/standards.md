@@ -55,3 +55,6 @@ The student develops products and generates new understanding by extending exist
 ## GPD.2: Communication and collaboration
 
 The student communicates and collaborates with peers to contribute to his or her own learning and the learning of others The student is expected to:
+
+- ### GPD.2E
+  - Collaborate to research the business of games, including the roles of developer, marketing, publisher, and retail sales.
