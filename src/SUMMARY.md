@@ -3,6 +3,7 @@
 - [Home](./home.md)
 - [Lessons](./lessons.md)
   - [Lesson 1](lessons/lesson_1.md)
+  - [Lesson 2](lessons/lesson_2.md)
 - [Vocabulary](./vocabulary.md)
   - [Demographic](terms/demographic.md)
   - [Game Design Document](terms/gdd.md)
