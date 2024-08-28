@@ -12,7 +12,7 @@
 
 ### D
 
-- [Demographic](/terms/demographic.md)
+- [Demographic](terms/demographic.md)
 
 ### E
 
@@ -22,7 +22,7 @@
 
 - [Game Design Document](terms/gdd.md)
 - [Game Mechanics](terms/game_mechanics.md)
-- [Genre](/terms/genre.md)
+- [Genre](terms/genre.md)
 
 ### H
 
@@ -50,8 +50,8 @@
 
 ### T
 
-- [Target Audience](/terms/target_audience.md)
-- [Theme](/terms/theme.md)
+- [Target Audience](/erms/target_audience.md)
+- [Theme](terms/theme.md)
 
 ### U
 
