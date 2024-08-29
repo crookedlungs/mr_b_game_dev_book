@@ -10,6 +10,7 @@
 
 - [Boilerplate]()
 - [Boolean]()
+- [Byte]()
 
 ### C
 
@@ -24,10 +25,13 @@
 
 ### E
 
+- [Enumerator (Enum)]()
+
 ### F
 
 - [File]()
 - [Flow Control]()
+- [Framework]()
 - [Fullstack Developer]()
 - [Function]()
 
@@ -37,6 +41,7 @@
 - [Game Engine](terms/game_engine.md)
 - [Game Mechanics](terms/game_mechanics.md)
 - [Genre](terms/genre.md)
+- [Gigabyte]()
 
 ### H
 
@@ -50,15 +55,20 @@
 
 ### K
 
+- [Kilobyte]()
+
 ### L
 
 - [Loop]()
 
 ### M
 
+- [Megabyte]()
 - [Merge]()
 
 ### N
+
+- [Network Attached Storage (NAS)]()
 
 ### O
 
@@ -68,6 +78,7 @@
 
 - [Pull]()
 - [Push]()
+- [Programming Language]()
 
 ### Q
 
@@ -84,6 +95,7 @@
 ### T
 
 - [Target Audience](terms/target_audience.md)
+- [Terabyte]()
 - [Terminal]()
 - [Theme](terms/theme.md)
 

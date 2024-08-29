@@ -72,6 +72,10 @@ add_numbers:
 
 ```
 
+## Game Engine Specific Languages
+
+- [GDScript (Godot)]()
+
 ## Markup Languages
 
 These are designed to structure and organize data in a readable format. They use tags or annotations to define elements within a document, such as headings, paragraphs, or links. Markup languages do not perform computations or execute logic; instead, they focus on defining the structure and content of documents, particularly in web development.
@@ -125,3 +129,8 @@ h1 {
   font-size: 24px;
 }
 ```
+
+## Shader Languages
+
+- [GLSL]()
+- [HLSL]()
