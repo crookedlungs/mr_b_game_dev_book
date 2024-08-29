@@ -8,13 +8,13 @@ Lua is a powerful, lightweight scripting language designed for embedded use. It�
 
 **Defining Variables**
 
-In Lua, you can define variables using the `local` keyword for local variables or directly for global variables.
+In Lua, you can define [variables](../vocabulary.md#variable) using the `local` keyword for local variables or directly for global [variables](../vocabulary.md#variable).
 
 ```lua
 local myVariable = 10
 ```
 
-Variables defined without `local` are considered to be "global" variables.
+[Variables](../vocabulary.md#variable) defined without `local` are considered to be "global" [variables](../vocabulary.md#variable).
 
 ```lua
 myVariable = 10
@@ -28,7 +28,7 @@ myVariable = 10
 
 Lua supports several data types:
 
-**Numbers:** Represent integers or foating-point numbers.
+**Numbers:** Represent [integers](../vocabulary.md#integer) or [foating-point numbers](../vocabulary.md#floating-point-number-float).
 
 ```lua
 local num1 = 10       -- integer
@@ -49,7 +49,7 @@ local isTrue = true
 local isFalse = false
 ```
 
-**Tables:** Lua’s primary data structure, used for arrays, dictionaries, and objects.
+**Tables:** Lua’s primary data structure, used for [arrays](../vocabulary.md#array), dictionaries, and [objects](../vocabulary.md#object).
 
 ```lua
 local myTable = {1, 2, 3}           -- Array-like table

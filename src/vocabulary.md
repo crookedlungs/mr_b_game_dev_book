@@ -195,6 +195,18 @@ A container in a computer system for storing information. Files can contain vari
 
 ---
 
+#### Floating Point Number (Float)
+
+A number that contains a decimal point.
+
+##### Examples
+
+- .05
+- 10.5
+- 1000.80
+
+---
+
 #### Flow Control
 
 The order in which individual statements, instructions, or function calls are executed or evaluated in a program. Flow control allows a program to make decisions, repeat tasks, and choose different paths of execution based on conditions.
@@ -315,6 +327,18 @@ A traditional storage device that uses spinning magnetic disks to store and retr
 A software application that provides a comprehensive environment for programming. IDEs typically include a code editor, debugger, and build automation tools, making it easier for developers to write, test, and debug code.
 
 ##### Examples
+
+---
+
+#### Integer
+
+A whole number with **no** decimal point.
+
+##### Examples
+
+- 5
+- 10
+- 1000
 
 ---
 
@@ -625,6 +649,30 @@ A sequence of characters, like letters, numbers, and symbols, put together in a 
 ---
 
 #### Synchronous
+
+---
+
+#### Syntax
+
+The set of rules that define the structure of a programming language. It dictates how code must be written so that the computer can understand and execute it correctly. This includes the order of keywords, the use of punctuation, and the way different elements of the code are combined.
+
+##### Examples
+
+- The syntax for defining a function requires the def keyword followed by the function name and parentheses.
+
+```python
+def my_function():
+    pass
+```
+
+- The syntax for a conditional statement requires the if keyword, followed by a condition, and a colon.
+
+```python
+if condition:
+    # Code to execute if the condition is true
+```
+
+**Note:** Correct syntax is crucial because even a small mistake, like missing a colon or parentheses, can cause errors and prevent the program from running.
 
 ---
 

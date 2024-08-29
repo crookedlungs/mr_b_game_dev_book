@@ -8,13 +8,13 @@ Python is a versatile, easy-to-learn programming language that’s widely used i
 
 **Defining Variables**
 
-In Python, you define variables by simply assigning a value to a name.
+In Python, you define [variables](../vocabulary.md#variable) by simply assigning a value to a name.
 
 ```python
 my_variable = 10
 ```
 
-Python automatically determines the type of the variable based on the value assigned, so there’s no need to declare the type explicitly.
+Python automatically determines the type of the [variable](../vocabulary.md#variable) based on the value assigned, so there’s no need to declare the type explicitly.
 
 ---
 
@@ -22,7 +22,7 @@ Python automatically determines the type of the variable based on the value assi
 
 Python supports various data types:
 
-**Numbers:** Represent integers or foating-point numbers.
+**Numbers:** Represent [integers](../vocabulary.md#integer) or [foating-point numbers](../vocabulary.md#floating-point-number-float).
 
 ```python
 num1 = 10       # integer
@@ -94,7 +94,7 @@ while count <= 5:
 
 ## Functions
 
-Functions in Python are defined using the `def` keyword.
+[Functions](../vocabulary.md#function) in Python are defined using the `def` keyword.
 
 **Defining a Function**
 
@@ -167,4 +167,4 @@ print(result)  # Output: Cannot divide by zero
 
 ## Conclusion
 
-Python’s simplicity and readability make it an excellent language for beginners. By learning how to define variables, use control structures, and create functions, students can quickly start building their own projects and applications.
+Python’s simplicity and readability make it an excellent language for beginners. By learning how to define [variables](../vocabulary.md#variable), use control structures, and create functions, students can quickly start building their own projects and applications.
