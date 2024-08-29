@@ -63,9 +63,9 @@ A data type that can only have one of two possible values: `true` or `false`. Bo
 
 ##### Examples
 
-- isLoggedIn = true
-- hasAccess = false
-- Conditional statements like if (isAdmin) { ... }
+- `isLoggedIn = true`
+- `hasAccess = false`
+- Conditional statements like `if (isAdmin) { ... }`
 
 ---
 
@@ -93,6 +93,12 @@ The primary component of a computer that performs most of the processing inside 
 - Intel Core i7
 - AMD Ryzen 9
 - ARM Cortex-A78
+
+---
+
+#### Comment
+
+##### Examples
 
 ---
 
