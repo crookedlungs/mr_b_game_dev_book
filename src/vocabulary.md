@@ -6,6 +6,8 @@
 
 ### A
 
+- [Asynchronous]()
+
 ### B
 
 - [Boilerplate]()
@@ -22,6 +24,7 @@
 
 - [Data]()
 - [Demographic](terms/demographic.md)
+- ["Don't Repeat Yourself" (DRY)](terms/dry.md)
 
 ### E
 
@@ -72,6 +75,7 @@
 
 ### O
 
+- [Object Oriented Programming (OOP)]()
 - [Operating System (OS)]()
 
 ### P
@@ -82,6 +86,8 @@
 
 ### Q
 
+- [Query]()
+
 ### R
 
 - [Random Access Memory (RAM)]()
@@ -89,8 +95,10 @@
 ### S
 
 - [SATA]()
+- [Search Engine]()
 - [Solid State Hard Drive (SSD)]()
 - [Source Control]()
+- [Synchronous]()
 
 ### T
 

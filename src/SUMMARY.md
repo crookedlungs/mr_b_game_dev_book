@@ -11,6 +11,7 @@
   - [Game Design Document](terms/gdd.md)
   - [Game Engine](terms/game_engine.md)
   - [Game Mechanics](terms/game_mechanics.md)
+  - ["Don't Repeat Yourself"](terms/dry.md)
   - [Genre](terms/genre.md)
   - [Target Audience](terms/target_audience.md)
   - [Theme](terms/theme.md)
