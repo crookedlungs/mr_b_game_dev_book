@@ -6,6 +6,7 @@
 
 ### A
 
+- [Augmented Reality (AR)]()
 - [Asynchronous]()
 
 ### B
@@ -23,6 +24,7 @@
 ### D
 
 - [Data]()
+- [Database]()
 - [Demographic](terms/demographic.md)
 - ["Don't Repeat Yourself" (DRY)](terms/dry.md)
 
@@ -113,6 +115,7 @@
 
 - [Variable]()
 - [Vector]()
+- [Virtual Reality (VR)]()
 
 ### W
 
