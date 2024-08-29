@@ -86,7 +86,7 @@ A unit of digital information that typically consists of 8 bits. A byte is the b
 
 #### Central Processing Unit (CPU)
 
-The primary component of a computer that performs most of the processing inside the machine. The CPU carries out instructions from programs by performing basic arithmetic, logic, control, and input/output operations.
+The primary component of a computer that performs most of the processing inside the machine. The CPU carries out instructions from programs by performing basic arithmetic (math), logic, control, and input/output operations.
 
 ##### Examples
 
@@ -328,6 +328,12 @@ A traditional storage device that uses spinning magnetic disks to store and retr
 
 ---
 
+#### Input
+
+#####
+
+---
+
 #### Integrated Development Environment (IDE)
 
 A software application that provides a comprehensive environment for programming. IDEs typically include a code editor, debugger, and build automation tools, making it easier for developers to write, test, and debug code.
@@ -488,6 +494,12 @@ The main [software](#software) that runs on a computer, phone, or other device. 
 - Windows: An [operating system](#operating-system-os) used on many PCs.
 - macOS: The [operating system](#operating-system-os) used on Apple computers.
 - Linux: An [open-source](#open-source) operating system.
+
+---
+
+#### Output
+
+##### Examples
 
 ---
 
