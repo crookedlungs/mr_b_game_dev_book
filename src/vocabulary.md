@@ -8,7 +8,11 @@
 
 ### B
 
+- [Boilerplate]()
+
 ### C
+
+- [Central Processing Unit (CPU)]()
 
 ### D
 
@@ -18,6 +22,8 @@
 
 ### F
 
+- [File]()
+
 ### G
 
 - [Game Design Document](terms/gdd.md)
@@ -26,6 +32,8 @@
 - [Genre](terms/genre.md)
 
 ### H
+
+- [Hard Drive (HDD)]()
 
 ### I
 
@@ -47,11 +55,15 @@
 
 ### R
 
+- [Random Access Memory (RAM)]()
+
 ### S
+
+- [Solid State Hard Drive (SSD)]()
 
 ### T
 
-- [Target Audience](/erms/target_audience.md)
+- [Target Audience](terms/target_audience.md)
 - [Theme](terms/theme.md)
 
 ### U
