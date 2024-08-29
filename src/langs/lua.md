@@ -2,6 +2,8 @@
 
 Lua is a powerful, lightweight scripting language designed for embedded use. It’s widely used in game development and other applications due to its simplicity and flexibility.
 
+---
+
 ## Variables
 
 **Defining Variables**
@@ -19,6 +21,8 @@ myVariable = 10
 ```
 
 **Note:** It’s good practice to use `local` whenever possible to avoid unintended interactions with other parts of the code.
+
+---
 
 ## Data Types
 
@@ -51,6 +55,8 @@ local isFalse = false
 local myTable = {1, 2, 3}           -- Array-like table
 local myDict = {key = "value"}      -- Dictionary-like table
 ```
+
+---
 
 ## Control Structures
 
@@ -88,6 +94,8 @@ while count <= 5 do
 end
 ```
 
+---
+
 ## Functions
 
 Functions in Lua are defined using the `function` keyword and can be assigned to variables.
@@ -121,6 +129,8 @@ end
 
 print(square(4))   -- Output: 16
 ```
+
+---
 
 ## Tables and Metatables
 
@@ -168,6 +178,8 @@ setmetatable(t2, mt)
 print(t1 + t2)   -- Output: 30
 ```
 
+---
+
 ## Error Handling
 
 **Pcall (Protected Call)**
@@ -188,6 +200,8 @@ else
     print("Error:", result)
 end
 ```
+
+---
 
 ## Conclusion
 

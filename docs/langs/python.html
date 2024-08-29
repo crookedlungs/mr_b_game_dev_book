@@ -174,7 +174,115 @@
 
                 <div id="content" class="content">
                     <main>
-                        
+                        <h1 id="introduction-to-python-programming"><a class="header" href="#introduction-to-python-programming">Introduction to Python Programming</a></h1>
+<p>Python is a versatile, easy-to-learn programming language that’s widely used in web development, data science, automation, and more. Its simple syntax and readability make it a great choice for beginners.</p>
+<hr />
+<h2 id="variables"><a class="header" href="#variables">Variables</a></h2>
+<p><strong>Defining Variables</strong></p>
+<p>In Python, you define variables by simply assigning a value to a name.</p>
+<pre><code class="language-python">my_variable = 10
+</code></pre>
+<p>Python automatically determines the type of the variable based on the value assigned, so there’s no need to declare the type explicitly.</p>
+<hr />
+<h2 id="data-types"><a class="header" href="#data-types">Data Types</a></h2>
+<p>Python supports various data types:</p>
+<p><strong>Numbers:</strong> Represent integers or foating-point numbers.</p>
+<pre><code class="language-python">num1 = 10       # integer
+num2 = 10.5     # floating-point number
+</code></pre>
+<p><strong>Strings:</strong> Text data enclosed in single or double quotes.</p>
+<pre><code class="language-python">str1 = 'Hello'
+str2 = "World"
+</code></pre>
+<p><strong>Booleans:</strong> Represent <code>true</code> or <code>false</code>.</p>
+<pre><code class="language-python">is_true = True
+is_false = False
+</code></pre>
+<p><strong>Lists:</strong> Ordered collections of items, which can be of any type.</p>
+<pre><code class="language-python">my_list = [1, 2, 3]
+</code></pre>
+<p><strong>Dictionaries:</strong> Collections of key-value pairs.</p>
+<pre><code class="language-python">my_dict = {'key': 'value'}
+</code></pre>
+<hr />
+<h2 id="control-structures"><a class="header" href="#control-structures">Control Structures</a></h2>
+<p><strong>If-Else Statements:</strong></p>
+<pre><code class="language-python">age = 15
+
+if age &lt; 18:
+    print("You are a minor.")
+elif age &lt; 60:
+    print("You are an adult.")
+else:
+    print("You are a senior.")
+</code></pre>
+<p><strong>Loops:</strong></p>
+<ul>
+<li><strong>For Loop:</strong></li>
+</ul>
+<pre><code class="language-python">for i in range(1, 6):
+    print(i)  # Prints numbers from 1 to 5
+</code></pre>
+<ul>
+<li><strong>While Loop:</strong></li>
+</ul>
+<pre><code class="language-python">count = 1
+while count &lt;= 5:
+    print(count)
+    count += 1
+</code></pre>
+<hr />
+<h2 id="functions"><a class="header" href="#functions">Functions</a></h2>
+<p>Functions in Python are defined using the <code>def</code> keyword.</p>
+<p><strong>Defining a Function</strong></p>
+<pre><code class="language-python">def greet(name):
+    return "Hello, " + name
+
+print(greet("Alice"))  # Output: Hello, Alice
+</code></pre>
+<p><strong>Function with Multiple Parameters</strong></p>
+<pre><code class="language-python">def add(a, b):
+    return a + b
+
+print(add(5, 3))  # Output: 8
+</code></pre>
+<p><strong>Anonymous Functions(Lambdas)</strong></p>
+<pre><code class="language-python">square = lambda x: x * x
+
+print(square(4))  # Output: 16
+</code></pre>
+<hr />
+<h2 id="lists-and-dictionaries"><a class="header" href="#lists-and-dictionaries">Lists and Dictionaries</a></h2>
+<p><strong>Creating a List</strong></p>
+<pre><code class="language-python">my_list = [1, 2, 3]
+
+print(my_list[0])  # Output: 1
+</code></pre>
+<p><strong>Creating a Dictionary</strong></p>
+<pre><code class="language-python">person = {
+    'name': 'John',
+    'age': 30
+}
+
+print(person['name'])  # Output: John
+
+</code></pre>
+<hr />
+<h2 id="error-handling"><a class="header" href="#error-handling">Error Handling</a></h2>
+<p><strong>Try-Except</strong></p>
+<pre><code class="language-python">def safe_divide(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "Cannot divide by zero"
+
+result = safe_divide(10, 0)
+print(result)  # Output: Cannot divide by zero
+</code></pre>
+<hr />
+<h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
+<p>Python’s simplicity and readability make it an excellent language for beginners. By learning how to define variables, use control structures, and create functions, students can quickly start building their own projects and applications.</p>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

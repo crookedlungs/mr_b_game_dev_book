@@ -176,6 +176,7 @@
                     <main>
                         <h1 id="introduction-to-lua-programming"><a class="header" href="#introduction-to-lua-programming">Introduction to Lua Programming</a></h1>
 <p>Lua is a powerful, lightweight scripting language designed for embedded use. It’s widely used in game development and other applications due to its simplicity and flexibility.</p>
+<hr />
 <h2 id="variables"><a class="header" href="#variables">Variables</a></h2>
 <p><strong>Defining Variables</strong></p>
 <p>In Lua, you can define variables using the <code>local</code> keyword for local variables or directly for global variables.</p>
@@ -185,6 +186,7 @@
 <pre><code class="language-lua">myVariable = 10
 </code></pre>
 <p><strong>Note:</strong> It’s good practice to use <code>local</code> whenever possible to avoid unintended interactions with other parts of the code.</p>
+<hr />
 <h2 id="data-types"><a class="header" href="#data-types">Data Types</a></h2>
 <p>Lua supports several data types:</p>
 <p><strong>Numbers:</strong> Represent integers or foating-point numbers.</p>
@@ -203,6 +205,7 @@ local isFalse = false
 <pre><code class="language-lua">local myTable = {1, 2, 3}           -- Array-like table
 local myDict = {key = "value"}      -- Dictionary-like table
 </code></pre>
+<hr />
 <h2 id="control-structures"><a class="header" href="#control-structures">Control Structures</a></h2>
 <p><strong>If-Else Statements:</strong></p>
 <pre><code class="language-lua">local age = 15
@@ -232,6 +235,7 @@ while count &lt;= 5 do
   count = count + 1
 end
 </code></pre>
+<hr />
 <h2 id="functions"><a class="header" href="#functions">Functions</a></h2>
 <p>Functions in Lua are defined using the <code>function</code> keyword and can be assigned to variables.</p>
 <p><strong>Defining a Function</strong></p>
@@ -255,6 +259,7 @@ end
 
 print(square(4))   -- Output: 16
 </code></pre>
+<hr />
 <h2 id="tables-and-metatables"><a class="header" href="#tables-and-metatables">Tables and Metatables</a></h2>
 <p><strong>Creating a Table</strong></p>
 <pre><code class="language-lua">local person = {
@@ -290,6 +295,7 @@ setmetatable(t2, mt)
 
 print(t1 + t2)   -- Output: 30
 </code></pre>
+<hr />
 <h2 id="error-handling"><a class="header" href="#error-handling">Error Handling</a></h2>
 <p><strong>Pcall (Protected Call)</strong></p>
 <pre><code class="language-lua">local function safeDivide(a, b)
@@ -307,6 +313,7 @@ else
     print("Error:", result)
 end
 </code></pre>
+<hr />
 <h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
 <p>Lua’s simplicity and flexibility make it an excellent choice for introducing programming concepts to students. By learning how to define variables, control structures, and functions, students can begin to create their own interactive projects and games.</p>
 
