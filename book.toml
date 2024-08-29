@@ -11,5 +11,6 @@ build-dir = "docs"
 [output.html]
 additional-css = ["./theme/hints.css"]
 additional-js = ["./theme/hints.js"]
+no-section-label = true
 
 [preprocessor.hints]
