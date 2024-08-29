@@ -9,13 +9,17 @@
 ### B
 
 - [Boilerplate]()
+- [Boolean]()
 
 ### C
 
 - [Central Processing Unit (CPU)]()
+- [Commit]()
+- [Computer Science]()
 
 ### D
 
+- [Data]()
 - [Demographic](terms/demographic.md)
 
 ### E
@@ -23,6 +27,9 @@
 ### F
 
 - [File]()
+- [Flow Control]()
+- [Fullstack Developer]()
+- [Function]()
 
 ### G
 
@@ -37,19 +44,30 @@
 
 ### I
 
+- [Integrated Development Environment (IDE)]()
+
 ### J
 
 ### K
 
 ### L
 
+- [Loop]()
+
 ### M
+
+- [Merge]()
 
 ### N
 
 ### O
 
+- [Operating System (OS)]()
+
 ### P
+
+- [Pull]()
+- [Push]()
 
 ### Q
 
@@ -59,16 +77,22 @@
 
 ### S
 
+- [SATA]()
 - [Solid State Hard Drive (SSD)]()
+- [Source Control]()
 
 ### T
 
 - [Target Audience](terms/target_audience.md)
+- [Terminal]()
 - [Theme](terms/theme.md)
 
 ### U
 
 ### V
+
+- [Variable]()
+- [Vector]()
 
 ### W
 
