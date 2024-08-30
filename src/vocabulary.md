@@ -10,7 +10,13 @@
 
 #### Application
 
+A software program that is designed to perform specific tasks or functions for the user. In game design, an application can be a game itself, a tool used to create games, or software that supports game development.
+
 ##### Examples
+
+- A game like "Minecraft"
+- The game engine Unity
+- Photoshop
 
 ---
 
@@ -104,7 +110,14 @@ The primary component of a computer that performs most of the processing inside 
 
 #### Comment
 
-##### Examples
+A piece of text in a computer program that is ignored by the computer when the code runs. Comments are used by programmers to explain what the code does or to leave notes for themselves or others. They help make the code easier to understand.
+
+##### Example
+
+```python
+# This is a comment.
+print("Hello, World!")  # This prints a greeting
+```
 
 ---
 
@@ -201,7 +214,11 @@ A special data type that defines a set of named values, representing a collectio
 
 #### First In / First Out (FIFO)
 
-##### Examples
+A way of organizing and processing data where the first piece of data that is added is also the first one to be used or removed. It's like a line at a movie theater: the first person in line is the first to get a ticket.
+
+##### Example
+
+- In game development, a queue that processes player actions in the order they were received might use FIFO.
 
 ---
 
@@ -244,10 +261,6 @@ A pre-built set of tools and libraries that provides a structure for developing 
 #### Fullstack Developer
 
 A developer who is skilled in both front-end (client-side) and back-end (server-side) development. Fullstack developers can build and maintain all aspects of a web application, from the user interface to the server and database.
-
-##### Examples
-
----
 
 ##### Examples
 
@@ -326,7 +339,12 @@ A unit of digital information equal to approximately one billion bytes (1,073,74
 
 #### Graphic User Interface (GUI)
 
+Refers to the visual part of an application that users interact with. It includes things like buttons, menus, and icons that make it easier to use the software without needing to type commands.
+
 ##### Examples
+
+- The main menu of a game, where you can click on "Start Game" or "Settings," is part of the game's GUI.
+- The controls and menus you use to create images in Photoshop.
 
 ---
 
@@ -348,13 +366,23 @@ A traditional storage device that uses spinning magnetic disks to store and retr
 
 #### Input
 
+Refers to any data or signals that are sent to a computer or game by the user. This could be something like pressing a key, clicking a mouse, or touching a screen. In games, input is what players do to control their characters or make choices.
+
 ##### Examples
+
+- Pressing the spacebar to make a character jump in a game is an input.
+- Clicking the mouse to perform an attack in a game.
+- Typing into a textbox on a website.
 
 ---
 
 #### Internet Protocol (IP) Address
 
-##### Examples
+A unique string of numbers that identifies a device on a network, like the internet. It’s like a home address, but for computers, letting them find each other and communicate. In online games, IP addresses help connect players’ devices so they can play together.
+
+##### Example
+
+When you play an online game, your device connects to a game server using its IP address.
 
 ---
 
