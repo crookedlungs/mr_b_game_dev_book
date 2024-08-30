@@ -1,6 +1,6 @@
 # Lesson 1 - Parts of a Computer
 
-Standards: [FCS.6A]()
+Standards: [FCS.6A](../../standards.md#fcs1a)
 
 ---
 
