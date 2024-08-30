@@ -8,6 +8,12 @@
 
 ---
 
+#### Application
+
+##### Examples
+
+---
+
 #### Array
 
 An array is a way to organize and store multiple pieces of similar data in one place. It's like a list where each item has a specific position, called an index, which starts at zero. Arrays are useful when you need to keep track of many items of the same type, like numbers, words, or even objects.
@@ -193,6 +199,12 @@ A special data type that defines a set of named values, representing a collectio
 
 ---
 
+#### First In / First Out (FIFO)
+
+##### Examples
+
+---
+
 #### File
 
 A container in a computer system for storing information. Files can contain various types of data, such as text, images, videos, and software. They are identified by a filename and a file extension.
@@ -312,6 +324,12 @@ A unit of digital information equal to approximately one billion bytes (1,073,74
 
 ---
 
+#### Graphic User Interface (GUI)
+
+##### Examples
+
+---
+
 ### H
 
 ---
@@ -330,7 +348,13 @@ A traditional storage device that uses spinning magnetic disks to store and retr
 
 #### Input
 
-#####
+##### Examples
+
+---
+
+#### Internet Protocol (IP) Address
+
+##### Examples
 
 ---
 
@@ -386,7 +410,7 @@ A programming construct that repeats a block of code as long as a specified cond
 
 - A `for` loop that iterates through an [array](#array)
 - A `while` loop that runs until a condition is met
-- Looping through user input until it is valid
+- Looping through user [input](#input) until it is valid
 
 ---
 
@@ -418,6 +442,12 @@ The process of combining changes from two or more branches in a version control 
 
 ---
 
+#### Methods
+
+##### Examples
+
+---
+
 ### N
 
 ---
@@ -440,7 +470,7 @@ A dedicated [file](#file) storage device that provides centralized [data](#data)
 
 #### Object
 
-A bundle of [data](#data) and actions (called methods) that you can use to represent something in a program. Objects are used in a style of programming called [Object-Oriented Programming (OOP)](#object-oriented-programming-oop). An object can have properties (like characteristics) and methods (like actions it can perform).
+A bundle of [data](#data) and actions (called [methods](#methods)) that you can use to represent something in a program. Objects are used in a style of programming called [Object-Oriented Programming (OOP)](#object-oriented-programming-oop). An object can have properties (like characteristics) and methods (like actions it can perform).
 
 ##### Examples
 
@@ -530,6 +560,8 @@ An external device connected to a computer that adds functionality or expands it
 #### Programming Language
 
 A set of instructions that you use to communicate with a computer. It allows you to write code that tells the computer what to do, like solving problems, creating games, or building apps. Different programming languages have different rules and uses, but they all help you create software.
+
+See the section on [languages](./langs.md) for more information.
 
 ##### Examples
 
@@ -655,6 +687,12 @@ A collection of instructions, data, or programs that tell a computer how to work
 
 ---
 
+#### Sprite
+
+##### Examples
+
+---
+
 #### String
 
 A sequence of characters, like letters, numbers, and symbols, put together in a specific order. Strings are used in programming to represent text, such as words, sentences, or any other combination of characters.
@@ -663,6 +701,12 @@ A sequence of characters, like letters, numbers, and symbols, put together in a 
 
 - `"Hello, World!"`: A string that contains a common phrase.
 - `"123 Main Street"`: A string that represents an address.
+
+---
+
+#### Stylesheet
+
+##### Examples
 
 ---
 
