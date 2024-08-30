@@ -4,12 +4,6 @@ Standards: [FCS.6A]()
 
 ---
 
-## Lesson Media
-
-- [Video](https://www.youtube.com/watch?v=OdziYWEkDIM)
-
----
-
 ## What is Computer Hardware?
 
 Computer Hardware refers to the physical parts of a computer system that you can see and touch. These components work together to make your computer function, allowing you to perform tasks like playing games, browsing the internet, or doing schoolwork.
