@@ -28,31 +28,31 @@ Here are the main parts of a computer's hardware:
 
 ** Central Processing Unit (CPU):** The CPU is often called the "brain" of the computer. It processes instructions and performs calculations. Whenever you run a program or play a game, the CPU handles most of the work.
 
-    Example: If you're playing a game, the CPU calculates the movements of characters and the effects of your actions.
+Example: If you're playing a game, the CPU calculates the movements of characters and the effects of your actions.
 
 ** Memory (RAM):** RAM stands for Random Access Memory. It's like the computer's short-term memory. It temporarily stores data that the CPU needs quickly. When you run multiple programs at once, they use RAM to keep things running smoothly.
 
-    Example: When you open a game and a web browser at the same time, they both use RAM to function without slowing down.
+Example: When you open a game and a web browser at the same time, they both use RAM to function without slowing down.
 
-** Storage (Hard Drive or SSD):** This is where all your files, games, and software are stored permanently. A Hard Disk Drive (HDD) uses spinning disks to store data, while a Solid State Drive (SSD) uses flash memory, which is faster and more reliable.
+- **Storage (Hard Drive or SSD):** This is where all your files, games, and software are stored permanently. A Hard Disk Drive (HDD) uses spinning disks to store data, while a Solid State Drive (SSD) uses flash memory, which is faster and more reliable.
 
-    Example: The game you downloaded is stored on your hard drive or SSD, ready to be accessed whenever you want to play.
+Example: The game you downloaded is stored on your hard drive or SSD, ready to be accessed whenever you want to play.
 
-    **Graphics Processing Unit (GPU):** The GPU is responsible for rendering images and videos on your screen. It's especially important for gaming and video editing because it handles complex visuals.
+- **Graphics Processing Unit (GPU):** The GPU is responsible for rendering images and videos on your screen. It's especially important for gaming and video editing because it handles complex visuals.
 
-    Example: When you're playing a game with detailed graphics, the GPU creates the images you see on your screen.
+Example: When you're playing a game with detailed graphics, the GPU creates the images you see on your screen.
 
-    **Motherboard:** The motherboard is like the computer's backbone. It connects all the other components and allows them to communicate with each other.
+- **Motherboard:** The motherboard is like the computer's backbone. It connects all the other components and allows them to communicate with each other.
 
-    Example: The CPU, RAM, and GPU all plug into the motherboard so they can work together.
+Example: The CPU, RAM, and GPU all plug into the motherboard so they can work together.
 
-    **Power Supply Unit (PSU):** The PSU provides power to all the components of the computer. Without it, nothing would work.
+- **Power Supply Unit (PSU):** The PSU provides power to all the components of the computer. Without it, nothing would work.
 
-    Example: The PSU converts electricity from the wall into a form that the computer components can use.
+Example: The PSU converts electricity from the wall into a form that the computer components can use.
 
-    **Input/Output Devices:** Input devices, like keyboards and mice, allow you to interact with the computer. Output devices, like monitors and speakers, let the computer communicate back to you.
+- **Input/Output Devices:** Input devices, like keyboards and mice, allow you to interact with the computer. Output devices, like monitors and speakers, let the computer communicate back to you.
 
-    Example: When you type on your keyboard (input), the words appear on your monitor (output).
+Example: When you type on your keyboard (input), the words appear on your monitor (output).
 
 ---
 
