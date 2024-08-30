@@ -2,10 +2,13 @@
 
 - [Home](./home.md)
 - [Lessons](./lessons.md)
-  - [Lesson 1 - What is a Game Design Document (GDD)?](lessons/lesson_1.md)
-  - [Lesson 2 - Genre vs. Theme](lessons/lesson_2.md)
-  - [Lesson 3 - Understanding Demographics and Target Audiences in Game Design](lessons/lesson_3.md)
-  <!-- - [Lesson 4 - ](lessons/lesson_4.md) -->
+  - [Fundamentals of Computer Science]()
+    - [Lesson 1 - Parts of a Computer](lessons/fcs/lesson_1.md)
+  - [Game Design]()
+    - [Lesson 1 - What is a Game Design Document (GDD)?](lessons/gpd/lesson_1.md)
+    - [Lesson 2 - Genre vs. Theme](lessons/gpd/lesson_2.md)
+    - [Lesson 3 - Understanding Demographics and Target Audiences in Game Design](lessons/gpd/lesson_3.md)
+    <!-- - [Lesson 4 - ](lessons/gpd/lesson_4.md) -->
 - [Vocabulary](./vocabulary.md)
 - [Genre](genre/genre_overview.md)
   - [Action]()
