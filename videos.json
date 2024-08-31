@@ -1,0 +1,21 @@
+{
+  "Fundamentals of Computer Science": [
+    {
+      "Lesson 1: Parts of a Computer": "https://www.youtube.com/embed/mX2JQ8XvlKs?si=Mp6gQby6zoqWINbc"
+    }
+  ],
+  "Game Design": [
+    {
+      "Lesson 1: Game Design Documents": "https://www.youtube.com/embed/ZE8v7uVGepM?si=b8L1iVYPvLQbulWX"
+    },
+    {
+      "Lesson 2: Genre": "https://www.youtube.com/embed/uepAJ-rqJKA?si=kDncSQJw0dNsAUs0"
+    },
+    {
+      "Lesson 3: Target Audience": "https://www.youtube.com/embed/NdFw8kvHAY8?si=NIUcSKvnLsZOz7Vw"
+    },
+    {
+      "Lesson 4: What Makes A Game Fun": "https://www.youtube.com/embed/lkatr_a1OMQ?si=H-zrGKh2KzPeSUvY"
+    }
+  ]
+}

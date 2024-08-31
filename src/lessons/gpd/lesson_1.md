@@ -1,10 +1,18 @@
-# Lesson 1 - What is a Game Design Document (GDD)?
+# Lesson 1 - What is a [Game Design Document (GDD)](../../vocabulary.md#game-design-document)?
 
 Standards: [GPD.1A](~GPD1A) | [GPD.1B](~GPD1B)
 
+---
+
+## Video
+
+<iframe width="750" height="315" src="https://www.youtube.com/embed/ZE8v7uVGepM?si=b8L1iVYPvLQbulWX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## What is a Game Design Document?
 
-A [**Game Design Document (GDD)**](../terms/gdd.md) is like a blueprint for your game. It’s a detailed guide that explains:
+A [**Game Design Document (GDD)**](../../vocabulary.md#game-design-document) is like a blueprint for your game. It’s a detailed guide that explains:
 
 - how your game will work
 - what it will look like
@@ -40,7 +48,7 @@ Once your GDD is written, it becomes the roadmap for your game’s development. 
 
 ### Conclusion
 
-A Game Design Document is a crucial tool in game development. It helps you organize your ideas and communicate them clearly to others. Whether you’re working on a small game by yourself or a big project with a team, a well-crafted GDD will make the process smoother and more successful.
+A [Game Design Document (GDD)](../../vocabulary.md#game-design-document) is a crucial tool in game development. It helps you organize your ideas and communicate them clearly to others. Whether you’re working on a small game by yourself or a big project with a team, a well-crafted GDD will make the process smoother and more successful.
 
 ## Lesson Materials
 

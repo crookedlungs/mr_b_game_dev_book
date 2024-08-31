@@ -2,6 +2,14 @@
 
 Standards: [GPD.1A](~GPD1A)
 
+---
+
+## Video
+
+<iframe width="750" height="315" src="https://www.youtube.com/embed/uepAJ-rqJKA?si=kDncSQJw0dNsAUs0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Introduction
 
 When designing a video game, two important concepts to understand are [**genre**](../terms/genre.md) and [**theme**](../terms/theme.md). These two ideas help shape the experience that players will have, but they are different in how they influence the game. Let’s explore what each one means and how they work together in game design.

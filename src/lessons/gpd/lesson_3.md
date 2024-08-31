@@ -2,6 +2,14 @@
 
 Standards:
 
+---
+
+## Video
+
+<iframe width="750" height="315" src="https://www.youtube.com/embed/NdFw8kvHAY8?si=NIUcSKvnLsZOz7Vw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 ## Introduction
 
 When designing a video game, it's important to know who your game is for. Two key concepts that help game designers understand and reach the right players are [**demographics**](<../terms/[demographic](../terms/demographic.md).md>) and [**target audiences**](../terms/target_audience.md). These ideas help shape the design and marketing of a game to make sure it appeals to the people who are most likely to enjoy it.
