@@ -11,7 +11,7 @@
     - [Lesson 4 - Types of Players](lessons/gpd/lesson_4.md)
 - [Vocabulary](./vocabulary.md)
 - [Genre](genre/genre_overview.md)
-  - [Action]()
+  <!-- - [Action]()
   - [Action-Adventure]()
   - [Adventure]()
   - [Battle Royale]()
@@ -40,7 +40,7 @@
   - [Survival]()
   - [Tower Defense]()
   - [Turn-Based Strategy (TBS)]()
-  - [Visual Novel]()
+  - [Visual Novel]() -->
 - [Languages](./langs.md)
   - [C++]()
   - [CSS]()
