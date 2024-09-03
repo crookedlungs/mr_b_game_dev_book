@@ -116,6 +116,26 @@ These are designed to structure and organize data in a readable format. They use
 
 ---
 
+## Markdown Languages
+
+- [Markdown]()
+
+  - Used for creating README files and mdbooks.
+
+  **Example**
+
+  ```markdown
+  # Page Title
+
+  This is my page!
+
+  ## About
+
+  I made this page to show you how **markdown** works!
+  ```
+
+---
+
 ## Stylesheet Languages
 
 [Stylesheet](./vocabulary.md#stylesheet) languages are used to describe the presentation and design of a document, particularly web pages. They control how elements defined by [markup languages](#markup-languages) (like HTML) are displayed, including layout, colors, fonts, and other visual aspects.

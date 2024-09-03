@@ -10,7 +10,11 @@ Temp Text
 
 - ### Quest 1 - File Structure
 
+  - **Objective:** Create the folder and file structure for the activity.
+
 - ### Quest 2 - Creating Sprites
+
+  - **Objective:** Create the sprites necesarry for the activity.
 
 ---
 
