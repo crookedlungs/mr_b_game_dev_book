@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Lesson 4 - Types of Players - Mr. Boswell&#x27;s Computer Science and Game Development Book</title>
+        <title>Lesson 2 - Managing Files and the Filesystem - Mr. Boswell&#x27;s Computer Science and Game Development Book</title>
 
 
         <!-- Custom HTML head -->
@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item "><a href="../../home.html">Home</a></li><li class="chapter-item expanded "><a href="../../lessons.html">Lessons</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>Fundamentals of Computer Science</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/fcs/lesson_1.html">Lesson 1 - Parts of a Computer</a></li><li class="chapter-item "><a href="../../lessons/fcs/lesson_2.html">Lesson 2 - Managing Files and the Filesystem</a></li></ol></li><li class="chapter-item expanded "><div>Game Design</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/gpd/lesson_1.html">Lesson 1 - What is a Game Design Document (GDD)?</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_2.html">Lesson 2 - Genre vs. Theme</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_3.html">Lesson 3 - Understanding Demographics and Target Audiences in Game Design</a></li><li class="chapter-item expanded "><a href="../../lessons/gpd/lesson_4.html" class="active">Lesson 4 - Types of Players</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../vocabulary.html">Vocabulary</a></li><li class="chapter-item "><a href="../../genre/genre_overview.html">Genre</a></li><li class="chapter-item "><a href="../../langs.html">Languages</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>C++</div></li><li class="chapter-item "><div>CSS</div></li><li class="chapter-item "><div>HTML</div></li><li class="chapter-item "><div>Javascript</div></li><li class="chapter-item "><a href="../../langs/lua.html">Lua</a></li><li class="chapter-item "><a href="../../langs/python.html">Python</a></li><li class="chapter-item "><div>Rust</div></li><li class="chapter-item "><div>Sass</div></li></ol></li><li class="chapter-item "><a href="../../templates.html">Templates</a></li><li class="chapter-item "><a href="../../standards.html">Standards</a></li></ol>
+                <ol class="chapter"><li class="chapter-item "><a href="../../home.html">Home</a></li><li class="chapter-item expanded "><a href="../../lessons.html">Lessons</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><div>Fundamentals of Computer Science</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/fcs/lesson_1.html">Lesson 1 - Parts of a Computer</a></li><li class="chapter-item expanded "><a href="../../lessons/fcs/lesson_2.html" class="active">Lesson 2 - Managing Files and the Filesystem</a></li></ol></li><li class="chapter-item "><div>Game Design</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/gpd/lesson_1.html">Lesson 1 - What is a Game Design Document (GDD)?</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_2.html">Lesson 2 - Genre vs. Theme</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_3.html">Lesson 3 - Understanding Demographics and Target Audiences in Game Design</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_4.html">Lesson 4 - Types of Players</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../vocabulary.html">Vocabulary</a></li><li class="chapter-item "><a href="../../genre/genre_overview.html">Genre</a></li><li class="chapter-item "><a href="../../langs.html">Languages</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>C++</div></li><li class="chapter-item "><div>CSS</div></li><li class="chapter-item "><div>HTML</div></li><li class="chapter-item "><div>Javascript</div></li><li class="chapter-item "><a href="../../langs/lua.html">Lua</a></li><li class="chapter-item "><a href="../../langs/python.html">Python</a></li><li class="chapter-item "><div>Rust</div></li><li class="chapter-item "><div>Sass</div></li></ol></li><li class="chapter-item "><a href="../../templates.html">Templates</a></li><li class="chapter-item "><a href="../../standards.html">Standards</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -174,39 +174,104 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lesson-4---types-of-players"><a class="header" href="#lesson-4---types-of-players">Lesson 4 - Types of Players</a></h1>
-<p>Standards: <a href="../../standards.html#gpd3c">GPD.3C</a></p>
+                        <h1 id="lesson-2---managing-files-and-the-filesystem"><a class="header" href="#lesson-2---managing-files-and-the-filesystem">Lesson 2 - Managing Files and the Filesystem</a></h1>
+<p>Standards: <a href="../../standards.html#fcs1a">FCS.6A</a></p>
 <hr />
 <h2 id="video"><a class="header" href="#video">Video</a></h2>
-<iframe width="750" height="315" src="https://www.youtube.com/embed/yxpW2ltDNow?si=pOvBFTK8egvro3lS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <hr />
 <h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
-<p>In the world of video games, people play for different reasons. Some love to explore new worlds, others enjoy competing against their friends, and some just want to relax and have fun. Understanding what motivates people to play games can help game designers create better experiences. One popular way to categorize players is through <a href="../../vocabulary.html#bartles-taxonomy">Bartle's Taxonomy</a>, developed by Richard Bartle.</p>
-<p><img src="https://github.com/crookedlungs/mr_b_game_dev_book/blob/main/media/images/bartletaxonomy.png?raw=true" alt="Bartle&#39;s Taxonomy" /></p>
+<p>In the digital world, managing files and understanding the filesystem are essential skills, especially for game designers. Whether you're working on a small project or a large game, keeping your files organized will save you time and reduce confusion. In this lesson, we'll learn how to set up a clear and efficient folder structure, name files correctly, and use naming conventions that make it easy to keep track of your work. These practices are key to ensuring that your game development process runs smoothly and that you can easily find and manage the files you need.</p>
 <hr />
-<h2 id="bartles-taxonomy"><a class="header" href="#bartles-taxonomy">Bartle's Taxonomy</a></h2>
-<p><a href="../../vocabulary.html#bartles-taxonomy">Bartle's Taxonomy</a> divides players into four main types: <strong>Achievers</strong>, <strong>Explorers</strong>, <strong>Socializers</strong>, and <strong>Killers</strong>. Let's explore what makes each of these player types unique and how understanding them can help in designing games.</p>
-<h3 id="achievers"><a class="header" href="#achievers">Achievers</a></h3>
-<p>Achievers are players who love to accomplish goals and collect rewards. They are motivated by points, levels, badges, and completing challenges. For Achievers, the game is all about reaching the highest score, unlocking all the achievements, and being the best. They feel satisfied when they master a game and show off their accomplishments to others. When designing games for Achievers, it's important to include clear goals, rewards, and challenges that allow them to track their progress.</p>
-<h3 id="explorers"><a class="header" href="#explorers">Explorers</a></h3>
-<p>Explorers are curious and love to discover new things. They enjoy exploring the game world, finding hidden secrets, and learning about the game’s story and mechanics. Explorers are motivated by curiosity and the thrill of discovery. They don't care as much about winning or completing the game quickly; instead, they take their time to uncover every corner of the game. To keep Explorers engaged, designers should include detailed environments, interesting backstories, and plenty of secrets or Easter eggs to find.</p>
-<h3 id="socializers"><a class="header" href="#socializers">Socializers</a></h3>
-<p>Socializers play games to connect with other people. For them, the game is a way to meet new friends, chat with others, and work together as a team. Socializers are motivated by the relationships they build and the interactions they have with other players. They might enjoy multiplayer games where they can collaborate with others or social games where they can chat and share experiences. To appeal to Socializers, game designers should focus on creating opportunities for teamwork, communication, and community-building within the game.</p>
-<h3 id="killers"><a class="header" href="#killers">Killers</a></h3>
-<p>Killers are competitive players who love the thrill of victory, especially when it involves defeating others. They are motivated by competition and dominance. Killers enjoy player-versus-player (PvP) games where they can challenge and defeat other players. They thrive on the excitement of battles, and they like to test their skills against real opponents. To keep Killers engaged, designers should create competitive environments, leaderboards, and opportunities for direct player conflict.</p>
-<hr />
+<h3 id="folder-structure"><a class="header" href="#folder-structure">Folder Structure</a></h3>
+<p>When creating your folders, keep the hierarchy simple. This means don't use a bunch of "nested" folders. Adding unnecessary subfolders can make your folder structure harder to understand and can potentially increase the time it takes to retrieve files.</p>
+<h4 id="example"><a class="header" href="#example">Example</a></h4>
+<p>Consider the folder structure below:</p>
+<pre><code class="language-cpp"><span class="boring">/*
+</span>- Documents (folder)
+-- Projects (folder)
+--- SpaceShooter (folder)
+---- Sprites (folder)
+----- Sprite01.jpg (file)
+----- Sprite02.jpg (file)
+----- Sprite03.jpg (file)
+<span class="boring">*/
+</span></code></pre>
+<p>This is a lot easier to read than:</p>
+<pre><code class="language-cpp"><span class="boring">/*
+</span>- Documents (folder)
+-- Projects (folder)
+--- SpaceShooter (folder)
+---- Sprite01.jpg (file)
+---- Sprites (folder)
+----- Sprite02.jpg (file)
+----- Other Sprites (folder)
+------ Sprite3 (folder)
+------- Sprite03.jpg (file)
+<span class="boring"> */
+</span></code></pre>
+<h3 id="naming-files-and-folders"><a class="header" href="#naming-files-and-folders">Naming Files and Folders</a></h3>
+<p>When naming files, there are certain rules we need to follow.</p>
+<ul>
+<li><strong>1:</strong> Avoid Spaces
+<ul>
+<li>Having extra white space in our file names may make it easier for you to read but it makes it more difficult for the computer to locate the file.</li>
+</ul>
+</li>
+<li><strong>2:</strong> Keep It Simple
+<ul>
+<li>Avoid overly complex names for your files.</li>
+</ul>
+</li>
+<li><strong>3:</strong> Use letters (A-Z) and numbers (0-9). Avoid special characters.</li>
+</ul>
+<h4 id="naming-conventions"><a class="header" href="#naming-conventions">Naming Conventions</a></h4>
+<p>Naming conventions allow us to follow our first rule (avoid spaces) of naming files and folders correctly. However, there are several different naming conventions we can use.</p>
+<ul>
+<li>
+<h5 id="kebab-case"><a class="header" href="#kebab-case">kebab-case</a></h5>
+<p>A naming convention where multi-word identifiers are formed by removing spaces between words and replacing them with a hyphen <code>-</code>.</p>
+<p><code>my-variable</code></p>
+</li>
+<li>
+<h5 id="camelcase"><a class="header" href="#camelcase">camelCase</a></h5>
+<p>A way to separate the words in a phrase by making the first letter of each word capitalized and not using spaces. It is commonly used in web URLs, programming and computer naming conventions.</p>
+<p><code>myVariable</code></p>
+</li>
+<li>
+<h5 id="pascalcase"><a class="header" href="#pascalcase">PascalCase</a></h5>
+<p>A programming naming convention where the first letter of each compound word in a variable is capitalized.</p>
+<p><code>MyVariable</code></p>
+</li>
+<li>
+<h5 id="snake_case"><a class="header" href="#snake_case">snake_case</a></h5>
+<p>A naming convention in which each space is replaced with an underscore <code>_</code> character, and words are written in lowercase. It is a commonly used naming convention in computing, for example for variable and subroutine names, and for filenames.</p>
+<p><code>my_variable</code></p>
+</li>
+</ul>
+<h5 id="file-versions"><a class="header" href="#file-versions">File Versions</a></h5>
+<p>More often than not, you will create a new version of a file and still want to keep the original file. These files are now two separate versions of the same data.</p>
+<p>When we create file versions, we need to make a note of that in our file name. Let's say we have a file called <code>variables.py</code> and we want to add more to it but still keep our original file. In order to show the differences in the two files, we would need to name the new one like this:</p>
+<p><code>VariablesV02.py</code></p>
+<p>It might also help to rename the original file to:</p>
+<p><code>VariablesV01.py</code></p>
+<p>Notice how we used <code>PascalCase</code> to add the file version. This keeps it easy to read, shows which version the file is, and still follows our first rule.
+We also want to use a two‑digit format for numbers 0–9 (for example, 01 and not 1) to ensure correct numerical sequence.</p>
+<h5 id="dates"><a class="header" href="#dates">Dates</a></h5>
+<p>If you need to add the data to a file name, use the following format:</p>
+<p><code>Variables20240903.py</code></p>
+<p>This helps with sorting and listing files in chronological order.</p>
 <h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
-<p><a href="../../vocabulary.html#bartles-taxonomy">Bartle's Taxonomy</a> helps us understand that players have different motivations and play styles. By recognizing these four player types, game designers can create games that appeal to a wide range of players. Whether you're designing a game for people who love competition, exploration, social interaction, or achievement, understanding what drives your audience can help you create a more engaging and enjoyable gaming experience. As you continue learning about game design, think about which type of player you are and how that might influence the games you want to create.</p>
+<p>Now that you’ve learned the basics of managing files and understanding the filesystem, you’re better equipped to keep your projects organized and efficient. By following best practices for folder structure and file naming, you’ll save time and avoid common pitfalls that can slow down your game development process. Remember, good organization is not just about keeping things tidy; it's about making your work easier and more enjoyable. As you continue to develop your skills in game design, these habits will help you stay on track and focused on what really matters—creating great games!</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../../lessons/gpd/lesson_3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../lessons/fcs/lesson_1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../../vocabulary.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../../lessons/gpd/lesson_1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -216,11 +281,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../../lessons/gpd/lesson_3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../../lessons/fcs/lesson_1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../../vocabulary.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../../lessons/gpd/lesson_1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

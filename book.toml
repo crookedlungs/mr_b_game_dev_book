@@ -13,5 +13,8 @@ additional-css = ["./theme/hints.css"]
 additional-js = ["./theme/hints.js"]
 no-section-label = true
 
+[output.html.code.hidelines]
+cpp = "~"
+
 [output.html.fold]
 enable = true

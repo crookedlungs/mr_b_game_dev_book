@@ -3,6 +3,7 @@
 ## Fundamentals of Computer Science
 
 - [Lesson 1](lessons/fcs/lesson_1.md) - Parts of a Computer
+- [Lesson 2](lessons/fcs/lesson_2.md) - Managing Files and the Filesystem
 
 ### Activities & Projects
 

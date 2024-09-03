@@ -4,6 +4,7 @@
 - [Lessons](./lessons.md)
   - [Fundamentals of Computer Science]()
     - [Lesson 1 - Parts of a Computer](lessons/fcs/lesson_1.md)
+    - [Lesson 2 - Managing Files and the Filesystem](lessons/fcs/lesson_2.md)
   - [Game Design]()
     - [Lesson 1 - What is a Game Design Document (GDD)?](lessons/gpd/lesson_1.md)
     - [Lesson 2 - Genre vs. Theme](lessons/gpd/lesson_2.md)

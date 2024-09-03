@@ -434,7 +434,7 @@ A whole number with **no** decimal point.
 
 #### Kebab Case
 
-A naming convention where multi-word identifiers are formed by removing spaces between words and replacing them with a hyphen (“-“).
+A naming convention where multi-word identifiers are formed by removing spaces between words and replacing them with a hyphen `-`.
 
 ##### Examples
 
@@ -743,7 +743,7 @@ A tool on the internet that helps you find information. When you type in words o
 
 #### Snake Case
 
-A naming convention in which each space is replaced with an underscore (\_) character, and words are written in lowercase. It is a commonly used naming convention in computing, for example for variable and subroutine names, and for filenames.
+A naming convention in which each space is replaced with an underscore `_` character, and words are written in lowercase. It is a commonly used naming convention in computing, for example for variable and subroutine names, and for filenames.
 
 ##### Examples
 
