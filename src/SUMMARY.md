@@ -45,8 +45,8 @@
 - [Coding Languages](./langs.md)
   <!--   - [C++]()
     - [CSS]()
-    - [HTML]() -->
-  - [Javascript]()
+    - [HTML]()
+  - [Javascript]()-->
   - [Lua](./langs/lua.md)
   - [Python](./langs/python.md)
   <!-- - [Rust]()
