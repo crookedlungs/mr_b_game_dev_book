@@ -14,6 +14,16 @@ The student develops products and generates new understanding by extending exist
 
   - Create and publish interactive stories, games, and animations.
 
+### FCS.4: Critical Thinking, Problem Solving, and Decision Making
+
+- #### FCS.4E
+
+  - Demonstrate coding proficiency in a contemporary programming language by developing solutions that create stories, games, and animations.
+
+- #### FCS.4L
+
+  - Create an interactive story, game, or animation.
+
 ### FCS.6: Creativity and Innovation
 
 The student understands technology concepts, systems, and operations as they apply to computer science The student is expected to:
