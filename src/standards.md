@@ -1,5 +1,10 @@
 # Standards
 
+These standards align with the essential knowledge and skills outlined by the TEA for students in the state of Texas.
+You can find more information on the [TEKS Resource System](https://www.teksresourcesystem.net/module/standards/Tools/Browse/).
+
+---
+
 ## Fundamentals of Computer Science
 
 ### FCS.1: Creativity and Innovation
