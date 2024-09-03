@@ -6,6 +6,8 @@ Python is a versatile, easy-to-learn programming language that’s widely used i
 
 ## Variables
 
+<iframe width="750" height="315" src="https://www.youtube.com/embed/pHOH7UfOhbE?si=wD8pUyE9eLLoGx3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 **Defining Variables**
 
 In Python, you define [variables](../vocabulary.md#variable) by simply assigning a value to a name.
@@ -19,6 +21,8 @@ Python automatically determines the type of the [variable](../vocabulary.md#vari
 ---
 
 ## Data Types
+
+<iframe width="750" height="315" src="https://www.youtube.com/embed/ppsCxnNm-JI?si=B8uyugVplNV2gLpr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Python supports various data types:
 
@@ -72,6 +76,8 @@ else:
     print("You are a senior.")
 ```
 
+<iframe width="750" height="315" src="https://www.youtube.com/embed/-BOBedcjySI?si=NFkteZIajCy81enC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 **Loops:**
 
 - **For Loop:**
@@ -80,6 +86,8 @@ else:
 for i in range(1, 6):
     print(i)  # Prints numbers from 1 to 5
 ```
+
+<iframe width="750" height="315" src="https://www.youtube.com/embed/zmIdC0_0BgY?si=p0pY8BovuImg9rhT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - **While Loop:**
 
@@ -90,9 +98,13 @@ while count <= 5:
     count += 1
 ```
 
+<iframe width="750" height="315" src="https://www.youtube.com/embed/ECduJk00mUU?si=K5F2uVwLZ4bDIK8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ---
 
 ## Functions
+
+<iframe width="750" height="315" src="https://www.youtube.com/embed/zvzjaqMBEso?si=eRhmYJa_WhVid15T" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Functions](../vocabulary.md#function) in Python are defined using the `def` keyword.
 
