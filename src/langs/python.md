@@ -180,3 +180,9 @@ print(result)  # Output: Cannot divide by zero
 ## Conclusion
 
 Python’s simplicity and readability make it an excellent language for beginners. By learning how to define [variables](../vocabulary.md#variable), use control structures, and create functions, students can quickly start building their own projects and applications.
+
+## Continued Learning
+
+The playlist below contains several great videos to continue learning Python.
+
+<iframe width="750" height="315" src="https://www.youtube.com/embed/videoseries?si=6P9bV31koqb_qmgi&amp;list=PLUaB-1hjhk8GHKfndKjyDMHPg_HlQ4vpK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
