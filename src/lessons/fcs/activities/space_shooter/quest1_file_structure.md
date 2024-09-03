@@ -12,8 +12,8 @@ Complete the following steps in order to complete today's work.
   - You can make a new folder by using `right-click` on your mouse and then selecting `New` and then `Folder`
 - **2:** Open the `Projects` folder and then create a new folder called `SpaceShooterGame`
 - **3:** Open the `SpaceShooterGame` folder and then create another new folder called `Sprites`
-- **4:** Move each sprite into the new `Sprites` folder.
-- **5:** Your sprites should have the following names.
+- **4:** Move each [sprite](../../../../vocabulary.md#sprite) into the new `Sprites` folder.
+- **5:** Your [sprites](../../../../vocabulary.md#sprite) should have the following names.
   - We will use the [PascalCase](../../../../vocabulary.md#pascal-case) naming convention for our files.
 
 | File Name   | Description    |
