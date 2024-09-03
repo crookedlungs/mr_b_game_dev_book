@@ -57,6 +57,12 @@ Refers to operations or events that do not occur at the same time or are not coo
 
 ---
 
+### Bartle's Taxonomy
+
+A classification of video game players (gamers) based on a 1996 paper by Richard Bartle according to their preferred actions within the game. The classification originally described players of multiplayer online games, though now it also refers to players of single-player video games.
+
+---
+
 #### Boilerplate
 
 Standardized, reusable code or text that can be used across multiple projects with little or no modification. Boilerplate code is often used to set up basic structures in a program or document, reducing the amount of repetitive work needed.

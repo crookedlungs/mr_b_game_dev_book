@@ -66,9 +66,20 @@ The student develops products and generates new understanding by extending exist
 
   - Implement game sound mechanics, including playing, pausing, and looping.
 
-### GPD.2: Communication and collaboration
+### GPD.2: Communication and Collaboration
 
 The student communicates and collaborates with peers to contribute to his or her own learning and the learning of others The student is expected to:
 
 - #### GPD.2E
   - Collaborate to research the business of games, including the roles of developer, marketing, publisher, and retail sales.
+
+### GPD.3: Research and Information Fluency
+
+The student locates, analyzes, processes, and organizes data The student is expected to:
+
+- #### GPD.3A
+  - Play board games to research and collect game play data.
+- #### GPD.3B
+  - Evaluate, analyze, and document game styles and playability.
+- #### GPD.3C
+  - Research the dramatic elements in games, including kinds of fun, player types, and nonlinear storytelling.
