@@ -6,9 +6,12 @@
 
 The student understands technology concepts, systems, and operations as they apply to computer science The student is expected to:
 
-- #### FCS.1A
+- #### FCS.6A
 
   - Demonstrate knowledge of the basic computer components, including a central processing unit (CPU), storage, and input/output devices.
+
+- #### FCS.6B
+  - Use operating system tools, including appropriate file management.
 
 ---
 
