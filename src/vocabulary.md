@@ -723,6 +723,8 @@ A collection of instructions, data, or programs that tell a computer how to work
 
 #### Sprite
 
+A two-dimensional (2D) image or animation that is integrated into a larger scene within a video game. Sprites are often used to represent characters, objects, or other elements in a game. Unlike 3D models, sprites are flat and are typically drawn from a single perspective. They are used in many classic and modern games, especially in 2D games, to create the visual elements that players interact with.
+
 ##### Examples
 
 ---
