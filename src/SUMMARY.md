@@ -42,14 +42,14 @@
   - [Tower Defense]()
   - [Turn-Based Strategy (TBS)]()
   - [Visual Novel]() -->
-- [Languages](./langs.md)
-  - [C++]()
-  - [CSS]()
-  - [HTML]()
+- [Coding Languages](./langs.md)
+  <!--   - [C++]()
+    - [CSS]()
+    - [HTML]() -->
   - [Javascript]()
   - [Lua](./langs/lua.md)
   - [Python](./langs/python.md)
-  - [Rust]()
-  - [Sass]()
+  <!-- - [Rust]()
+  - [Sass]() -->
 - [Templates](./templates.md)
 - [Standards](./standards.md)

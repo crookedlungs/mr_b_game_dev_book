@@ -2,6 +2,6 @@
 
 ## Quick Navigation
 
-[Languages](./langs.md) | [Lessons](./lessons.md) | [Vocabulary](./vocabulary.md) | [Templates](./templates.md) | [Standards](./standards.md)
+[Coding Languages](./langs.md) | [Lessons](./lessons.md) | [Vocabulary](./vocabulary.md) | [Templates](./templates.md) | [Standards](./standards.md)
 
 ## About
