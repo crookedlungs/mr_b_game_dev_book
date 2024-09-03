@@ -4,9 +4,9 @@ Standards: [FCS.6B](../../standards.md#fcs1b)
 
 ---
 
-## Video
+<!-- ## Video
 
----
+--- -->
 
 ## Introduction
 
