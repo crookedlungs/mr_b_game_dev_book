@@ -2,6 +2,18 @@
 
 ## Fundamentals of Computer Science
 
+### FCS.1: Creativity and Innovation
+
+The student develops products and generates new understanding by extending existing knowledge The student is expected to:
+
+- #### FCS.1A
+
+  - Investigate and explore various career opportunities within the computer science field and report findings through various media.
+
+- #### FCS.1B
+
+  - Create and publish interactive stories, games, and animations.
+
 ### FCS.6: Creativity and Innovation
 
 The student understands technology concepts, systems, and operations as they apply to computer science The student is expected to:

@@ -1,8 +1,12 @@
 # Space Shooter
 
+Standards: [FCS.6B](../../../../standards.md#fcs6b)
+
+---
+
 ## Quest 1 - File Structure
 
-Today, we will create the folder structure for our space shooter game.
+Today, we will create the file and folder structure for our space shooter game.
 
 #### Instructions
 

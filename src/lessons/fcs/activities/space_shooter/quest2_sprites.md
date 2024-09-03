@@ -1,5 +1,9 @@
 # Space Shooter
 
+Standards: [FCS.1B](../../../../standards.md#fcs1b)
+
+---
+
 ## Quest 1 - Creating Sprites
 
 Today, we are making [sprites](../../../../vocabulary.md#sprite) for our space shooter game.
