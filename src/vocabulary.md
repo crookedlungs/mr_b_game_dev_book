@@ -921,6 +921,8 @@ A software-based emulation of a physical computer that runs an operating system 
 
 ##### Examples
 
+- Oracle VirtualBox
+
 ---
 
 #### Virtual Reality (VR)
@@ -940,6 +942,18 @@ A software application used to access and view websites on the internet. Web bro
 - Google Chrome
 - Safari
 - Firefox
+
+---
+
+#### Word Processor
+
+A word processor is a software program capable of creating, storing, and printing text documents.
+
+##### Examples
+
+- Google Docs
+- Microsoft Word
+- LibreOffice Writer
 
 ---
 
