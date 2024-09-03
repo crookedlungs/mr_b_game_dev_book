@@ -46,6 +46,6 @@ Your folder and file structure should look _exactly_ like this.
 
 </div>
 
-- **6:** Go to Google Drive and create a new folder called `Projects`
+- **6:** Go to [Google Drive](https://www.google.com/drive/) and create a new folder called `Projects`
 - **7:** Right-click inside of your new `Projects` folder and click `Folder Upload`
 - **8:** Select your `SpaceShooterGame` folder and upload it.
