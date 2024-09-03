@@ -14,7 +14,7 @@ Standards: [GPD.3C](../../standards.md#gpd3c)
 
 In the world of video games, people play for different reasons. Some love to explore new worlds, others enjoy competing against their friends, and some just want to relax and have fun. Understanding what motivates people to play games can help game designers create better experiences. One popular way to categorize players is through [Bartle's Taxonomy](../../vocabulary.md#bartles-taxonomy), developed by Richard Bartle.
 
-![Bartle's Taxonomy](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Character_theory_chart.svg/220px-Character_theory_chart.svg.png)
+![Bartle's Taxonomy](https://github.com/crookedlungs/mr_b_game_dev_book/blob/main/media/images/bartletaxonomy.png?raw=true)
 
 ---
 
