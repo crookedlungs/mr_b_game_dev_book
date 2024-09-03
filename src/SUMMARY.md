@@ -46,7 +46,8 @@
   <!--   - [C++]()
     - [CSS]()
     - [HTML]()
-  - [Javascript]()-->
+  - [JavaScript]()
+  - [TypeScript]()-->
   - [Lua](./langs/lua.md)
   - [Python](./langs/python.md)
   <!-- - [Rust]()
