@@ -11,7 +11,11 @@ The student understands technology concepts, systems, and operations as they app
   - Demonstrate knowledge of the basic computer components, including a central processing unit (CPU), storage, and input/output devices.
 
 - #### FCS.6B
+
   - Use operating system tools, including appropriate file management.
+
+- #### FCS.6C
+  - Demonstrate knowledge and appropriate use of different operating systems.
 
 ---
 
@@ -81,8 +85,13 @@ The student communicates and collaborates with peers to contribute to his or her
 The student locates, analyzes, processes, and organizes data The student is expected to:
 
 - #### GPD.3A
+
   - Play board games to research and collect game play data.
+
 - #### GPD.3B
+
   - Evaluate, analyze, and document game styles and playability.
+
 - #### GPD.3C
+
   - Research the dramatic elements in games, including kinds of fun, player types, and nonlinear storytelling.
