@@ -432,6 +432,18 @@ A whole number with **no** decimal point.
 
 ---
 
+#### Kebab Case
+
+A naming convention where multi-word identifiers are formed by removing spaces between words and replacing them with a hyphen (“-“).
+
+##### Examples
+
+- `my-variable`
+- `high-score`
+- `is-finished`
+
+---
+
 #### Kilobyte
 
 A unit of digital information equal to 1,024 [bytes](#byte). Kilobytes are commonly used to measure small files or chunks of [data](#data), such as text files or small images.
