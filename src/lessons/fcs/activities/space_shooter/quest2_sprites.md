@@ -1,0 +1,26 @@
+# Space Shooter
+
+## Quest 1 - Creating Sprites
+
+Today, we are making [sprites](../../../../vocabulary.md#sprite) for our space shooter game.
+
+#### Instructions
+
+Complete the following steps in order to complete today's work.
+
+- **1:** Go to [PixilArt](https://www.pixilart.com/).
+- **2:** Create 7 [sprites](../../../../vocabulary.md#sprite) with the following characteristics:
+  - 100px tall
+  - 100px wide
+  - You should have:
+    - 1 space ship
+    - 4 Asteroids (each is a different sprite)
+    - 1 laser beam
+    - 1 star
+- **3:** Save each sprite as you finish it.
+
+#### Tips for Creating [Sprites](../../../../vocabulary.md#sprite)
+
+- Fill as much of your canvas as possible
+- Center your image
+- Only draw 1 [sprite](../../../../vocabulary.md#sprite) per image
