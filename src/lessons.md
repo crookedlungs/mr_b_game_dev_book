@@ -6,6 +6,8 @@
 
 ### Activities & Projects
 
+- [Space Shooter]()
+
 ## Game Design
 
 - [Lesson 1](lessons/gpd/lesson_1.md) - What is a Game Design Document (GDD)?

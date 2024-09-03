@@ -102,6 +102,18 @@ A unit of digital information that typically consists of 8 bits. A byte is the b
 
 ---
 
+#### Camel Case
+
+A way to separate the words in a phrase by making the first letter of each word capitalized and not using spaces. It is commonly used in web URLs, programming and computer naming conventions.
+
+##### Examples
+
+- `isFinished`
+- `myVariable`
+- `highScore`
+
+---
+
 #### Central Processing Unit (CPU)
 
 The primary component of a computer that performs most of the processing inside the machine. The CPU carries out instructions from programs by performing basic arithmetic (math), logic, control, and input/output operations.
@@ -583,6 +595,18 @@ The process of analyzing a string of text or code to extract meaningful informat
 
 ---
 
+#### Pascal Case
+
+A programming naming convention where the first letter of each compound word in a variable is capitalized.
+
+##### Examples
+
+- `ItemNumber`
+- `MyVariable`
+- `IsFinished`
+
+---
+
 #### Peripheral
 
 An external device connected to a computer that adds functionality or expands its capabilities. Peripherals can be input devices, output devices, or storage devices, and they typically connect via USB, Bluetooth, or other interfaces.
@@ -702,6 +726,18 @@ A tool on the internet that helps you find information. When you type in words o
 - **Google:** The most widely used search engine.
 - **Bing:** Another popular search engine.
 - **Yahoo:** One of the older search engines still in use.
+
+---
+
+#### Snake Case
+
+A naming convention in which each space is replaced with an underscore (\_) character, and words are written in lowercase. It is a commonly used naming convention in computing, for example for variable and subroutine names, and for filenames.
+
+##### Examples
+
+- `my_variable`
+- `is_finished`
+- `high_score`
 
 ---
 
