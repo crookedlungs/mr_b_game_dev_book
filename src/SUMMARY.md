@@ -14,6 +14,7 @@
     - [Lesson 2 - Genre vs. Theme](lessons/gpd/lesson_2.md)
     - [Lesson 3 - Understanding Demographics and Target Audiences in Game Design](lessons/gpd/lesson_3.md)
     - [Lesson 4 - Types of Players](lessons/gpd/lesson_4.md)
+    - [Lesson 5 - Nonlinear Storytelling](lessons/gpd/lesson_5.md)
 - [Vocabulary](./vocabulary.md)
 <!-- - [Genre](genre/genre_overview.md)
 - [Action]()
