@@ -31,7 +31,7 @@ Complete the following steps in order to complete today's work.
 | Star        | Star01.png     |
 
 <div class="warning">
-Your folder and file structure should look _exactly_ like this.
+Your folder and file structure should look exactly like this.
 
 ```cpp
 ~/*
