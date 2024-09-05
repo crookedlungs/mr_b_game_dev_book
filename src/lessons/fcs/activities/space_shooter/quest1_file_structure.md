@@ -1,7 +1,8 @@
 # Space Shooter
 
-Standards: [FCS.6B](../../../../standards.md#fcs6b)
-Skills: [Renaming Files](../../../../skills/basic_skills/renaming_files.md) | [Creating a Folder](../../../../skills/basic_skills/create_folder.md)
+**Standards:** [FCS.6B](../../../../standards.md#fcs6b)
+
+**Skills:** [Renaming Files](../../../../skills/basic_skills/renaming_files.md) | [Creating a Folder](../../../../skills/basic_skills/create_folder.md)
 
 ---
 
