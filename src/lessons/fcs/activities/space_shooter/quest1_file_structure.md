@@ -1,6 +1,7 @@
 # Space Shooter
 
 Standards: [FCS.6B](../../../../standards.md#fcs6b)
+Skills: [Renaming Files](../../../../skills/basic_skills/renaming_files.md)
 
 ---
 

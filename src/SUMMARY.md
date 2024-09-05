@@ -58,4 +58,6 @@
   <!-- - [Rust]()
   - [Sass]() -->
 - [Templates](./templates.md)
+- [Skills](./skills/skills.md)
+  - [Renaming Files](./skills/basic_skills/renaming_files.md)
 - [Standards](./standards.md)
