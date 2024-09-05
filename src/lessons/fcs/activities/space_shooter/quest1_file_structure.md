@@ -1,7 +1,7 @@
 # Space Shooter
 
 Standards: [FCS.6B](../../../../standards.md#fcs6b)
-Skills: [Renaming Files](../../../../skills/basic_skills/renaming_files.md)
+Skills: [Renaming Files](../../../../skills/basic_skills/renaming_files.md) | [Creating a Folder](../../../../skills/basic_skills/create_folder.md)
 
 ---
 
@@ -14,7 +14,7 @@ Today, we will create the file and folder structure for our space shooter game.
 Complete the following steps in order to complete today's work.
 
 - **1:** On your desktop, create a folder named `Projects`
-  - You can make a new folder by using `right-click` on your mouse and then selecting `New` and then `Folder`
+  - You can make a new folder by using `right-click` on your mouse and then selecting `New` and then `Folder`. [Need Help?](../../../../skills/basic_skills/create_folder.md)
 - **2:** Open the `Projects` folder and then create a new folder called `SpaceShooterGame`
 - **3:** Open the `SpaceShooterGame` folder and then create another new folder called `Sprites`
 - **4:** Move each [sprite](../../../../vocabulary.md#sprite) into the new `Sprites` folder.

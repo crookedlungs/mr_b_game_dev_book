@@ -28,6 +28,7 @@
   - [Sass]() -->
 - [Templates](./templates.md)
 - [Skills](./skills/skills.md)
+  - [Creating a Folder](./skills/basic_skills/create_folder.md)
   - [Renaming Files](./skills/basic_skills/renaming_files.md)
   - [Deleting Files](./skills/basic_skills/deleting_files.md)
 - [Standards](./standards.md)
