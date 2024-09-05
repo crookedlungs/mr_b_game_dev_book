@@ -20,7 +20,7 @@ Complete the following steps in order to complete today's work.
 - **5:** Your [sprites](../../../../vocabulary.md#sprite) should have the following names.
   - We will use the [PascalCase](../../../../vocabulary.md#pascal-case) naming convention for our files.
 
-| File Name   | Description    |
+| Description | File Name      |
 | ----------- | -------------- |
 | Space Ship  | SpaceShip.png  |
 | Asteroid #1 | Asteroid01.png |
