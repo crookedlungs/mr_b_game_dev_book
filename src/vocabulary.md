@@ -627,6 +627,17 @@ An external device connected to a computer that adds functionality or expands it
 
 ---
 
+#### Pixel
+
+The smallest element on a digital display. Often shorted to `px`.
+
+##### Examples
+
+- 100px by 100px
+- 1080p (1920px by 1080px)
+
+---
+
 #### Programming Language
 
 A set of instructions that you use to communicate with a computer. It allows you to write code that tells the computer what to do, like solving problems, creating games, or building apps. Different programming languages have different rules and uses, but they all help you create software.

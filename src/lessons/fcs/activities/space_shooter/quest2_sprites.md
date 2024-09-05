@@ -14,8 +14,8 @@ Complete the following steps in order to complete today's work.
 
 - **1:** Go to [PixilArt](https://www.pixilart.com/).
 - **2:** Create 7 [sprites](../../../../vocabulary.md#sprite) with the following characteristics:
-  - 100px tall
-  - 100px wide
+  - 100[px](../../../../vocabulary.md#pixel) tall
+  - 100[px](../../../../vocabulary.md#pixel) wide
   - You should have:
     - 1 space ship
     - 4 Asteroids (each is a different sprite)
