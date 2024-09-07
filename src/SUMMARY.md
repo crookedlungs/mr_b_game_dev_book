@@ -27,4 +27,6 @@
   - [Creating a Folder](./skills/basic_skills/create_folder.md)
   - [Renaming Files](./skills/basic_skills/renaming_files.md)
   - [Deleting Files](./skills/basic_skills/deleting_files.md)
+  - [PixilArt]()
+    - [Download a Drawing](./skills/how_to/pixilart/download_a_drawing.md)
 - [Standards](./standards.md)
