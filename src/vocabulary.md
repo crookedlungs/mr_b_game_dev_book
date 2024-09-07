@@ -204,6 +204,10 @@ Refers to the specific characteristics of the group of people that the game is a
 
 ---
 
+#### Desktop
+
+---
+
 #### "Don't Repeat Yourself" (DRY)
 
 A principle of software development aimed at reducing repetition of information which is likely to change, replacing it with abstractions that are less likely to change, or using data normalization which avoids redundancy in the first place.
@@ -223,6 +227,16 @@ A special data type that defines a set of named values, representing a collectio
 - Days of the week (Monday, Tuesday, etc.)
 - Directions (North, South, East, West)
 - Traffic light colors (Red, Yellow, Green)
+
+```rust
+pub enum DaysOfWeek {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday
+}
+```
 
 ---
 
@@ -375,6 +389,12 @@ Refers to the visual part of an application that users interact with. It include
 A traditional storage device that uses spinning magnetic disks to store and retrieve digital data. Hard drives are used in computers to store large amounts of data, such as operating systems, software, and personal files.
 
 ##### Examples
+
+---
+
+#### Heap
+
+##### Example
 
 ---
 
@@ -785,6 +805,12 @@ A collection of instructions, data, or programs that tell a computer how to work
 A two-dimensional (2D) image or animation that is integrated into a larger scene within a video game. Sprites are often used to represent characters, objects, or other elements in a game. Unlike 3D models, sprites are flat and are typically drawn from a single perspective. They are used in many classic and modern games, especially in 2D games, to create the visual elements that players interact with.
 
 ##### Examples
+
+---
+
+#### Stack
+
+##### Example
 
 ---
 
