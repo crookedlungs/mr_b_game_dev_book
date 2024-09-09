@@ -49,6 +49,14 @@ The student understands technology concepts, systems, and operations as they app
 
   - Demonstrate knowledge and understanding of basic network connectivity.
 
+- #### FCS.6E
+
+  - Describe, compare, and contrast the differences between an application and an operating system.
+
+- #### FCS.6F
+
+  - Student Expectation - FCS.6F: Compare, contrast, and appropriately use various input, processing, output, and primary/secondary storage devices.
+
 ---
 
 ## Game Design
