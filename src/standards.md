@@ -29,7 +29,7 @@ The student develops products and generates new understanding by extending exist
 
   - Create an interactive story, game, or animation.
 
-### FCS.6: Creativity and Innovation
+### FCS.6: Technology Operations and Concepts
 
 The student understands technology concepts, systems, and operations as they apply to computer science The student is expected to:
 
@@ -42,7 +42,12 @@ The student understands technology concepts, systems, and operations as they app
   - Use operating system tools, including appropriate file management.
 
 - #### FCS.6C
+
   - Demonstrate knowledge and appropriate use of different operating systems.
+
+- #### FCS.6D
+
+  - Demonstrate knowledge and understanding of basic network connectivity.
 
 ---
 

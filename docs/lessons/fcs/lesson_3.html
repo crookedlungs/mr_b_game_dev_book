@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Lesson 3 - Managing Files and the Filesystem - Mr. Boswell&#x27;s Computer Science and Game Development Book</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././theme/hints.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../../home.html">Home</a></li><li class="chapter-item expanded "><a href="../../lessons.html">Lessons</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><div>Fundamentals of Computer Science</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/fcs/lesson_1.html">Lesson 1 - Parts of a Computer</a></li><li class="chapter-item "><a href="../../lessons/fcs/lesson_2.html">Lesson 2 - Parts of an Operating System</a></li><li class="chapter-item expanded "><a href="../../lessons/fcs/lesson_3.html" class="active">Lesson 3 - Managing Files and the Filesystem</a></li><li class="chapter-item "><div>Activities</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/fcs/activities/space_shooter/space_shooter_overview.html">Space Shooter Game</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/fcs/activities/space_shooter/quest1_file_structure.html">Quest 1 - File Structure</a></li><li class="chapter-item "><a href="../../lessons/fcs/activities/space_shooter/quest2_sprites.html">Quest 2 - Creating Sprites</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><div>Game Design</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/gpd/lesson_1.html">Lesson 1 - What is a Game Design Document (GDD)?</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_2.html">Lesson 2 - Genre vs. Theme</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_3.html">Lesson 3 - Understanding Demographics and Target Audiences in Game Design</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_4.html">Lesson 4 - Types of Players</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_5.html">Lesson 5 - Nonlinear Storytelling</a></li><li class="chapter-item "><div>Activities</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/gpd/activities/boardgame/board_game_overview.html">Board Game Design</a></li><li class="chapter-item "><a href="../../lessons/gpd/activities/boardgame/quest1_gdd.html">Quest 1 - Game Design Document</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="../../vocabulary.html">Vocabulary</a></li><li class="chapter-item "><a href="../../langs.html">Coding Languages</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../langs/lua.html">Lua</a></li><li class="chapter-item "><a href="../../langs/python.html">Python</a></li></ol></li><li class="chapter-item "><a href="../../templates.html">Templates</a></li><li class="chapter-item "><a href="../../skills/skills.html">Skills</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../skills/basic_skills/create_folder.html">Creating a Folder</a></li><li class="chapter-item "><a href="../../skills/basic_skills/renaming_files.html">Renaming Files</a></li><li class="chapter-item "><a href="../../skills/basic_skills/deleting_files.html">Deleting Files</a></li><li class="chapter-item "><div>PixilArt</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../skills/how_to/pixilart/download_a_drawing.html">Download a Drawing</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../standards.html">Standards</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Mr. Boswell&#x27;s Computer Science and Game Development Book</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="lesson-2---managing-files-and-the-filesystem"><a class="header" href="#lesson-2---managing-files-and-the-filesystem">Lesson 2 - Managing Files and the Filesystem</a></h1>
+<p>Standards: <a href="../../standards.html#fcs1b">FCS.6B</a></p>
+<hr />
+<!-- ## Video
+
+--- -->
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>In the digital world, managing files and understanding the filesystem are essential skills, especially for game designers. Whether you're working on a small project or a large game, keeping your files organized will save you time and reduce confusion. In this lesson, we'll learn how to set up a clear and efficient folder structure, name files correctly, and use naming conventions that make it easy to keep track of your work. These practices are key to ensuring that your game development process runs smoothly and that you can easily find and manage the files you need.</p>
+<hr />
+<h3 id="folder-structure"><a class="header" href="#folder-structure">Folder Structure</a></h3>
+<p>When creating your folders, keep the hierarchy simple. This means don't use a bunch of "nested" folders. Adding unnecessary subfolders can make your folder structure harder to understand and can potentially increase the time it takes to retrieve files.</p>
+<h4 id="example"><a class="header" href="#example">Example</a></h4>
+<p>Consider the folder structure below:</p>
+<pre><code class="language-cpp"><span class="boring">/*
+</span>- Documents (folder)
+-- Projects (folder)
+--- SpaceGame (folder)
+---- Sprites (folder)
+----- Sprite01.jpg (file)
+----- Sprite02.jpg (file)
+----- Sprite03.jpg (file)
+<span class="boring">*/
+</span></code></pre>
+<p>This is a lot easier to read than:</p>
+<pre><code class="language-cpp"><span class="boring">/*
+</span>- Documents (folder)
+-- Projects (folder)
+--- SpaceGame (folder)
+---- Sprite01.jpg (file)
+---- Sprites (folder)
+----- Sprite02.jpg (file)
+----- Other Sprites (folder)
+------ Sprite3 (folder)
+------- Sprite03.jpg (file)
+<span class="boring"> */
+</span></code></pre>
+<h3 id="naming-files-and-folders"><a class="header" href="#naming-files-and-folders">Naming Files and Folders</a></h3>
+<p>When naming files, there are certain rules we need to follow.</p>
+<ul>
+<li><strong>1:</strong> Avoid Spaces
+<ul>
+<li>Having extra white space in our file names may make it easier for you to read but it makes it more difficult for the computer to locate the file.</li>
+</ul>
+</li>
+<li><strong>2:</strong> Keep It Simple
+<ul>
+<li>Avoid overly complex names for your files.</li>
+</ul>
+</li>
+<li><strong>3:</strong> Use letters (A-Z) and numbers (0-9). Avoid special characters.</li>
+</ul>
+<h4 id="naming-conventions"><a class="header" href="#naming-conventions">Naming Conventions</a></h4>
+<p>Naming conventions allow us to follow our first rule (avoid spaces) of naming files and folders correctly. However, there are several different naming conventions we can use.</p>
+<ul>
+<li>
+<h5 id="kebab-case"><a class="header" href="#kebab-case">kebab-case</a></h5>
+<p>A naming convention where multi-word identifiers are formed by removing spaces between words and replacing them with a hyphen <code>-</code>.</p>
+<p><code>my-variable</code></p>
+</li>
+<li>
+<h5 id="camelcase"><a class="header" href="#camelcase">camelCase</a></h5>
+<p>A way to separate the words in a phrase by making the first letter of each word capitalized and not using spaces. It is commonly used in web URLs, programming and computer naming conventions.</p>
+<p><code>myVariable</code></p>
+</li>
+<li>
+<h5 id="pascalcase"><a class="header" href="#pascalcase">PascalCase</a></h5>
+<p>A programming naming convention where the first letter of each compound word in a variable is capitalized.</p>
+<p><code>MyVariable</code></p>
+</li>
+<li>
+<h5 id="snake_case"><a class="header" href="#snake_case">snake_case</a></h5>
+<p>A naming convention in which each space is replaced with an underscore <code>_</code> character, and words are written in lowercase. It is a commonly used naming convention in computing, for example for variable and subroutine names, and for filenames.</p>
+<p><code>my_variable</code></p>
+</li>
+</ul>
+<h5 id="file-versions"><a class="header" href="#file-versions">File Versions</a></h5>
+<p>More often than not, you will create a new version of a file and still want to keep the original file. These files are now two separate versions of the same data.</p>
+<p>When we create file versions, we need to make a note of that in our file name. Let's say we have a file called <code>variables.py</code> and we want to add more to it but still keep our original file. In order to show the differences in the two files, we would need to name the new one like this:</p>
+<p><code>VariablesV02.py</code></p>
+<p>It might also help to rename the original file to:</p>
+<p><code>VariablesV01.py</code></p>
+<p>Notice how we used <code>PascalCase</code> to add the file version. This keeps it easy to read, shows which version the file is, and still follows our first rule.
+We also want to use a two‑digit format for numbers 0–9 (for example, 01 and not 1) to ensure correct numerical sequence.</p>
+<h5 id="dates"><a class="header" href="#dates">Dates</a></h5>
+<p>If you need to add the data to a file name, use the following format:</p>
+<p><code>Variables20240903.py</code></p>
+<p>This helps with sorting and listing files in chronological order.</p>
+<h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
+<p>Now that you’ve learned the basics of managing files and understanding the filesystem, you’re better equipped to keep your projects organized and efficient. By following best practices for folder structure and file naming, you’ll save time and avoid common pitfalls that can slow down your game development process. Remember, good organization is not just about keeping things tidy; it's about making your work easier and more enjoyable. As you continue to develop your skills in game design, these habits will help you stay on track and focused on what really matters—creating great games!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../lessons/fcs/lesson_2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../lessons/fcs/activities/space_shooter/space_shooter_overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../lessons/fcs/lesson_2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../lessons/fcs/activities/space_shooter/space_shooter_overview.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Hints -->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../.././theme/hints.js"></script>
+
+
+    </div>
+    </body>
+</html>
