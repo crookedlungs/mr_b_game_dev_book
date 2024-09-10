@@ -1,5 +1,9 @@
 # Deleting Files
 
+Standards: [FCS.6B](../../standards.md#fcs1b)
+
+---
+
 ## How do I delete a file?
 
 1. Click on the file you want to delete.
