@@ -1,4 +1,4 @@
-# Lesson 3 - Managing Files and the Filesystem
+# Lesson 4 - Naming Conventions
 
 Standards: [FCS.6B](../../standards.md#fcs1b)
 
