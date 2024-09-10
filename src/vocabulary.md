@@ -282,6 +282,18 @@ The order in which individual statements, instructions, or function calls are ex
 
 ---
 
+#### FOSS (Free and Open-Source)
+
+An acronym that refers to software that allows users to change, modify, and reuse the source code to improve program functionality in any way they want. The term “free” means the software has no copyright constraints.
+
+##### Examples
+
+- **Linux:** An [operating system](#operating-system-os).
+- **GIMP:** Photo editing software similar to Adobe Photoshop.
+- **InkScape:** Illustrating software similar to Adobe Illustrator.
+
+---
+
 #### Framework
 
 A pre-built set of tools and libraries that provides a structure for developing software applications. Frameworks are designed to simplify development by providing reusable code, patterns, and best practices.
@@ -575,7 +587,7 @@ Software that is released with a license that allows anyone to view, modify, and
 
 ##### Examples
 
-- The Linux operating system
+- The Linux [operating system](#operating-system-os)
 - The Apache HTTP Server
 - The Python programming language
 
