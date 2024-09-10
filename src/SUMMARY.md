@@ -6,6 +6,7 @@
     - [Lesson 1 - Parts of a Computer](lessons/fcs/lesson_1.md)
     - [Lesson 2 - Parts of an Operating System](lessons/fcs/lesson_2.md)
     - [Lesson 3 - Managing Files and the Filesystem](lessons/fcs/lesson_3.md)
+    - [Lesson 4 - Naming Conventions](lessons/fcs/lesson_4.md)
     - [Activities]()
       - [Space Shooter Game](./lessons/fcs/activities/space_shooter/space_shooter_overview.md)
         - [Quest 1 - File Structure](./lessons/fcs/activities/space_shooter/quest1_file_structure.md)
