@@ -1,4 +1,4 @@
-# Lesson 2 - Managing Files and the Filesystem
+# Lesson 2 - Parts of an Operating System
 
 Standards: [FCS.6C](../../standards.md#fcs1c)
 
