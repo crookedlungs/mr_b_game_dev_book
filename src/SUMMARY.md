@@ -33,4 +33,4 @@
   - [PixilArt]()
     - [Download a Drawing](./skills/how_to/pixilart/download_a_drawing.md)
 - [Standards](./standards.md)
-  - [Vertical Alignment]()
+  - [Vertical Alignment](./standards/vertical_alignment.md)
