@@ -1,6 +1,8 @@
 # Space Arcade Game
 
-Standards: [FCS.1B](../../../../standards.md#fcs1b)
+| Standards                                |
+| ---------------------------------------- |
+| [FCS.1B](../../../../standards.md#fcs1b) |
 
 ---
 
