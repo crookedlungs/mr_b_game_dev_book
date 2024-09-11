@@ -250,9 +250,16 @@ The student develops products and generates new understanding by extending exist
 
 The student communicates and collaborates with peers to contribute to his or her own learning and the learning of others The student is expected to:
 
+GPD.2A: Design and implement procedures to set timelines for, track the progress of, and evaluate a game product.
+GPD.2B: Seek and respond to input from peers and professionals in evaluating a game project.
+GPD.2C: Demonstrate knowledge and appropriate use of operating systems, program development tools, and networking resources.
+GPD.2D: Use network resources to acquire, organize, maintain, and evaluate information.
+
 - #### GPD.2E
 
   - Collaborate to research the business of games, including the roles of developer, marketing, publisher, and retail sales.
+
+GPD.2F: Demonstrate an understanding of and evaluate online technology, including online interaction and massive multiplayer games.
 
 ### GPD.3: Research and Information Fluency
 
@@ -271,3 +278,51 @@ The student locates, analyzes, processes, and organizes data The student is expe
 
   - Research the dramatic elements in games, including kinds of fun, player types, and nonlinear storytelling.
   - [Lesson 5 - Nonlinear Storytelling](./lessons/gpd/lesson_5.md) | [Lesson 4 - Types of Players](./lessons/gpd/lesson_4.md)
+
+### GPD.4: Critical Thinking, Problem Solving, and Decision Making
+
+The student uses appropriate strategies to analyze problems and design algorithms The student is expected to:
+
+GPD.4A: Demonstrate an understanding of the game design process, including generating ideas, brainstorming, and paper prototyping.
+GPD.4B: Write programs using variables of different data types.
+GPD.4C: Evaluate game rules and instructions.
+GPD.4D: Demonstrate an understanding of the user experience by comparing rules and game-play patterns.
+GPD.4E: Write game rules and instructions.
+GPD.4F: Develop game software.
+GPD.4G: Write computer game code, resolve game defects, and revise existing game code.
+GPD.4H: Test a finished game product by implementing sound testing techniques.
+
+### GPD.5: Digital Citizenship
+
+The student explores and understands safety, legal, cultural, and societal issues relating to the use of technology and information The student is expected to:
+
+GPD.5A: Explore intellectual property, privacy, sharing of information, copyright laws, and software licensing agreements.
+GPD.5B: Model ethical acquisition and use of digital information.
+GPD.5C: Demonstrate proper digital etiquette when using networks, responsible u
+GPD.5D: Model respect of intellectual property, including manipulating graphics, morphing graphics, editing graphics, and editing sound.se of software, and knowledge of acceptable use policies.
+GPD.5E: Discuss and evaluate the social issues surrounding gaming.
+GPD.5F: Evaluate the cultural aspects of game design fundamentals, including rationale for games and types of games.
+
+### GPD.6: Technology Operations and Concepts
+
+The student understands technology concepts, systems, and operations as they apply to game programming The student is expected to:
+
+GPD.6A: Identify basic game components, including the game engine, game play subsystems, data structures, models, and interfaces.
+GPD.6B: Generate random numbers in a program.
+GPD.6C: Create a program implementing conditional statements.
+GPD.6D: Develop an appropriate data model.
+GPD.6E: Demonstrate an understanding of and apply object-oriented game programming.
+GPD.6F: Demonstrate an understanding of game programming essentials, including event-driven programming, communicating with messages, and device management.
+GPD.6G: Demonstrate an understanding of the role of game events, the animation loop, and game timing.
+GPD.6H: Demonstrate an understanding of the role of game engines.
+GPD.6I: Demonstrate an understanding of video display flicker and double buffering.
+GPD.6J: Apply basic game screen design and layout, including visual controls, user interfaces, menus, and options.
+GPD.6K: Use game control design to understand, access, and control input devices, including keyboard, mouse, and joystick.
+GPD.6L: Demonstrate an understanding of and apply game animation, including the principles of animation and frame-based animation.
+GPD.6M: Demonstrate an understanding of decision making and types of decisions.
+GPD.6N: Demonstrate an understanding of game events, including listeners, triggers, and timed events.
+GPD.6O: Demonstrate an understanding of and implement collision detection, including bounding boxes and sprite collisions.
+GPD.6P: Implement a tile-based game, including loading tile maps, drawing tile maps, rendering a tile map, and layering sprites.
+GPD.6Q: Demonstrate an understanding of artificial intelligence and develop and implement artificial intelligence.
+GPD.6R: Demonstrate an understanding of game balance and tuning.
+GPD.6S: Demonstrate an understanding of player progression, including leveling, linear progression, and maintaining high score data.
