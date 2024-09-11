@@ -1,8 +1,8 @@
-# Space Shooter Game
+# Space Arcade Game
 
 ## About
 
-Temp Text
+Students will create a simple 2D space arcade game.
 
 ---
 
