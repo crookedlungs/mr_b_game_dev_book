@@ -1,8 +1,12 @@
 # Project #1 - Board Game Design
 
+| Standards                                                                         |
+| --------------------------------------------------------------------------------- |
+| [GPD.1A](../../../../standards#gpd1a) \| [GPD.3A](../../../../standards.md#gpd3a) |
+
 ## About
 
-Temp Text
+This project allows students to work collaboratively in the pursuit of designing, prototyping, and playtesting a boardgame.
 
 ---
 
@@ -17,9 +21,3 @@ Temp Text
   - **Objective:** Write the rules that govern how your game is played.
 
 ---
-
-## Activity Skills
-
-| Skill | Standard                                 |
-| ----- | ---------------------------------------- |
-|       | [FCS.6B](../../../../standards.md#fcs6b) |

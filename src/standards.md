@@ -3,6 +3,8 @@
 These standards align with the essential knowledge and skills outlined by the TEA for students in the state of Texas.
 You can find more information on the [TEKS Resource System](https://www.teksresourcesystem.net/module/standards/Tools/Browse/).
 
+**Note:** Standards are being added as necessary. The current list may be incomplete.
+
 ---
 
 ## Fundamentals of Computer Science
@@ -24,6 +26,7 @@ The student develops products and generates new understanding by extending exist
 - #### FCS.4E
 
   - Demonstrate coding proficiency in a contemporary programming language by developing solutions that create stories, games, and animations.
+  - [Lesson 4 - Naming Conventions](./lessons/fcs/lesson_4.md)
 
 - #### FCS.4L
 
@@ -36,14 +39,17 @@ The student understands technology concepts, systems, and operations as they app
 - #### FCS.6A
 
   - Demonstrate knowledge of the basic computer components, including a central processing unit (CPU), storage, and input/output devices.
+  - [Lesson 1 - Parts of a Computer](./lessons/fcs/lesson_1.md)
 
 - #### FCS.6B
 
   - Use operating system tools, including appropriate file management.
+  - [Lesson 3 - Managing Files and the Filesystem](./lessons/fcs/lesson_3.md)
 
 - #### FCS.6C
 
   - Demonstrate knowledge and appropriate use of different operating systems.
+  - [Lesson 2 - Parts of an Operating System](./lessons/fcs/lesson_2.md)
 
 - #### FCS.6D
 
@@ -55,7 +61,7 @@ The student understands technology concepts, systems, and operations as they app
 
 - #### FCS.6F
 
-  - Student Expectation - FCS.6F: Compare, contrast, and appropriately use various input, processing, output, and primary/secondary storage devices.
+  - Compare, contrast, and appropriately use various input, processing, output, and primary/secondary storage devices.
 
 ---
 
@@ -68,10 +74,12 @@ The student develops products and generates new understanding by extending exist
 - #### GPD.1A
 
   - Understand the basic game design elements, including conceptual ideas, storyline, visualization, storyboard, game effects, sound elements, game play, game controls, and player tutorial.
+  - [Lesson 1 - Game Design Document](./lessons/gpd/lesson_1.md) | [Lesson 2 - Genre vs Theme](./lessons/gpd/lesson_2.md)
 
 - #### GPD.1B
 
   - Create a design concept document.
+  - [Lesson 1 - Game Design Document](./lessons/gpd/lesson_1.md)
 
 - #### GPD.1C
 
@@ -118,6 +126,7 @@ The student develops products and generates new understanding by extending exist
 The student communicates and collaborates with peers to contribute to his or her own learning and the learning of others The student is expected to:
 
 - #### GPD.2E
+
   - Collaborate to research the business of games, including the roles of developer, marketing, publisher, and retail sales.
 
 ### GPD.3: Research and Information Fluency
@@ -127,6 +136,7 @@ The student locates, analyzes, processes, and organizes data The student is expe
 - #### GPD.3A
 
   - Play board games to research and collect game play data.
+  - [Board Game Design](./lessons/gpd/activities/boardgame/board_game_overview.md)
 
 - #### GPD.3B
 
@@ -135,3 +145,4 @@ The student locates, analyzes, processes, and organizes data The student is expe
 - #### GPD.3C
 
   - Research the dramatic elements in games, including kinds of fun, player types, and nonlinear storytelling.
+  - [Lesson 5 - Nonlinear Storytelling](./lessons/gpd/lesson_5.md) | [Lesson 4 - Types of Players](./lessons/gpd/lesson_4.md)

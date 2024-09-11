@@ -8,7 +8,7 @@
     - [Lesson 3 - Managing Files and the Filesystem](lessons/fcs/lesson_3.md)
     - [Lesson 4 - Naming Conventions](lessons/fcs/lesson_4.md)
     - [Activities]()
-      - [Space Shooter Game](./lessons/fcs/activities/space_shooter/space_shooter_overview.md)
+      - [Space Arcade Game](./lessons/fcs/activities/space_shooter/space_shooter_overview.md)
         - [Quest 1 - File Structure](./lessons/fcs/activities/space_shooter/quest1_file_structure.md)
         - [Quest 2 - Creating Sprites](./lessons/fcs/activities/space_shooter/quest2_sprites.md)
   - [Game Design]()
@@ -34,3 +34,4 @@
   - [PixilArt]()
     - [Download a Drawing](./skills/how_to/pixilart/download_a_drawing.md)
 - [Standards](./standards.md)
+  - [Vertical Alignment]()

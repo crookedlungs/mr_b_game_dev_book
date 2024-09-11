@@ -1,6 +1,6 @@
 [book]
-title = "Mr. Boswell's Computer Science and Game Development Book"
-authors = ["crookedlungs"]
+title = "Computer Science and Game Design: The Comprehensive Pathway"
+authors = ["Ryon Boswell"]
 language = "en"
 multilingual = false
 src = "src"

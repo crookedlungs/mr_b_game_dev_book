@@ -1,4 +1,4 @@
-# Space Shooter
+# Space Arcade Game
 
 Standards: [FCS.1B](../../../../standards.md#fcs1b)
 
@@ -13,7 +13,7 @@ Today, we are making [sprites](../../../../vocabulary.md#sprite) for our space s
 Complete the following steps in order to complete today's work.
 
 - **1:** Go to [PixilArt](https://www.pixilart.com/).
-- **2:** Create 7 [sprites](../../../../vocabulary.md#sprite) with the following characteristics:
+- **2:** Create **7** [sprites](../../../../vocabulary.md#sprite) with the following characteristics:
   - 100[px](../../../../vocabulary.md#pixel) tall
   - 100[px](../../../../vocabulary.md#pixel) wide
   - You should have:
@@ -21,7 +21,8 @@ Complete the following steps in order to complete today's work.
     - 4 Asteroids (each is a different sprite)
     - 1 laser beam
     - 1 star
-- **3:** Save each sprite as you finish it.
+- **3:** Download each sprite as you finish it.
+  - **HELP:** [How To Download PixilArt Drawing](../../../../skills/how_to/pixilart/download_a_drawing.md)
 
 #### Tips for Creating [Sprites](../../../../vocabulary.md#sprite)
 
