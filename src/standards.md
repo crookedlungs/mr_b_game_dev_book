@@ -21,16 +21,141 @@ The student develops products and generates new understanding by extending exist
 
   - Create and publish interactive stories, games, and animations.
 
+- #### FCS.1C
+
+  - Create and publish interactive animations.
+
+- #### FCS.1D
+
+  - Create algorithms for the solution of various problems.
+
+- #### FCS.1E
+
+  - Create web pages using a mark-up language.
+
+- #### FCS.1F
+
+  - Use the Internet to create and publish solutions.
+
+- #### FCS.1G
+
+  - Design creative and effective user interfaces.
+
+### FCS.2: Communication and Collaboration
+
+The student communicates and collaborates with peers to contribute to his or her own learning and the learning of others The student is expected to:
+
+- #### FCS.2A
+
+  - Seek and respond to advice from peers and professionals in evaluating problem solutions.
+
+- #### FCS.2B
+
+  - Debug and solve problems using reference materials and effective strategies.
+
+- #### FCS.2C
+
+  - Publish information in a variety of ways such as print, monitor display, web pages, and video.
+
+### FCS.3: Research and Information Fluency
+
+The student locates, analyzes, processes, and organizes data The student is expected to:
+
+- #### FCS.3A
+
+  - Construct appropriate electronic search strategies.
+
+- #### FCS.3B
+
+  - Use a variety of resources, including other subject areas, together with various productivity tools to gather authentic data as a basis for individual and group programming projects.
+
 ### FCS.4: Critical Thinking, Problem Solving, and Decision Making
+
+The student uses appropriate strategies to analyze problems and design algorithms The student is expected to:
+
+- #### FCS.4A
+
+  - Demonstrate the ability to insert applets into web pages.
+
+- #### FCS.4B
+
+  - Find, download, and insert scripting code into web pages to enhance interactivity.
+
+- #### FCS.4C
+
+  - Understand binary representation of data in computer systems, perform conversions between decimal and binary number systems, and count in binary number systems.
+
+- #### FCS.4D
+
+  - Read and define a problem's description, purpose, and goals.
 
 - #### FCS.4E
 
   - Demonstrate coding proficiency in a contemporary programming language by developing solutions that create stories, games, and animations.
   - [Lesson 4 - Naming Conventions](./lessons/fcs/lesson_4.md)
 
+- #### FCS.4F
+
+  - Choose, identify, and use the appropriate data type to properly represent data in a problem solution.
+
+- #### FCS.4G
+
+  - Demonstrate an understanding of and use variables within a programmed story, game, or animation.
+
+- #### FCS.4H
+
+  - Demonstrate proficiency in the use of arithmetic operators to create mathematical expressions, including addition, subtraction, multiplication, real division, integer division, and modulus division.
+
+- #### FCS.4I
+
+  - Demonstrate an understanding of and use sequence within a programmed story, game, or animation.
+
+- #### FCS.4J
+
+  - Demonstrate an understanding of and use conditional statements within a programmed story, game, or animation.
+
+- #### FCS.4K
+
+  - Demonstrate an understanding of and use iteration within a programmed story, game, or animation.
+
 - #### FCS.4L
 
   - Create an interactive story, game, or animation.
+
+- #### FCS.4M
+
+  - Use random numbers within a programmed story, game, or animation.
+
+- #### FCS.4N
+  - Test program solutions by investigating valid and invalid data.
+
+### FCS.5: Digital Citizenship
+
+The student explores and understands safety, legal, cultural, and societal issues relating to the use of technology and information The student is expected to:
+
+- #### FCS.5A
+
+  - Discuss copyright laws/issues and model ethical acquisition of digital information by citing sources using established methods.
+
+- #### FCS.5B
+
+  - Demonstrate proper digital etiquette and knowledge of acceptable use policies when using networks, especially resources on the Internet and on intranets.
+
+- #### FCS.5C
+
+  - Investigate measures such as passwords or virus detection/prevention to protect computer systems and databases from unauthorized use and tampering.
+
+- #### FCS.5D
+
+  - Understand the safety risks associated with the use of social networking sites.
+
+- #### FCS.5E
+
+  - Discuss the impact of computing and computing related advancements on society.
+
+- #### FCS.5F
+
+  - Determine the reliability of information available through electronic media.
 
 ### FCS.6: Technology Operations and Concepts
 
