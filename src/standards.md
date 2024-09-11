@@ -259,7 +259,9 @@ GPD.2D: Use network resources to acquire, organize, maintain, and evaluate infor
 
   - Collaborate to research the business of games, including the roles of developer, marketing, publisher, and retail sales.
 
-GPD.2F: Demonstrate an understanding of and evaluate online technology, including online interaction and massive multiplayer games.
+- #### GPD.2F
+
+  - Demonstrate an understanding of and evaluate online technology, including online interaction and massive multiplayer games.
 
 ### GPD.3: Research and Information Fluency
 
@@ -298,8 +300,8 @@ The student explores and understands safety, legal, cultural, and societal issue
 
 GPD.5A: Explore intellectual property, privacy, sharing of information, copyright laws, and software licensing agreements.
 GPD.5B: Model ethical acquisition and use of digital information.
-GPD.5C: Demonstrate proper digital etiquette when using networks, responsible u
-GPD.5D: Model respect of intellectual property, including manipulating graphics, morphing graphics, editing graphics, and editing sound.se of software, and knowledge of acceptable use policies.
+GPD.5C: Demonstrate proper digital etiquette when using networks, responsible use of software, and knowledge of acceptable use policies.
+GPD.5D: Model respect of intellectual property, including manipulating graphics, morphing graphics, editing graphics, and editing sound.
 GPD.5E: Discuss and evaluate the social issues surrounding gaming.
 GPD.5F: Evaluate the cultural aspects of game design fundamentals, including rationale for games and types of games.
 
