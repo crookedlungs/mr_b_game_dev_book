@@ -14,7 +14,11 @@ Students will create a simple 2D space arcade game.
 
 - ### Quest 2 - [Creating Sprites](./quest2_sprites.md)
 
-  - **Objective:** Create the sprites necesarry for the activity.
+  - **Objective:** Create the sprites necessary for the activity.
+
+- ### Quest 3 - [Creating the Project](./quest3_creating_project.md)
+
+  - **Objective:** Create the Godot project files.
 
 ---
 

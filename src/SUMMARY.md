@@ -10,6 +10,7 @@
       - [Space Arcade Game](./lessons/fcs/activities/space_shooter/space_shooter_overview.md)
         - [Quest 1 - File Structure](./lessons/fcs/activities/space_shooter/quest1_file_structure.md)
         - [Quest 2 - Creating Sprites](./lessons/fcs/activities/space_shooter/quest2_sprites.md)
+        - [Quest 3 - Creating the Project](./lessons/fcs/activities/space_shooter/quest3_creating_project.md)
   - [Game Design]()
     - [Lesson 1 - What is a Game Design Document (GDD)?](lessons/gpd/lesson_1.md)
     - [Lesson 2 - Genre vs. Theme](lessons/gpd/lesson_2.md)

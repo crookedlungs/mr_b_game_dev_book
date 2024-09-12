@@ -8,7 +8,7 @@
 
 ## Quest 1 - Creating Sprites
 
-Today, we are making [sprites](../../../../vocabulary.md#sprite) for our space shooter game.
+Today, we are making [sprites](../../../../vocabulary.md#sprite) for our space arcade game.
 
 #### Instructions
 
