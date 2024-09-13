@@ -1,15 +1,11 @@
 # Lesson 4 - Directories
 
-Standards: [FCS.6B](../../standards.md#fcs6b)
-
-**Objectives:**
-
-By the end of this lesson, you will know how to:
-
-- Identify what a [directory](../../vocabulary.md#directory) is.
-- Understand the difference between [directories](../../vocabulary.md#directory) and files.
-- Create, navigate, and organize [directories](../../vocabulary.md#directory).
-- Use directories to manage files efficiently in a computer system.
+| Standards                          | Objectives                                                                                |
+| ---------------------------------- | ----------------------------------------------------------------------------------------- |
+| [FCS.6B](../../standards.md#fcs6b) | Identify what a [directory](../../vocabulary.md#directory) is.                            |
+|                                    | Understand the difference between [directories](../../vocabulary.md#directory) and files. |
+|                                    | Create, navigate, and organize [directories](../../vocabulary.md#directory).              |
+|                                    | Use directories to manage files efficiently in a computer system.                         |
 
 ## Key Terms
 
