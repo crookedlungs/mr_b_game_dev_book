@@ -5,6 +5,7 @@
 - [Lesson 1 - Parts of a Computer](lessons/fcs/lesson_1.md)
 - [Lesson 2 - Parts of an Operating System](lessons/fcs/lesson_2.md)
 - [Lesson 3 - Managing Files and the Filesystem](lessons/fcs/lesson_3.md)
+- [Lesson 4 - Directories](lessons/fcs/lesson_4_directories.md)
 
 ### Activities & Projects
 

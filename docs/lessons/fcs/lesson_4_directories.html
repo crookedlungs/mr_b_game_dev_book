@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Lesson 4 - Directories - Computer Science and Game Design: The Comprehensive Pathway</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././theme/hints.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../../home.html">Home</a></li><li class="chapter-item expanded "><a href="../../lessons.html">Lessons</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><div>Fundamentals of Computer Science</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/fcs/lesson_1.html">Lesson 1 - Parts of a Computer</a></li><li class="chapter-item "><a href="../../lessons/fcs/lesson_2.html">Lesson 2 - Parts of an Operating System</a></li><li class="chapter-item "><a href="../../lessons/fcs/lesson_3.html">Lesson 3 - Managing Files and the Filesystem</a></li><li class="chapter-item expanded "><a href="../../lessons/fcs/lesson_4_directories.html" class="active">Lesson 4 - Directories</a></li><li class="chapter-item "><div>Activities</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/fcs/activities/space_shooter/space_shooter_overview.html">Space Arcade Game</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/fcs/activities/space_shooter/quest1_file_structure.html">Quest 1 - File Structure</a></li><li class="chapter-item "><a href="../../lessons/fcs/activities/space_shooter/quest2_sprites.html">Quest 2 - Creating Sprites</a></li><li class="chapter-item "><a href="../../lessons/fcs/activities/space_shooter/quest3_creating_project.html">Quest 3 - Creating the Project</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><div>Game Design</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/gpd/lesson_1.html">Lesson 1 - What is a Game Design Document (GDD)?</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_2.html">Lesson 2 - Genre vs. Theme</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_3.html">Lesson 3 - Understanding Demographics and Target Audiences in Game Design</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_4.html">Lesson 4 - Types of Players</a></li><li class="chapter-item "><a href="../../lessons/gpd/lesson_5.html">Lesson 5 - Nonlinear Storytelling</a></li><li class="chapter-item "><div>Activities</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../lessons/gpd/activities/boardgame/board_game_overview.html">Board Game Design</a></li><li class="chapter-item "><a href="../../lessons/gpd/activities/boardgame/quest1_gdd.html">Quest 1 - Game Design Document</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="../../vocabulary.html">Vocabulary</a></li><li class="chapter-item "><a href="../../langs.html">Coding Languages</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../langs/lua.html">Lua</a></li><li class="chapter-item "><a href="../../langs/python.html">Python</a></li></ol></li><li class="chapter-item "><a href="../../templates.html">Templates</a></li><li class="chapter-item "><a href="../../skills/skills.html">Skills</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>Basic Skills</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>File Management</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../skills/basic_skills/create_folder.html">Creating a Folder</a></li><li class="chapter-item "><a href="../../skills/basic_skills/renaming_files.html">Renaming Files</a></li><li class="chapter-item "><a href="../../skills/basic_skills/deleting_files.html">Deleting Files</a></li></ol></li></ol></li><li class="chapter-item "><div>PixilArt</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../skills/how_to/pixilart/download_a_drawing.html">Download a Drawing</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../standards.html">Standards</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../standards/vertical_alignment.html">Vertical Alignment</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Computer Science and Game Design: The Comprehensive Pathway</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="lesson-4---directories"><a class="header" href="#lesson-4---directories">Lesson 4 - Directories</a></h1>
+<p>Standards: <a href="../../standards.html#fcs1b">FCS.6B</a></p>
+<p><strong>Objectives:</strong></p>
+<p>By the end of this lesson, you will know how to:</p>
+<ul>
+<li>Identify what a directory is.</li>
+<li>Understand the difference between directories and files.</li>
+<li>Create, navigate, and organize directories.</li>
+<li>Use directories to manage files efficiently in a computer system.</li>
+</ul>
+<hr />
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>In this lesson, we will learn about directories, one of the most fundamental concepts in computer science and file management. A directory is like a folder on your computer where you can store and organize files. Understanding how directories work and how to navigate them will make it easier for you to manage your projects, documents, and files as you dive deeper into computer science.</p>
+<hr />
+<h2 id="directories"><a class="header" href="#directories">Directories</a></h2>
+<h3 id="what-is-a-directory"><a class="header" href="#what-is-a-directory">What is a Directory?</a></h3>
+<p>A directory is a special kind of file that contains other files and subdirectories. It’s similar to a folder in real life where you keep different documents, papers, or items. Directories help you organize and group files logically so that you can find them quickly.</p>
+<p><strong>Example:</strong></p>
+<p>Imagine your school backpack is a directory. Inside the backpack, you have different folders (subdirectories) for each subject: Math, Science, English, etc. Inside each folder, there are papers (files) related to that subject. The structure makes it easier to find what you need.</p>
+<p>We can show that as:</p>
+<pre><code class="language-mathematica">MyBackpack
+├── MathFolder
+│ ├── math_homework
+├── ScienceFolder
+│ ├── science_homework
+├── EnglishFolder
+│ ├── english_essay
+</code></pre>
+<h3 id="directory-structure"><a class="header" href="#directory-structure">Directory Structure</a></h3>
+<p>Computers use a directory structure that looks like a tree, often called a <code>file system</code>. The top of the tree is called the <code>root directory</code>, and below it are subdirectories and files. In this structure:</p>
+<ul>
+<li>The <code>root</code> directory is the main directory.</li>
+<li>Subdirectories branch off from the <code>root</code>, containing more files and directories.</li>
+<li>Files are the actual pieces of data stored in the directories, such as documents, images, or programs.</li>
+</ul>
+<p>Here's an example of a simple directory structure:</p>
+<pre><code class="language-mathematica">Root Directory
+├── Documents
+│ ├── homework.docx
+│ ├── notes.txt
+├── Pictures
+│ ├── vacation.jpg
+│ └── school.png
+└── Projects
+├── GameProject
+│ ├── main.py
+│ └── assets
+│ ├── sprite.png
+└── science_project.docx
+</code></pre>
+<p>Here is another example:</p>
+<pre><code class="language-mathematica">C:\Users\john.smith\Desktop\Projects
+</code></pre>
+<p>This can also be read as:</p>
+<pre><code class="language-mathematica">Root\SystemDirectory\HomeDirectory\Desktop\WorkingDirectory
+</code></pre>
+<p>Notice how we don't use spaces in the directory names. This would confuse the computer. A general rule is to use <a href="">PascalCase</a> for directories and either <a href="">kebab-case</a> or <a href="">snake_case</a> for files.</p>
+<h3 id="navigating-directories"><a class="header" href="#navigating-directories">Navigating Directories</a></h3>
+<p>To work with directories, you need to know how to navigate through them. There are two main ways to do this:</p>
+<ul>
+<li>Graphical Interface (like File Explorer on Windows or Finder on macOS): You click on folders and files to open them.</li>
+<li>Command Line Interface (CLI): Using text commands to move between directories. Some common commands include:
+<ul>
+<li><code>cd</code> (change directory): Moves you into a different directory.</li>
+<li><code>ls</code> (list): Displays the files and subdirectories in your current directory.</li>
+<li><code>mkdir</code> (make directory): Creates a new directory.</li>
+</ul>
+</li>
+</ul>
+<p>The easiest way is to use the three buttons to the left of the <code>Directory</code> field on the File Explorer. They do the following:</p>
+<ul>
+<li><code>&lt;--</code> Navigates to the previous directory.</li>
+<li><code>--&gt;</code> Navigates to the next directory.</li>
+<li><code>^</code> Navigates to the parent directory.</li>
+</ul>
+<p><img src="https://lh3.googleusercontent.com/d/1NjsbSbIT1S01Y3vt-0IrvAkW4ADOA10F" alt="Directory Buttons" /></p>
+<p>As an example, here we can see we have a directory <code>MyProject</code> with a sub-directory <code>Sprites</code>.</p>
+<p><code>MyProject</code> is the <strong>parent</strong> of <code>Sprites</code>.</p>
+<pre><code class="language-mathematica">MyProject\Sprites
+</code></pre>
+<h3 id="organizing-files-using-directories"><a class="header" href="#organizing-files-using-directories">Organizing Files Using Directories</a></h3>
+<p>Using directories helps keep your files organized. For example, you can create a directory for each school subject, with subdirectories for each project or assignment. It makes finding and managing files much easier.</p>
+<h3 id="tips-for-organizing-files"><a class="header" href="#tips-for-organizing-files">Tips for Organizing Files:</a></h3>
+<ul>
+<li>Group similar files together in a directory.</li>
+<li>Use descriptive names for your directories and files.</li>
+<li>Avoid having too many files in the same directory to prevent clutter.</li>
+</ul>
+<h3 id="types-of-directories"><a class="header" href="#types-of-directories">Types of Directories</a></h3>
+<ul>
+<li><strong>Home Directory:</strong> This is the default directory where all your personal files and folders are stored. On most systems, it’s named after your user account.</li>
+<li><strong>System Directories:</strong> These contain files that the operating system uses. You won’t need to change these often, but they are essential for your computer to work.</li>
+<li><strong>Working Directory:</strong> The directory you are currently working in. When using the command line, this is the directory where the computer looks for your files.</li>
+</ul>
+<p><img src="https://lh3.googleusercontent.com/d/1q3KYI2Tlbg363jsmg539f2Ls2TOksDGz" alt="Directory Example" /></p>
+<hr />
+<h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
+<p>Directories are a powerful way to organize and manage files on your computer. By understanding how to navigate and structure directories, you can make your work more efficient and easier to manage. Whether you're working on a coding project, organizing school files, or managing photos, knowing how to use directories is an essential skill for every computer user.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../lessons/fcs/lesson_3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../lessons/fcs/activities/space_shooter/space_shooter_overview.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../lessons/fcs/lesson_3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../lessons/fcs/activities/space_shooter/space_shooter_overview.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Hints -->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../.././theme/hints.js"></script>
+
+
+    </div>
+    </body>
+</html>
