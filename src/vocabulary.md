@@ -208,6 +208,16 @@ Refers to the specific characteristics of the group of people that the game is a
 
 ---
 
+#### Directory
+
+A folder that contains other (sub)folders or files.
+
+##### Example
+
+`C:\Users\john.smith\Desktop\MyProject` where `MyProject` is a directory.
+
+---
+
 #### "Don't Repeat Yourself" (DRY)
 
 A principle of software development aimed at reducing repetition of information which is likely to change, replacing it with abstractions that are less likely to change, or using data normalization which avoids redundancy in the first place.
@@ -627,6 +637,16 @@ The main [software](#software) that runs on a computer, phone, or other device. 
 
 ---
 
+#### Parent Directory
+
+The [directory](#directory) directly above the current [directory](#directory).
+
+##### Example
+
+`C:\Users\john.smith\Desktop\MyProject` where `Desktop` is the parent directory of `MyProject`.
+
+---
+
 #### Parsing
 
 The process of analyzing a string of text or code to extract meaningful information or convert it into a different format. Parsing is commonly used in programming to process user input, read configuration files, or interpret data formats like JSON or XML.
@@ -648,6 +668,12 @@ A programming naming convention where the first letter of each compound word in 
 - `ItemNumber`
 - `MyVariable`
 - `IsFinished`
+
+---
+
+#### Path
+
+The full set of [directories](#directory), in order, that lead to a certain file or folder.
 
 ---
 
@@ -749,6 +775,12 @@ A storage location where code and other project files are kept, typically manage
 - A GitHub repository for an [open-source](#open-source) project
 - A local Git repository for personal code
 - A private repository for a company's internal [software](#software)
+
+---
+
+#### Root Directory
+
+The uppermost [directory](#directory) in a path.
 
 ---
 

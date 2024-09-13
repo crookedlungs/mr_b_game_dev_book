@@ -6,10 +6,18 @@ Standards: [FCS.6B](../../standards.md#fcs6b)
 
 By the end of this lesson, you will know how to:
 
-- Identify what a directory is.
-- Understand the difference between directories and files.
-- Create, navigate, and organize directories.
+- Identify what a [directory](../../vocabulary.md#directory) is.
+- Understand the difference between [directories](../../vocabulary.md#directory) and files.
+- Create, navigate, and organize [directories](../../vocabulary.md#directory).
 - Use directories to manage files efficiently in a computer system.
+
+## Key Terms
+
+| Term          | Definition                                                                                                            |
+| ------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Directory** | A folder that contains other (sub)folders or files.                                                                   |
+| **Parent**    | The [directory](../../vocabulary.md#directory) directly above the current [directory](../../vocabulary.md#directory). |
+| **Root**      | The uppermost [directory](../../vocabulary.md#directory) in a [path](../../vocabulary.md#path).                       |
 
 ---
 
@@ -23,7 +31,7 @@ In this lesson, we will learn about directories, one of the most fundamental con
 
 ### What is a Directory?
 
-A directory is a special kind of file that contains other files and subdirectories. It’s similar to a folder in real life where you keep different documents, papers, or items. Directories help you organize and group files logically so that you can find them quickly.
+A [directory](../../vocabulary.md#directory) is a special kind of folder that contains other folders and files. It’s similar to a folder in real life where you keep different documents, papers, or items. Directories help you organize and group files logically so that you can find them quickly.
 
 **Example:**
 
@@ -43,7 +51,11 @@ MyBackpack
 
 ### Directory Structure
 
-Computers use a directory structure that looks like a tree, often called a `file system`. The top of the tree is called the `root directory`, and below it are subdirectories and files. In this structure:
+Computers use a [directory](../../vocabulary.md#directory) structure that looks like a tree, often called a `file system`. The top of the tree is called the `root directory`, and below it are subdirectories[^sub] and files.
+
+[^sub]: The prefix "sub" means "below" or "under.
+
+In this structure:
 
 - The `root` directory is the main directory.
 - Subdirectories branch off from the `root`, containing more files and directories.
@@ -79,7 +91,7 @@ This can also be read as:
 Root\SystemDirectory\HomeDirectory\Desktop\WorkingDirectory
 ```
 
-Notice how we don't use spaces in the directory names. This would confuse the computer. A general rule is to use [PascalCase]() for directories and either [kebab-case]() or [snake_case]() for files.
+Notice how we don't use spaces in the directory names. This would confuse the computer. A general rule is to use [PascalCase](../../vocabulary.md#pascal-case) for directories and either [kebab-case](../../vocabulary.md#kebab-case) or [snake_case](../../vocabulary.md#snake-case) for files.
 
 ### Navigating Directories
 
