@@ -1,6 +1,6 @@
 # Lesson 3 - Managing Files and the Filesystem
 
-Standards: [FCS.6B](../../standards.md#fcs1b)
+Standards: [FCS.6B](../../standards.md#fcs6b)
 
 ---
 

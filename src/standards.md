@@ -170,6 +170,7 @@ The student understands technology concepts, systems, and operations as they app
 
   - Use operating system tools, including appropriate file management.
   - [Lesson 3 - Managing Files and the Filesystem](./lessons/fcs/lesson_3.md)
+  - [Lesson 4 - Directories](./lessons/fcs/lesson_4_directories.md)
 
 - #### FCS.6C
 

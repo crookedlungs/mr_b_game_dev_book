@@ -1,6 +1,6 @@
 # Lesson 4 - Directories
 
-Standards: [FCS.6B](../../standards.md#fcs1b)
+Standards: [FCS.6B](../../standards.md#fcs6b)
 
 **Objectives:**
 
