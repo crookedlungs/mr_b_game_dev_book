@@ -1,875 +1,354 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en" class="light" dir="ltr">
-  <head>
-    <!-- Book generated using mdBook -->
-    <meta charset="UTF-8" />
-    <title>
-      Vocabulary - Computer Science and Game Design: The Comprehensive Pathway
-    </title>
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Vocabulary - Computer Science and Game Design: The Comprehensive Pathway</title>
 
-    <!-- Custom HTML head -->
 
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
 
-    <link rel="icon" href="favicon.svg" />
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/chrome.css" />
-    <link rel="stylesheet" href="css/print.css" media="print" />
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="FontAwesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="fonts/fonts.css" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
 
-    <!-- Highlight.js Stylesheets -->
-    <link rel="stylesheet" href="highlight.css" />
-    <link rel="stylesheet" href="tomorrow-night.css" />
-    <link rel="stylesheet" href="ayu-highlight.css" />
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
 
-    <!-- Custom theme stylesheets -->
-    <link rel="stylesheet" href="./theme/hints.css" />
-  </head>
-  <body class="sidebar-visible no-js">
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./theme/hints.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
-      <!-- Provide site root to javascript -->
-      <script>
-        var path_to_root = "";
-        var default_theme = window.matchMedia("(prefers-color-scheme: dark)")
-          .matches
-          ? "navy"
-          : "light";
-      </script>
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
 
-      <!-- Work around some values being stored in localStorage wrapped in quotes -->
-      <script>
-        try {
-          var theme = localStorage.getItem("mdbook-theme");
-          var sidebar = localStorage.getItem("mdbook-sidebar");
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
 
-          if (theme.startsWith('"') && theme.endsWith('"')) {
-            localStorage.setItem(
-              "mdbook-theme",
-              theme.slice(1, theme.length - 1)
-            );
-          }
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
 
-          if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
-            localStorage.setItem(
-              "mdbook-sidebar",
-              sidebar.slice(1, sidebar.length - 1)
-            );
-          }
-        } catch (e) {}
-      </script>
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
 
-      <!-- Set the theme before any content is loaded, prevents flash -->
-      <script>
-        var theme;
-        try {
-          theme = localStorage.getItem("mdbook-theme");
-        } catch (e) {}
-        if (theme === null || theme === undefined) {
-          theme = default_theme;
-        }
-        var html = document.querySelector("html");
-        html.classList.remove("light");
-        html.classList.add(theme);
-        var body = document.querySelector("body");
-        body.classList.remove("no-js");
-        body.classList.add("js");
-      </script>
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
 
-      <input type="checkbox" id="sidebar-toggle-anchor" class="hidden" />
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
-      <!-- Hide / unhide sidebar before it is displayed -->
-      <script>
-        var body = document.querySelector("body");
-        var sidebar = null;
-        var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
-        if (document.body.clientWidth >= 1080) {
-          try {
-            sidebar = localStorage.getItem("mdbook-sidebar");
-          } catch (e) {}
-          sidebar = sidebar || "visible";
-        } else {
-          sidebar = "hidden";
-        }
-        sidebar_toggle.checked = sidebar === "visible";
-        body.classList.remove("sidebar-visible");
-        body.classList.add("sidebar-" + sidebar);
-      </script>
-
-      <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-        <div class="sidebar-scrollbox">
-          <ol class="chapter">
-            <li class="chapter-item"><a href="home.html">Home</a></li>
-            <li class="chapter-item">
-              <a href="lessons.html">Lessons</a
-              ><a class="toggle"><div>❱</div></a>
-            </li>
-            <li>
-              <ol class="section">
-                <li class="chapter-item">
-                  <div>Fundamentals of Computer Science</div>
-                  <a class="toggle"><div>❱</div></a>
-                </li>
-                <li>
-                  <ol class="section">
-                    <li class="chapter-item">
-                      <a href="lessons/fcs/lesson_1.html"
-                        >Lesson 1 - Parts of a Computer</a
-                      >
-                    </li>
-                    <li class="chapter-item">
-                      <a href="lessons/fcs/lesson_2.html"
-                        >Lesson 2 - Parts of an Operating System</a
-                      >
-                    </li>
-                    <li class="chapter-item">
-                      <a href="lessons/fcs/lesson_3.html"
-                        >Lesson 3 - Managing Files and the Filesystem</a
-                      >
-                    </li>
-                    <li class="chapter-item">
-                      <a href="lessons/fcs/lesson_4_directories.html"
-                        >Lesson 4 - Directories</a
-                      >
-                    </li>
-                    <li class="chapter-item">
-                      <a href="lessons/fcs/lesson_5_file_extensions.html"
-                        >Lesson 5 - File Extensions</a
-                      >
-                    </li>
-                    <li class="chapter-item">
-                      <div>Activities</div>
-                      <a class="toggle"><div>❱</div></a>
-                    </li>
-                    <li>
-                      <ol class="section">
-                        <li class="chapter-item">
-                          <a
-                            href="lessons/fcs/activities/space_shooter/space_shooter_overview.html"
-                            >Space Arcade Game</a
-                          ><a class="toggle"><div>❱</div></a>
-                        </li>
-                        <li>
-                          <ol class="section">
-                            <li class="chapter-item">
-                              <a
-                                href="lessons/fcs/activities/space_shooter/quest1_file_structure.html"
-                                >Quest 1 - File Structure</a
-                              >
-                            </li>
-                            <li class="chapter-item">
-                              <a
-                                href="lessons/fcs/activities/space_shooter/quest2_sprites.html"
-                                >Quest 2 - Creating Sprites</a
-                              >
-                            </li>
-                            <li class="chapter-item">
-                              <a
-                                href="lessons/fcs/activities/space_shooter/quest3_creating_project.html"
-                                >Quest 3 - Creating the Project</a
-                              >
-                            </li>
-                          </ol>
-                        </li>
-                      </ol>
-                    </li>
-                  </ol>
-                </li>
-                <li class="chapter-item">
-                  <div>Game Design</div>
-                  <a class="toggle"><div>❱</div></a>
-                </li>
-                <li>
-                  <ol class="section">
-                    <li class="chapter-item">
-                      <a href="lessons/gpd/lesson_1.html"
-                        >Lesson 1 - What is a Game Design Document (GDD)?</a
-                      >
-                    </li>
-                    <li class="chapter-item">
-                      <a href="lessons/gpd/lesson_2.html"
-                        >Lesson 2 - Genre vs. Theme</a
-                      >
-                    </li>
-                    <li class="chapter-item">
-                      <a href="lessons/gpd/lesson_3.html"
-                        >Lesson 3 - Understanding Demographics and Target
-                        Audiences in Game Design</a
-                      >
-                    </li>
-                    <li class="chapter-item">
-                      <a href="lessons/gpd/lesson_4.html"
-                        >Lesson 4 - Types of Players</a
-                      >
-                    </li>
-                    <li class="chapter-item">
-                      <a href="lessons/gpd/lesson_5.html"
-                        >Lesson 5 - Nonlinear Storytelling</a
-                      >
-                    </li>
-                    <li class="chapter-item">
-                      <div>Activities</div>
-                      <a class="toggle"><div>❱</div></a>
-                    </li>
-                    <li>
-                      <ol class="section">
-                        <li class="chapter-item">
-                          <a
-                            href="lessons/gpd/activities/boardgame/board_game_overview.html"
-                            >Board Game Design</a
-                          >
-                        </li>
-                        <li class="chapter-item">
-                          <a
-                            href="lessons/gpd/activities/boardgame/quest1_gdd.html"
-                            >Quest 1 - Game Design Document</a
-                          >
-                        </li>
-                      </ol>
-                    </li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
-            <li class="chapter-item expanded">
-              <a href="vocabulary.html" class="active">Vocabulary</a>
-            </li>
-            <li class="chapter-item">
-              <a href="langs.html">Coding Languages</a
-              ><a class="toggle"><div>❱</div></a>
-            </li>
-            <li>
-              <ol class="section">
-                <li class="chapter-item"><a href="langs/lua.html">Lua</a></li>
-                <li class="chapter-item">
-                  <a href="langs/python.html">Python</a>
-                </li>
-              </ol>
-            </li>
-            <li class="chapter-item"><a href="templates.html">Templates</a></li>
-            <li class="chapter-item">
-              <a href="skills/skills.html">Skills</a
-              ><a class="toggle"><div>❱</div></a>
-            </li>
-            <li>
-              <ol class="section">
-                <li class="chapter-item">
-                  <div>Basic Skills</div>
-                  <a class="toggle"><div>❱</div></a>
-                </li>
-                <li>
-                  <ol class="section">
-                    <li class="chapter-item">
-                      <div>File Management</div>
-                      <a class="toggle"><div>❱</div></a>
-                    </li>
-                    <li>
-                      <ol class="section">
-                        <li class="chapter-item">
-                          <a href="skills/basic_skills/create_folder.html"
-                            >Creating a Folder</a
-                          >
-                        </li>
-                        <li class="chapter-item">
-                          <a href="skills/basic_skills/renaming_files.html"
-                            >Renaming Files</a
-                          >
-                        </li>
-                        <li class="chapter-item">
-                          <a href="skills/basic_skills/deleting_files.html"
-                            >Deleting Files</a
-                          >
-                        </li>
-                        <li class="chapter-item">
-                          <a href="lessons/fcs/lesson_4_directories.html"
-                            >Navigating Directories</a
-                          >
-                        </li>
-                        <li class="chapter-item">
-                          <a href="lessons/fcs/lesson_5_file_extensions.html"
-                            >File Extensions</a
-                          ><a class="toggle"><div>❱</div></a>
-                        </li>
-                        <li>
-                          <ol class="section">
-                            <li class="chapter-item">
-                              <a href="file_types_index.html"
-                                >File Extensions - Index</a
-                              >
-                            </li>
-                          </ol>
-                        </li>
-                      </ol>
-                    </li>
-                  </ol>
-                </li>
-                <li class="chapter-item">
-                  <div>PixilArt</div>
-                  <a class="toggle"><div>❱</div></a>
-                </li>
-                <li>
-                  <ol class="section">
-                    <li class="chapter-item">
-                      <a href="skills/how_to/pixilart/download_a_drawing.html"
-                        >Download a Drawing</a
-                      >
-                    </li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
-            <li class="chapter-item">
-              <a href="standards.html">Standards</a
-              ><a class="toggle"><div>❱</div></a>
-            </li>
-            <li>
-              <ol class="section">
-                <li class="chapter-item">
-                  <a href="standards/vertical_alignment.html"
-                    >Vertical Alignment</a
-                  >
-                </li>
-              </ol>
-            </li>
-          </ol>
-        </div>
-        <div id="sidebar-resize-handle" class="sidebar-resize-handle">
-          <div class="sidebar-resize-indicator"></div>
-        </div>
-      </nav>
-
-      <!-- Track and set sidebar scroll position -->
-      <script>
-        var sidebarScrollbox = document.querySelector(
-          "#sidebar .sidebar-scrollbox"
-        );
-        sidebarScrollbox.addEventListener(
-          "click",
-          function (e) {
-            if (e.target.tagName === "A") {
-              sessionStorage.setItem(
-                "sidebar-scroll",
-                sidebarScrollbox.scrollTop
-              );
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
-          },
-          { passive: true }
-        );
-        var sidebarScrollTop = sessionStorage.getItem("sidebar-scroll");
-        sessionStorage.removeItem("sidebar-scroll");
-        if (sidebarScrollTop) {
-          // preserve sidebar scroll position when navigating via links within sidebar
-          sidebarScrollbox.scrollTop = sidebarScrollTop;
-        } else {
-          // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-          var activeSection = document.querySelector("#sidebar .active");
-          if (activeSection) {
-            activeSection.scrollIntoView({ block: "center" });
-          }
-        }
-      </script>
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
 
-      <div id="page-wrapper" class="page-wrapper">
-        <div class="page">
-          <div id="menu-bar-hover-placeholder"></div>
-          <div id="menu-bar" class="menu-bar sticky">
-            <div class="left-buttons">
-              <label
-                id="sidebar-toggle"
-                class="icon-button"
-                for="sidebar-toggle-anchor"
-                title="Toggle Table of Contents"
-                aria-label="Toggle Table of Contents"
-                aria-controls="sidebar"
-              >
-                <i class="fa fa-bars"></i>
-              </label>
-              <button
-                id="theme-toggle"
-                class="icon-button"
-                type="button"
-                title="Change theme"
-                aria-label="Change theme"
-                aria-haspopup="true"
-                aria-expanded="false"
-                aria-controls="theme-list"
-              >
-                <i class="fa fa-paint-brush"></i>
-              </button>
-              <ul
-                id="theme-list"
-                class="theme-popup"
-                aria-label="Themes"
-                role="menu"
-              >
-                <li role="none">
-                  <button role="menuitem" class="theme" id="light">
-                    Light
-                  </button>
-                </li>
-                <li role="none">
-                  <button role="menuitem" class="theme" id="rust">Rust</button>
-                </li>
-                <li role="none">
-                  <button role="menuitem" class="theme" id="coal">Coal</button>
-                </li>
-                <li role="none">
-                  <button role="menuitem" class="theme" id="navy">Navy</button>
-                </li>
-                <li role="none">
-                  <button role="menuitem" class="theme" id="ayu">Ayu</button>
-                </li>
-              </ul>
-              <button
-                id="search-toggle"
-                class="icon-button"
-                type="button"
-                title="Search. (Shortkey: s)"
-                aria-label="Toggle Searchbar"
-                aria-expanded="false"
-                aria-keyshortcuts="S"
-                aria-controls="searchbar"
-              >
-                <i class="fa fa-search"></i>
-              </button>
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="home.html">Home</a></li><li class="chapter-item "><a href="lessons.html">Lessons</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>Fundamentals of Computer Science</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="lessons/fcs/lesson_1.html">Lesson 1 - Parts of a Computer</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_2.html">Lesson 2 - Parts of an Operating System</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_3.html">Lesson 3 - Managing Files and the Filesystem</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_4_directories.html">Lesson 4 - Directories</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_5_file_extensions.html">Lesson 5 - File Extensions</a></li><li class="chapter-item "><div>Activities</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="lessons/fcs/activities/space_shooter/space_shooter_overview.html">Space Arcade Game</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="lessons/fcs/activities/space_shooter/quest1_file_structure.html">Quest 1 - File Structure</a></li><li class="chapter-item "><a href="lessons/fcs/activities/space_shooter/quest2_sprites.html">Quest 2 - Creating Sprites</a></li><li class="chapter-item "><a href="lessons/fcs/activities/space_shooter/quest3_creating_project.html">Quest 3 - Creating the Project</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><div>Game Design</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="lessons/gpd/lesson_1.html">Lesson 1 - What is a Game Design Document (GDD)?</a></li><li class="chapter-item "><a href="lessons/gpd/lesson_2.html">Lesson 2 - Genre vs. Theme</a></li><li class="chapter-item "><a href="lessons/gpd/lesson_3.html">Lesson 3 - Understanding Demographics and Target Audiences in Game Design</a></li><li class="chapter-item "><a href="lessons/gpd/lesson_4.html">Lesson 4 - Types of Players</a></li><li class="chapter-item "><a href="lessons/gpd/lesson_5.html">Lesson 5 - Nonlinear Storytelling</a></li><li class="chapter-item "><div>Activities</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="lessons/gpd/activities/boardgame/board_game_overview.html">Board Game Design</a></li><li class="chapter-item "><a href="lessons/gpd/activities/boardgame/quest1_gdd.html">Quest 1 - Game Design Document</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="vocabulary.html" class="active">Vocabulary</a></li><li class="chapter-item "><a href="langs.html">Coding Languages</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="langs/lua.html">Lua</a></li><li class="chapter-item "><a href="langs/python.html">Python</a></li></ol></li><li class="chapter-item "><a href="templates.html">Templates</a></li><li class="chapter-item "><a href="skills/skills.html">Skills</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>Basic Skills</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>File Management</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="skills/basic_skills/create_folder.html">Creating a Folder</a></li><li class="chapter-item "><a href="skills/basic_skills/renaming_files.html">Renaming Files</a></li><li class="chapter-item "><a href="skills/basic_skills/deleting_files.html">Deleting Files</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_4_directories.html">Navigating Directories</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_5_file_extensions.html">File Extensions</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="file_types_index.html">File Extensions - Index</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><div>PixilArt</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="skills/how_to/pixilart/download_a_drawing.html">Download a Drawing</a></li></ol></li></ol></li><li class="chapter-item "><a href="standards.html">Standards</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="standards/vertical_alignment.html">Vertical Alignment</a></li></ol></li></ol>
             </div>
-
-            <h1 class="menu-title">
-              Computer Science and Game Design: The Comprehensive Pathway
-            </h1>
-
-            <div class="right-buttons">
-              <a
-                href="print.html"
-                title="Print this book"
-                aria-label="Print this book"
-              >
-                <i id="print-button" class="fa fa-print"></i>
-              </a>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-          </div>
+        </nav>
 
-          <div id="search-wrapper" class="hidden">
-            <form id="searchbar-outer" class="searchbar-outer">
-              <input
-                type="search"
-                id="searchbar"
-                name="searchbar"
-                placeholder="Search this book ..."
-                aria-controls="searchresults-outer"
-                aria-describedby="searchresults-header"
-              />
-            </form>
-            <div id="searchresults-outer" class="searchresults-outer hidden">
-              <div id="searchresults-header" class="searchresults-header"></div>
-              <ul id="searchresults"></ul>
-            </div>
-          </div>
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
-          <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-          <script>
-            document
-              .getElementById("sidebar-toggle")
-              .setAttribute("aria-expanded", sidebar === "visible");
-            document
-              .getElementById("sidebar")
-              .setAttribute("aria-hidden", sidebar !== "visible");
-            Array.from(document.querySelectorAll("#sidebar a")).forEach(
-              function (link) {
-                link.setAttribute("tabIndex", sidebar === "visible" ? 0 : -1);
-              }
-            );
-          </script>
+        <div id="page-wrapper" class="page-wrapper">
 
-          <div id="content" class="content">
-            <main>
-              <h1 id="vocabulary">
-                <a class="header" href="#vocabulary">Vocabulary</a>
-              </h1>
-              <h2 id="quick-navigation">
-                <a class="header" href="#quick-navigation">Quick Navigation</a>
-              </h2>
-              <p>
-                <a href="#a">A</a> | <a href="#b">B</a> | <a href="#c">C</a> |
-                <a href="#d">D</a> | <a href="#e">E</a> | <a href="#f">F</a> |
-                <a href="#g">G</a> | <a href="#h">H</a> | <a href="#i">I</a> |
-                <a href="#j">J</a> | <a href="#k">K</a> | <a href="#l">L</a> |
-                <a href="#m">M</a> | <a href="#n">N</a> | <a href="#o">O</a> |
-                <a href="#p">P</a> | <a href="#q">Q</a> | <a href="#r">R</a> |
-                <a href="#s">S</a> | <a href="#t">T</a> | <a href="#u">U</a> |
-                <a href="#v">V</a> | <a href="#w">W</a> | <a href="#x">X</a> |
-                <a href="#y">Y</a> | <a href="#z">Z</a>
-              </p>
-              <h3 id="a"><a class="header" href="#a">A</a></h3>
-              <hr />
-              <h4 id="application">
-                <a class="header" href="#application">Application</a>
-              </h4>
-              <p>
-                A software program that is designed to perform specific tasks or
-                functions for the user. In game design, an application can be a
-                game itself, a tool used to create games, or software that
-                supports game development.
-              </p>
-              <h5 id="examples">
-                <a class="header" href="#examples">Examples</a>
-              </h5>
-              <ul>
-                <li>A game like "Minecraft"</li>
-                <li>The game engine Unity</li>
-                <li>Photoshop</li>
-              </ul>
-              <hr />
-              <h4 id="array"><a class="header" href="#array">Array</a></h4>
-              <p>
-                An array is a way to organize and store multiple pieces of
-                similar data in one place. It's like a list where each item has
-                a specific position, called an index, which starts at zero.
-                Arrays are useful when you need to keep track of many items of
-                the same type, like numbers, words, or even objects.
-              </p>
-              <h5 id="examples-1">
-                <a class="header" href="#examples-1">Examples</a>
-              </h5>
-              <ul>
-                <li>A list of high scores in a game: [100, 200, 300]</li>
-                <li>A collection of names: ["Alice", "Bob", "Charlie"]</li>
-              </ul>
-              <hr />
-              <h4 id="augmented-reality-ar">
-                <a class="header" href="#augmented-reality-ar"
-                  >Augmented Reality (AR)</a
-                >
-              </h4>
-              <p>
-                A technology that overlays digital content, such as images,
-                sounds, or other data, on the real world through devices like
-                smartphones or AR glasses. It enhances the user's perception of
-                reality by adding virtual elements to their physical
-                environment.
-              </p>
-              <h5 id="examples-2">
-                <a class="header" href="#examples-2">Examples</a>
-              </h5>
-              <ul>
-                <li>Pokémon GO</li>
-                <li>AR navigation in Google Maps</li>
-                <li>IKEA Place app for visualizing furniture</li>
-              </ul>
-              <hr />
-              <h4 id="asynchronous">
-                <a class="header" href="#asynchronous">Asynchronous</a>
-              </h4>
-              <p>
-                Refers to operations or events that do not occur at the same
-                time or are not coordinated in time. In programming,
-                asynchronous functions allow a program to initiate a task and
-                continue executing other tasks before the first task is
-                completed, without waiting for it to finish.
-              </p>
-              <h5 id="examples-3">
-                <a class="header" href="#examples-3">Examples</a>
-              </h5>
-              <ul>
-                <li>JavaScript async and await functions</li>
-                <li>Network requests in a web application</li>
-                <li>File I/O operations</li>
-              </ul>
-              <h3 id="b"><a class="header" href="#b">B</a></h3>
-              <hr />
-              <h3 id="bartles-taxonomy">
-                <a class="header" href="#bartles-taxonomy">Bartle's Taxonomy</a>
-              </h3>
-              <p>
-                A classification of video game players (gamers) based on a 1996
-                paper by Richard Bartle according to their preferred actions
-                within the game. The classification originally described players
-                of multiplayer online games, though now it also refers to
-                players of single-player video games.
-              </p>
-              <hr />
-              <h4 id="boilerplate">
-                <a class="header" href="#boilerplate">Boilerplate</a>
-              </h4>
-              <p>
-                Standardized, reusable code or text that can be used across
-                multiple projects with little or no modification. Boilerplate
-                code is often used to set up basic structures in a program or
-                document, reducing the amount of repetitive work needed.
-              </p>
-              <h5 id="examples-4">
-                <a class="header" href="#examples-4">Examples</a>
-              </h5>
-              <ul>
-                <li>HTML document structure</li>
-                <li>Common function templates in programming</li>
-                <li>Legal disclaimers or copyright notices</li>
-              </ul>
-              <hr />
-              <h4 id="boolean">
-                <a class="header" href="#boolean">Boolean</a>
-              </h4>
-              <p>
-                A data type that can only have one of two possible values:
-                <code>true</code> or <code>false</code>. Booleans are commonly
-                used in programming to make decisions and control the flow of a
-                program based on conditions.
-              </p>
-              <h5 id="examples-5">
-                <a class="header" href="#examples-5">Examples</a>
-              </h5>
-              <ul>
-                <li><code>isLoggedIn = true</code></li>
-                <li><code>hasAccess = false</code></li>
-                <li>
-                  Conditional statements like <code>if (isAdmin) { ... }</code>
-                </li>
-              </ul>
-              <hr />
-              <h4 id="byte"><a class="header" href="#byte">Byte</a></h4>
-              <p>
-                A unit of digital information that typically consists of 8 bits.
-                A byte is the basic addressable element in many computer
-                architectures and is often used to represent a single character
-                of text.
-              </p>
-              <h5 id="examples-6">
-                <a class="header" href="#examples-6">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  A single letter like <code>A</code> is often stored as one
-                  byte.
-                </li>
-                <li>
-                  The size of a file might be measured in
-                  <a href="#kilobyte">kilobytes (KB)</a> or
-                  <a href="#megabyte">megabytes (MB)</a>.
-                </li>
-              </ul>
-              <hr />
-              <h3 id="c"><a class="header" href="#c">C</a></h3>
-              <hr />
-              <h4 id="camel-case">
-                <a class="header" href="#camel-case">Camel Case</a>
-              </h4>
-              <p>
-                A way to separate the words in a phrase by making the first
-                letter of each word capitalized and not using spaces. It is
-                commonly used in web URLs, programming and computer naming
-                conventions.
-              </p>
-              <h5 id="examples-7">
-                <a class="header" href="#examples-7">Examples</a>
-              </h5>
-              <ul>
-                <li><code>isFinished</code></li>
-                <li><code>myVariable</code></li>
-                <li><code>highScore</code></li>
-              </ul>
-              <hr />
-              <h4 id="central-processing-unit-cpu">
-                <a class="header" href="#central-processing-unit-cpu"
-                  >Central Processing Unit (CPU)</a
-                >
-              </h4>
-              <p>
-                The primary component of a computer that performs most of the
-                processing inside the machine. The CPU carries out instructions
-                from programs by performing basic arithmetic (math), logic,
-                control, and input/output operations.
-              </p>
-              <h5 id="examples-8">
-                <a class="header" href="#examples-8">Examples</a>
-              </h5>
-              <ul>
-                <li>Intel Core i7</li>
-                <li>AMD Ryzen 9</li>
-                <li>ARM Cortex-A78</li>
-              </ul>
-              <hr />
-              <h4 id="comment">
-                <a class="header" href="#comment">Comment</a>
-              </h4>
-              <p>
-                A piece of text in a computer program that is ignored by the
-                computer when the code runs. Comments are used by programmers to
-                explain what the code does or to leave notes for themselves or
-                others. They help make the code easier to understand.
-              </p>
-              <h5 id="example">
-                <a class="header" href="#example">Example</a>
-              </h5>
-              <pre><code class="language-python"># This is a comment.
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Computer Science and Game Design: The Comprehensive Pathway</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="vocabulary"><a class="header" href="#vocabulary">Vocabulary</a></h1>
+<h2 id="quick-navigation"><a class="header" href="#quick-navigation">Quick Navigation</a></h2>
+<p><a href="#a">A</a> | <a href="#b">B</a> | <a href="#c">C</a> | <a href="#d">D</a> | <a href="#e">E</a> | <a href="#f">F</a> | <a href="#g">G</a> | <a href="#h">H</a> | <a href="#i">I</a> | <a href="#j">J</a> | <a href="#k">K</a> | <a href="#l">L</a> | <a href="#m">M</a> | <a href="#n">N</a> | <a href="#o">O</a> | <a href="#p">P</a> | <a href="#q">Q</a> | <a href="#r">R</a> | <a href="#s">S</a> | <a href="#t">T</a> | <a href="#u">U</a> | <a href="#v">V</a> | <a href="#w">W</a> | <a href="#x">X</a> | <a href="#y">Y</a> | <a href="#z">Z</a></p>
+<h3 id="a"><a class="header" href="#a">A</a></h3>
+<hr />
+<h4 id="application"><a class="header" href="#application">Application</a></h4>
+<p>A software program that is designed to perform specific tasks or functions for the user. In game design, an application can be a game itself, a tool used to create games, or software that supports game development.</p>
+<h5 id="examples"><a class="header" href="#examples">Examples</a></h5>
+<ul>
+<li>A game like "Minecraft"</li>
+<li>The game engine Unity</li>
+<li>Photoshop</li>
+</ul>
+<hr />
+<h4 id="array"><a class="header" href="#array">Array</a></h4>
+<p>An array is a way to organize and store multiple pieces of similar data in one place. It's like a list where each item has a specific position, called an index, which starts at zero. Arrays are useful when you need to keep track of many items of the same type, like numbers, words, or even objects.</p>
+<h5 id="examples-1"><a class="header" href="#examples-1">Examples</a></h5>
+<ul>
+<li>A list of high scores in a game: [100, 200, 300]</li>
+<li>A collection of names: ["Alice", "Bob", "Charlie"]</li>
+</ul>
+<hr />
+<h4 id="augmented-reality-ar"><a class="header" href="#augmented-reality-ar">Augmented Reality (AR)</a></h4>
+<p>A technology that overlays digital content, such as images, sounds, or other data, on the real world through devices like smartphones or AR glasses. It enhances the user's perception of reality by adding virtual elements to their physical environment.</p>
+<h5 id="examples-2"><a class="header" href="#examples-2">Examples</a></h5>
+<ul>
+<li>Pokémon GO</li>
+<li>AR navigation in Google Maps</li>
+<li>IKEA Place app for visualizing furniture</li>
+</ul>
+<hr />
+<h4 id="asynchronous"><a class="header" href="#asynchronous">Asynchronous</a></h4>
+<p>Refers to operations or events that do not occur at the same time or are not coordinated in time. In programming, asynchronous functions allow a program to initiate a task and continue executing other tasks before the first task is completed, without waiting for it to finish.</p>
+<h5 id="examples-3"><a class="header" href="#examples-3">Examples</a></h5>
+<ul>
+<li>JavaScript async and await functions</li>
+<li>Network requests in a web application</li>
+<li>File I/O operations</li>
+</ul>
+<h3 id="b"><a class="header" href="#b">B</a></h3>
+<hr />
+<h3 id="bartles-taxonomy"><a class="header" href="#bartles-taxonomy">Bartle's Taxonomy</a></h3>
+<p>A classification of video game players (gamers) based on a 1996 paper by Richard Bartle according to their preferred actions within the game. The classification originally described players of multiplayer online games, though now it also refers to players of single-player video games.</p>
+<hr />
+<h4 id="boilerplate"><a class="header" href="#boilerplate">Boilerplate</a></h4>
+<p>Standardized, reusable code or text that can be used across multiple projects with little or no modification. Boilerplate code is often used to set up basic structures in a program or document, reducing the amount of repetitive work needed.</p>
+<h5 id="examples-4"><a class="header" href="#examples-4">Examples</a></h5>
+<ul>
+<li>HTML document structure</li>
+<li>Common function templates in programming</li>
+<li>Legal disclaimers or copyright notices</li>
+</ul>
+<hr />
+<h4 id="boolean"><a class="header" href="#boolean">Boolean</a></h4>
+<p>A data type that can only have one of two possible values: <code>true</code> or <code>false</code>. Booleans are commonly used in programming to make decisions and control the flow of a program based on conditions.</p>
+<h5 id="examples-5"><a class="header" href="#examples-5">Examples</a></h5>
+<ul>
+<li><code>isLoggedIn = true</code></li>
+<li><code>hasAccess = false</code></li>
+<li>Conditional statements like <code>if (isAdmin) { ... }</code></li>
+</ul>
+<hr />
+<h4 id="byte"><a class="header" href="#byte">Byte</a></h4>
+<p>A unit of digital information that typically consists of 8 bits. A byte is the basic addressable element in many computer architectures and is often used to represent a single character of text.</p>
+<h5 id="examples-6"><a class="header" href="#examples-6">Examples</a></h5>
+<ul>
+<li>A single letter like <code>A</code> is often stored as one byte.</li>
+<li>The size of a file might be measured in <a href="#kilobyte">kilobytes (KB)</a> or <a href="#megabyte">megabytes (MB)</a>.</li>
+</ul>
+<hr />
+<h3 id="c"><a class="header" href="#c">C</a></h3>
+<hr />
+<h4 id="camel-case"><a class="header" href="#camel-case">Camel Case</a></h4>
+<p>A way to separate the words in a phrase by making the first letter of each word capitalized and not using spaces. It is commonly used in web URLs, programming and computer naming conventions.</p>
+<h5 id="examples-7"><a class="header" href="#examples-7">Examples</a></h5>
+<ul>
+<li><code>isFinished</code></li>
+<li><code>myVariable</code></li>
+<li><code>highScore</code></li>
+</ul>
+<hr />
+<h4 id="central-processing-unit-cpu"><a class="header" href="#central-processing-unit-cpu">Central Processing Unit (CPU)</a></h4>
+<p>The primary component of a computer that performs most of the processing inside the machine. The CPU carries out instructions from programs by performing basic arithmetic (math), logic, control, and input/output operations.</p>
+<h5 id="examples-8"><a class="header" href="#examples-8">Examples</a></h5>
+<ul>
+<li>Intel Core i7</li>
+<li>AMD Ryzen 9</li>
+<li>ARM Cortex-A78</li>
+</ul>
+<hr />
+<h4 id="comment"><a class="header" href="#comment">Comment</a></h4>
+<p>A piece of text in a computer program that is ignored by the computer when the code runs. Comments are used by programmers to explain what the code does or to leave notes for themselves or others. They help make the code easier to understand.</p>
+<h5 id="example"><a class="header" href="#example">Example</a></h5>
+<pre><code class="language-python"># This is a comment.
 print("Hello, World!")  # This prints a greeting
 </code></pre>
-              <hr />
-              <h4 id="commit"><a class="header" href="#commit">Commit</a></h4>
-              <p>
-                In version control systems, a commit is a record of changes made
-                to a set of files or a repository. Each commit is like a
-                snapshot of the project at a specific point in time, allowing
-                developers to track changes and revert to previous versions if
-                needed.
-              </p>
-              <h5 id="examples-9">
-                <a class="header" href="#examples-9">Examples</a>
-              </h5>
-              <ul>
-                <li>Committing new code to a Git repository</li>
-                <li><code>git commit -m "Added new feature"</code></li>
-                <li>Saving a checkpoint in a project</li>
-              </ul>
-              <hr />
-              <h4 id="computer-science">
-                <a class="header" href="#computer-science">Computer Science</a>
-              </h4>
-              <p>
-                The study of computers and computational systems, including
-                their theory, design, development, and application. Computer
-                science encompasses a wide range of topics, from algorithms and
-                data structures to artificial intelligence and machine learning.
-              </p>
-              <h5 id="examples-10">
-                <a class="header" href="#examples-10">Examples</a>
-              </h5>
-              <ul>
-                <li>Learning programming languages like Python or Java</li>
-                <li>Studying algorithms and data structures</li>
-                <li>Exploring artificial intelligence and machine learning</li>
-              </ul>
-              <hr />
-              <h3 id="d"><a class="header" href="#d">D</a></h3>
-              <hr />
-              <h4 id="data"><a class="header" href="#data">Data</a></h4>
-              <p>
-                Information that is processed or stored by a computer. Data can
-                take many forms, including numbers, text, images, and sounds. It
-                is the foundation of computer science and is used in everything
-                from simple calculations to complex machine learning algorithms.
-              </p>
-              <h5 id="examples-11">
-                <a class="header" href="#examples-11">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  Customer names and addresses stored in a
-                  <a href="#database">database</a>
-                </li>
-                <li>Sensor readings from a weather station</li>
-                <li>
-                  Images and videos stored on a
-                  <a href="#hard-drive-hdd">hard drive</a>
-                </li>
-              </ul>
-              <hr />
-              <h4 id="database">
-                <a class="header" href="#database">Database</a>
-              </h4>
-              <p>
-                A structured collection of data that is stored and accessed
-                electronically. Databases are used to store, organize, and
-                manage data in a way that allows for easy retrieval,
-                modification, and analysis.
-              </p>
-              <h5 id="examples-12">
-                <a class="header" href="#examples-12">Examples</a>
-              </h5>
-              <ul>
-                <li>MySQL, a relational database management system</li>
-                <li>MongoDB, a NoSQL database</li>
-                <li>A library catalog system</li>
-              </ul>
-              <hr />
-              <h4 id="daw-digital-audio-workstation">
-                <a class="header" href="#daw-digital-audio-workstation"
-                  >DAW (Digital Audio Workstation)</a
-                >
-              </h4>
-              <h5 id="examples-13">
-                <a class="header" href="#examples-13">Examples</a>
-              </h5>
-              <ul>
-                <li>AVID Pro Tools</li>
-                <li>Adobe Audition</li>
-                <li>Presonus Studio One</li>
-                <li>FL Studio</li>
-              </ul>
-              <hr />
-              <h4 id="demographic">
-                <a class="header" href="#demographic">Demographic</a>
-              </h4>
-              <p>
-                Refers to the specific characteristics of the group of people
-                that the game is aimed at. This can include factors like age,
-                gender, income level, education, and interests. Understanding
-                the demographic helps game designers create content that appeals
-                to the intended players.
-              </p>
-              <h5 id="examples-14">
-                <a class="header" href="#examples-14">Examples</a>
-              </h5>
-              <ul>
-                <li>Teenagers</li>
-                <li>Adults (18 - 35)</li>
-                <li>Female gamers</li>
-                <li>Players with high-end gaming PCs</li>
-              </ul>
-              <hr />
-              <h4 id="desktop">
-                <a class="header" href="#desktop">Desktop</a>
-              </h4>
-              <hr />
-              <h4 id="directory">
-                <a class="header" href="#directory">Directory</a>
-              </h4>
-              <p>A folder that contains other (sub)folders or files.</p>
-              <h5 id="example-1">
-                <a class="header" href="#example-1">Example</a>
-              </h5>
-              <p>
-                <code>C:\Users\john.smith\Desktop\MyProject</code> where
-                <code>MyProject</code> is a directory.
-              </p>
-              <hr />
-              <h4 id="dont-repeat-yourself-dry">
-                <a class="header" href="#dont-repeat-yourself-dry"
-                  >"Don't Repeat Yourself" (DRY)</a
-                >
-              </h4>
-              <p>
-                A principle of software development aimed at reducing repetition
-                of information which is likely to change, replacing it with
-                abstractions that are less likely to change, or using data
-                normalization which avoids redundancy in the first place.
-              </p>
-              <hr />
-              <h3 id="e"><a class="header" href="#e">E</a></h3>
-              <hr />
-              <h4 id="enumerator-enum">
-                <a class="header" href="#enumerator-enum">Enumerator (Enum)</a>
-              </h4>
-              <p>
-                A special data type that defines a set of named values,
-                representing a collection of constants. Enums are used to create
-                variables that can only take one out of a small set of possible
-                values, making code easier to read and maintain.
-              </p>
-              <h5 id="examples-15">
-                <a class="header" href="#examples-15">Examples</a>
-              </h5>
-              <ul>
-                <li>Days of the week (Monday, Tuesday, etc.)</li>
-                <li>Directions (North, South, East, West)</li>
-                <li>Traffic light colors (Red, Yellow, Green)</li>
-              </ul>
-              <pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+<hr />
+<h4 id="commit"><a class="header" href="#commit">Commit</a></h4>
+<p>In version control systems, a commit is a record of changes made to a set of files or a repository. Each commit is like a snapshot of the project at a specific point in time, allowing developers to track changes and revert to previous versions if needed.</p>
+<h5 id="examples-9"><a class="header" href="#examples-9">Examples</a></h5>
+<ul>
+<li>Committing new code to a Git repository</li>
+<li><code>git commit -m "Added new feature"</code></li>
+<li>Saving a checkpoint in a project</li>
+</ul>
+<hr />
+<h4 id="computer-science"><a class="header" href="#computer-science">Computer Science</a></h4>
+<p>The study of computers and computational systems, including their theory, design, development, and application. Computer science encompasses a wide range of topics, from algorithms and data structures to artificial intelligence and machine learning.</p>
+<h5 id="examples-10"><a class="header" href="#examples-10">Examples</a></h5>
+<ul>
+<li>Learning programming languages like Python or Java</li>
+<li>Studying algorithms and data structures</li>
+<li>Exploring artificial intelligence and machine learning</li>
+</ul>
+<hr />
+<h3 id="d"><a class="header" href="#d">D</a></h3>
+<hr />
+<h4 id="data"><a class="header" href="#data">Data</a></h4>
+<p>Information that is processed or stored by a computer. Data can take many forms, including numbers, text, images, and sounds. It is the foundation of computer science and is used in everything from simple calculations to complex machine learning algorithms.</p>
+<h5 id="examples-11"><a class="header" href="#examples-11">Examples</a></h5>
+<ul>
+<li>Customer names and addresses stored in a <a href="#database">database</a></li>
+<li>Sensor readings from a weather station</li>
+<li>Images and videos stored on a <a href="#hard-drive-hdd">hard drive</a></li>
+</ul>
+<hr />
+<h4 id="database"><a class="header" href="#database">Database</a></h4>
+<p>A structured collection of data that is stored and accessed electronically. Databases are used to store, organize, and manage data in a way that allows for easy retrieval, modification, and analysis.</p>
+<h5 id="examples-12"><a class="header" href="#examples-12">Examples</a></h5>
+<ul>
+<li>MySQL, a relational database management system</li>
+<li>MongoDB, a NoSQL database</li>
+<li>A library catalog system</li>
+</ul>
+<hr />
+<h4 id="daw-digital-audio-workstation"><a class="header" href="#daw-digital-audio-workstation">DAW (Digital Audio Workstation)</a></h4>
+<h5 id="examples-13"><a class="header" href="#examples-13">Examples</a></h5>
+<ul>
+<li>AVID Pro Tools</li>
+<li>Adobe Audition</li>
+<li>Presonus Studio One</li>
+<li>FL Studio</li>
+</ul>
+<hr />
+<h4 id="demographic"><a class="header" href="#demographic">Demographic</a></h4>
+<p>Refers to the specific characteristics of the group of people that the game is aimed at. This can include factors like age, gender, income level, education, and interests. Understanding the demographic helps game designers create content that appeals to the intended players.</p>
+<h5 id="examples-14"><a class="header" href="#examples-14">Examples</a></h5>
+<ul>
+<li>Teenagers</li>
+<li>Adults (18 - 35)</li>
+<li>Female gamers</li>
+<li>Players with high-end gaming PCs</li>
+</ul>
+<hr />
+<h4 id="desktop"><a class="header" href="#desktop">Desktop</a></h4>
+<hr />
+<h4 id="directory"><a class="header" href="#directory">Directory</a></h4>
+<p>A folder that contains other (sub)folders or files.</p>
+<h5 id="example-1"><a class="header" href="#example-1">Example</a></h5>
+<p><code>C:\Users\john.smith\Desktop\MyProject</code> where <code>MyProject</code> is a directory.</p>
+<hr />
+<h4 id="dont-repeat-yourself-dry"><a class="header" href="#dont-repeat-yourself-dry">"Don't Repeat Yourself" (DRY)</a></h4>
+<p>A principle of software development aimed at reducing repetition of information which is likely to change, replacing it with abstractions that are less likely to change, or using data normalization which avoids redundancy in the first place.</p>
+<hr />
+<h3 id="e"><a class="header" href="#e">E</a></h3>
+<hr />
+<h4 id="enumerator-enum"><a class="header" href="#enumerator-enum">Enumerator (Enum)</a></h4>
+<p>A special data type that defines a set of named values, representing a collection of constants. Enums are used to create variables that can only take one out of a small set of possible values, making code easier to read and maintain.</p>
+<h5 id="examples-15"><a class="header" href="#examples-15">Examples</a></h5>
+<ul>
+<li>Days of the week (Monday, Tuesday, etc.)</li>
+<li>Directions (North, South, East, West)</li>
+<li>Traffic light colors (Red, Yellow, Green)</li>
+</ul>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
 </span>pub enum DaysOfWeek {
     Monday,
@@ -879,1361 +358,615 @@ print("Hello, World!")  # This prints a greeting
     Friday
 }
 <span class="boring">}</span></code></pre></pre>
-              <hr />
-              <h3 id="f"><a class="header" href="#f">F</a></h3>
-              <hr />
-              <h4 id="first-in--first-out-fifo">
-                <a class="header" href="#first-in--first-out-fifo"
-                  >First In / First Out (FIFO)</a
-                >
-              </h4>
-              <p>
-                A way of organizing and processing data where the first piece of
-                data that is added is also the first one to be used or removed.
-                It's like a line at a movie theater: the first person in line is
-                the first to get a ticket.
-              </p>
-              <h5 id="example-2">
-                <a class="header" href="#example-2">Example</a>
-              </h5>
-              <ul>
-                <li>
-                  In game development, a queue that processes player actions in
-                  the order they were received might use FIFO.
-                </li>
-              </ul>
-              <hr />
-              <h4 id="file"><a class="header" href="#file">File</a></h4>
-              <p>
-                A container in a computer system for storing information. Files
-                can contain various types of data, such as text, images, videos,
-                and software. They are identified by a filename and a file
-                extension.
-              </p>
-              <h5 id="examples-16">
-                <a class="header" href="#examples-16">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="floating-point-number-float">
-                <a class="header" href="#floating-point-number-float"
-                  >Floating Point Number (Float)</a
-                >
-              </h4>
-              <p>A number that contains a decimal point.</p>
-              <h5 id="examples-17">
-                <a class="header" href="#examples-17">Examples</a>
-              </h5>
-              <ul>
-                <li>.05</li>
-                <li>10.5</li>
-                <li>1000.80</li>
-              </ul>
-              <hr />
-              <h4 id="flow-control">
-                <a class="header" href="#flow-control">Flow Control</a>
-              </h4>
-              <p>
-                The order in which individual statements, instructions, or
-                function calls are executed or evaluated in a program. Flow
-                control allows a program to make decisions, repeat tasks, and
-                choose different paths of execution based on conditions.
-              </p>
-              <h5 id="examples-18">
-                <a class="header" href="#examples-18">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="foss-free-and-open-source">
-                <a class="header" href="#foss-free-and-open-source"
-                  >FOSS (Free and Open-Source)</a
-                >
-              </h4>
-              <p>
-                An acronym that refers to software that allows users to change,
-                modify, and reuse the source code to improve program
-                functionality in any way they want. The term “free” means the
-                software has no copyright constraints.
-              </p>
-              <h5 id="examples-19">
-                <a class="header" href="#examples-19">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  <strong>Linux:</strong> An
-                  <a href="#operating-system-os">operating system</a>.
-                </li>
-                <li>
-                  <strong>GIMP:</strong> Photo editing software similar to Adobe
-                  Photoshop.
-                </li>
-                <li>
-                  <strong>InkScape:</strong> Illustrating software similar to
-                  Adobe Illustrator.
-                </li>
-              </ul>
-              <hr />
-              <h4 id="framework">
-                <a class="header" href="#framework">Framework</a>
-              </h4>
-              <p>
-                A pre-built set of tools and libraries that provides a structure
-                for developing software applications. Frameworks are designed to
-                simplify development by providing reusable code, patterns, and
-                best practices.
-              </p>
-              <h5 id="examples-20">
-                <a class="header" href="#examples-20">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="fullstack-developer">
-                <a class="header" href="#fullstack-developer"
-                  >Fullstack Developer</a
-                >
-              </h4>
-              <p>
-                A developer who is skilled in both front-end (client-side) and
-                back-end (server-side) development. Fullstack developers can
-                build and maintain all aspects of a web application, from the
-                user interface to the server and database.
-              </p>
-              <h5 id="examples-21">
-                <a class="header" href="#examples-21">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="function">
-                <a class="header" href="#function">Function</a>
-              </h4>
-              <p>
-                A block of code that performs a specific task and can be reused
-                throughout a program. Functions take inputs (called parameters),
-                perform operations, and often return a result.
-              </p>
-              <h5 id="examples-22">
-                <a class="header" href="#examples-22">Examples</a>
-              </h5>
-              <hr />
-              <h3 id="g"><a class="header" href="#g">G</a></h3>
-              <hr />
-              <h4 id="game-design-document">
-                <a class="header" href="#game-design-document"
-                  >Game Design Document</a
-                >
-              </h4>
-              <p>
-                A game design document (GDD) is a comprehensive and detailed
-                plan for a video game project. It outlines the game's concept,
-                mechanics, story, art, sound, and other elements. The GDD serves
-                as a roadmap for developers, designers, and other stakeholders,
-                providing clear guidance and ensuring that all aspects of the
-                game are aligned with the project's goals.
-              </p>
-              <h5 id="examples-23">
-                <a class="header" href="#examples-23">Examples</a>
-              </h5>
-              <ul>
-                <li>Game mechanics and rules</li>
-                <li>Storyline and character development</li>
-                <li>Art style and asset requirements</li>
-                <li>Sound design and music</li>
-                <li><a href="#user-interface-ui">User interface</a> design</li>
-                <li>Technical specifications and platform requirements</li>
-              </ul>
-              <hr />
-              <h4 id="game-engine">
-                <a class="header" href="#game-engine">Game Engine</a>
-              </h4>
-              <p>
-                A special kind of software that helps developers create video
-                games. It provides the basic tools and technology needed to
-                build a game, such as graphics, sound, physics, and controls.
-                Instead of starting from scratch, developers use a game engine
-                to speed up the process and make sure the game works smoothly.
-              </p>
-              <h5 id="examples-24">
-                <a class="header" href="#examples-24">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  <a href="https://www.unrealengine.com/en-US">Unreal Engine</a>
-                  (C++)
-                </li>
-                <li>
-                  <a href="https://godotengine.org/">Godot</a> (GDScript /
-                  Python)
-                </li>
-                <li><a href="https://unity.com/">Unity</a> (C#)</li>
-                <li>
-                  <a href="https://phaser.io/">PhaserJs</a> (HTML / Javascript)
-                </li>
-                <li>
-                  <a href="https://www.babylonjs.com/">BabylonJs</a>
-                  (Javascript)
-                </li>
-              </ul>
-              <hr />
-              <h4 id="game-mechanics">
-                <a class="header" href="#game-mechanics">Game Mechanics</a>
-              </h4>
-              <p>
-                The rules and systems that define how a game works and how
-                players interact with it. Game mechanics include everything from
-                movement and combat to resource management and puzzle-solving,
-                providing the structure and challenge in a game.
-              </p>
-              <h5 id="examples-25">
-                <a class="header" href="#examples-25">Examples</a>
-              </h5>
-              <ul>
-                <li>Health points in an RPG</li>
-                <li>Jumping in a platformer</li>
-                <li>Collecting resources in a strategy game</li>
-              </ul>
-              <hr />
-              <h4 id="genre"><a class="header" href="#genre">Genre</a></h4>
-              <p>
-                A category that describes the type of gameplay. It helps
-                organize games based on how they are played.
-              </p>
-              <hr />
-              <h4 id="gigabyte">
-                <a class="header" href="#gigabyte">Gigabyte</a>
-              </h4>
-              <p>
-                A unit of digital information equal to approximately one billion
-                bytes (1,073,741,824 bytes in binary). Gigabytes are commonly
-                used to measure the size of files, storage capacity, and memory.
-              </p>
-              <h5 id="examples-26">
-                <a class="header" href="#examples-26">Examples</a>
-              </h5>
-              <ul>
-                <li>A 4GB USB drive</li>
-                <li>A 1GB video file</li>
-                <li>16GB of RAM in a computer</li>
-              </ul>
-              <hr />
-              <h4 id="graphic-user-interface-gui">
-                <a class="header" href="#graphic-user-interface-gui"
-                  >Graphic User Interface (GUI)</a
-                >
-              </h4>
-              <p>
-                Refers to the visual part of an application that users interact
-                with. It includes things like buttons, menus, and icons that
-                make it easier to use the software without needing to type
-                commands.
-              </p>
-              <h5 id="examples-27">
-                <a class="header" href="#examples-27">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  The main menu of a game, where you can click on "Start Game"
-                  or "Settings," is part of the game's GUI.
-                </li>
-                <li>
-                  The controls and menus you use to create images in Photoshop.
-                </li>
-              </ul>
-              <hr />
-              <h3 id="h"><a class="header" href="#h">H</a></h3>
-              <hr />
-              <h4 id="hard-drive-hdd">
-                <a class="header" href="#hard-drive-hdd">Hard Drive (HDD)</a>
-              </h4>
-              <p>
-                A traditional storage device that uses spinning magnetic disks
-                to store and retrieve digital data. Hard drives are used in
-                computers to store large amounts of data, such as operating
-                systems, software, and personal files.
-              </p>
-              <h5 id="examples-27">
-                <a class="header" href="#examples-27">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="heap"><a class="header" href="#heap">Heap</a></h4>
-              <p>
-                Dynamic memory that is assigned by a programmer and must be
-                <strong>manually</strong> cleared.
-              </p>
-              <h5 id="example-3">
-                <a class="header" href="#example-3">Example</a>
-              </h5>
-              <p>
-                The heap is more like a big, messy storage box. You can put
-                stuff anywhere inside, but you need to remember where you placed
-                it. Unlike the stack, items in the heap don’t go away when you
-                finish a task right away. You have to manually clean up the
-                items once you’re done with them, or they’ll just sit there and
-                take up space.
-              </p>
-              <hr />
-              <h4 id="http-hypertext-transfer-protocol">
-                <a class="header" href="#http-hypertext-transfer-protocol"
-                  >HTTP (Hypertext Transfer Protocol)</a
-                >
-              </h4>
-              <p>
-                The standard protocol for transferring hypertext documents on
-                the World Wide Web.
-              </p>
-              <hr />
-              <h4 id="https-hypertext-transfer-protocol-secure">
-                <a
-                  class="header"
-                  href="#https-hypertext-transfer-protocol-secure"
-                  >HTTPS (Hypertext Transfer Protocol Secure)</a
-                >
-              </h4>
-              <p>A secure version of the Hypertext Transfer Protocol.</p>
-              <hr />
-              <h3 id="i"><a class="header" href="#i">I</a></h3>
-              <hr />
-              <h4 id="input"><a class="header" href="#input">Input</a></h4>
-              <p>
-                Refers to any data or signals that are sent to a computer or
-                game by the user. This could be something like pressing a key,
-                clicking a mouse, or touching a screen. In games, input is what
-                players do to control their characters or make choices.
-              </p>
-              <h5 id="examples-28">
-                <a class="header" href="#examples-28">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  Pressing the spacebar to make a character jump in a game is an
-                  input.
-                </li>
-                <li>Clicking the mouse to perform an attack in a game.</li>
-                <li>Typing into a textbox on a website.</li>
-              </ul>
-              <hr />
-              <h4 id="internet-protocol-ip-address">
-                <a class="header" href="#internet-protocol-ip-address"
-                  >Internet Protocol (IP) Address</a
-                >
-              </h4>
-              <p>
-                A unique string of numbers that identifies a device on a
-                network, like the internet. It’s like a home address, but for
-                computers, letting them find each other and communicate. In
-                online games, IP addresses help connect players’ devices so they
-                can play together.
-              </p>
-              <h5 id="example-4">
-                <a class="header" href="#example-4">Example</a>
-              </h5>
-              <p>
-                When you play an online game, your device connects to a game
-                server using its IP address.
-              </p>
-              <hr />
-              <h4 id="integrated-development-environment-ide">
-                <a class="header" href="#integrated-development-environment-ide"
-                  >Integrated Development Environment (IDE)</a
-                >
-              </h4>
-              <p>
-                A software application that provides a comprehensive environment
-                for programming. IDEs typically include a code editor, debugger,
-                and build automation tools, making it easier for developers to
-                write, test, and debug code.
-              </p>
-              <h5 id="examples-29">
-                <a class="header" href="#examples-29">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="integer">
-                <a class="header" href="#integer">Integer</a>
-              </h4>
-              <p>A whole number with <strong>no</strong> decimal point.</p>
-              <h5 id="examples-30">
-                <a class="header" href="#examples-30">Examples</a>
-              </h5>
-              <ul>
-                <li>5</li>
-                <li>10</li>
-                <li>1000</li>
-              </ul>
-              <hr />
-              <h3 id="j"><a class="header" href="#j">J</a></h3>
-              <hr />
-              <h3 id="k"><a class="header" href="#k">K</a></h3>
-              <hr />
-              <h4 id="kebab-case">
-                <a class="header" href="#kebab-case">Kebab Case</a>
-              </h4>
-              <p>
-                A naming convention where multi-word identifiers are formed by
-                removing spaces between words and replacing them with a hyphen
-                <code>-</code>.
-              </p>
-              <h5 id="examples-31">
-                <a class="header" href="#examples-31">Examples</a>
-              </h5>
-              <ul>
-                <li><code>my-variable</code></li>
-                <li><code>high-score</code></li>
-                <li><code>is-finished</code></li>
-              </ul>
-              <hr />
-              <h4 id="kilobyte">
-                <a class="header" href="#kilobyte">Kilobyte</a>
-              </h4>
-              <p>
-                A unit of digital information equal to 1,024
-                <a href="#byte">bytes</a>. Kilobytes are commonly used to
-                measure small files or chunks of <a href="#data">data</a>, such
-                as text files or small images.
-              </p>
-              <h5 id="examples-32">
-                <a class="header" href="#examples-32">Examples</a>
-              </h5>
-              <ul>
-                <li>A small text file (5KB)</li>
-                <li>A tiny image (50KB)</li>
-                <li>The size of an email without attachments</li>
-              </ul>
-              <hr />
-              <h3 id="l"><a class="header" href="#l">L</a></h3>
-              <hr />
-              <h4 id="loop"><a class="header" href="#loop">Loop</a></h4>
-              <p>
-                A programming construct that repeats a block of code as long as
-                a specified condition is true. Loops are used to perform
-                repetitive tasks, such as iterating over a list of items or
-                executing a task a set number of times.
-              </p>
-              <h5 id="examples-33">
-                <a class="header" href="#examples-33">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  A <code>for</code> loop that iterates through an
-                  <a href="#array">array</a>
-                </li>
-                <li>
-                  A <code>while</code> loop that runs until a condition is met
-                </li>
-                <li>
-                  Looping through user <a href="#input">input</a> until it is
-                  valid
-                </li>
-              </ul>
-              <hr />
-              <h3 id="m"><a class="header" href="#m">M</a></h3>
-              <hr />
-              <h4 id="megabyte">
-                <a class="header" href="#megabyte">Megabyte</a>
-              </h4>
-              <p>
-                A unit of digital information equal to approximately one million
-                bytes (1,048,576 bytes in binary). Megabytes are commonly used
-                to measure file sizes, such as documents, images, and small
-                software applications.
-              </p>
-              <h5 id="examples-34">
-                <a class="header" href="#examples-34">Examples</a>
-              </h5>
-              <ul>
-                <li>A 5MB image <a href="#file">file</a></li>
-                <li>A 20MB PDF document</li>
-                <li>The size of an MP3 music file</li>
-              </ul>
-              <hr />
-              <h4 id="memory-leak">
-                <a class="header" href="#memory-leak">Memory Leak</a>
-              </h4>
-              <p>
-                An error that occurs when <a href="#heap">heap</a> memory is not
-                cleared and slowly builds up over time. This can lead to the
-                computer slowing down or cause a crash.
-              </p>
-              <h5 id="example-5">
-                <a class="header" href="#example-5">Example</a>
-              </h5>
-              <hr />
-              <h4 id="merge"><a class="header" href="#merge">Merge</a></h4>
-              <p>
-                The process of combining changes from two or more branches in a
-                version control system. Merging is commonly used in
-                collaborative software development to integrate different
-                features or fixes into the main codebase.
-              </p>
-              <h5 id="examples-35">
-                <a class="header" href="#examples-35">Examples</a>
-              </h5>
-              <ul>
-                <li>Merging a feature branch into the main branch in Git</li>
-                <li>Resolving conflicts during a merge</li>
-                <li>Combining changes from different developers</li>
-              </ul>
-              <hr />
-              <h4 id="methods">
-                <a class="header" href="#methods">Methods</a>
-              </h4>
-              <h5 id="examples-36">
-                <a class="header" href="#examples-36">Examples</a>
-              </h5>
-              <hr />
-              <h3 id="n"><a class="header" href="#n">N</a></h3>
-              <hr />
-              <h4 id="network-attached-storage-nas">
-                <a class="header" href="#network-attached-storage-nas"
-                  >Network Attached Storage (NAS)</a
-                >
-              </h4>
-              <p>
-                A dedicated <a href="#file">file</a> storage device that
-                provides centralized <a href="#data">data</a> storage and access
-                to multiple devices on a network. NAS systems are used in homes
-                and businesses to store and share files, backup
-                <a href="#data">data</a>, and stream media.
-              </p>
-              <h5 id="examples-37">
-                <a class="header" href="#examples-37">Examples</a>
-              </h5>
-              <ul>
-                <li>A home NAS used for media storage</li>
-                <li>A business NAS for centralized file access</li>
-                <li>A NAS device for network backups</li>
-              </ul>
-              <hr />
-              <h3 id="o"><a class="header" href="#o">O</a></h3>
-              <hr />
-              <h4 id="object"><a class="header" href="#object">Object</a></h4>
-              <p>
-                A bundle of <a href="#data">data</a> and actions (called
-                <a href="#methods">methods</a>) that you can use to represent
-                something in a program. Objects are used in a style of
-                programming called
-                <a href="#object-oriented-programming-oop"
-                  >Object-Oriented Programming (OOP)</a
-                >. An object can have properties (like characteristics) and
-                methods (like actions it can perform).
-              </p>
-              <h5 id="examples-38">
-                <a class="header" href="#examples-38">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  A <code>car</code> object might have properties like
-                  <code>color</code> and <code>model</code>, and methods like
-                  <code>drive()</code> or <code>stop()</code>.
-                </li>
-                <li>
-                  A <code>character</code> object in a game might have
-                  properties like <code>health</code> and <code>strength</code>,
-                  and methods like <code>attack()</code> or <code>jump()</code>.
-                </li>
-              </ul>
-              <hr />
-              <h4 id="object-oriented-programming-oop">
-                <a class="header" href="#object-oriented-programming-oop"
-                  >Object Oriented Programming (OOP)</a
-                >
-              </h4>
-              <p>
-                A programming paradigm that organizes code into objects, which
-                are instances of classes. Objects contain data (attributes) and
-                methods (functions) that operate on the data, allowing for
-                modular, reusable, and scalable code.
-              </p>
-              <h5 id="examples-39">
-                <a class="header" href="#examples-39">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  Creating classes like <code>Car</code>, <code>Person</code>,
-                  or <code>Book</code> in a program
-                </li>
-                <li>Inheritance and polymorphism in OOP</li>
-                <li>
-                  Using <a href="#object">objects</a> to model real-world
-                  entities
-                </li>
-              </ul>
-              <hr />
-              <h4 id="open-source">
-                <a class="header" href="#open-source">Open Source</a>
-              </h4>
-              <p>
-                Software that is released with a license that allows anyone to
-                view, modify, and distribute the source code. Open source
-                software is developed collaboratively by a community of
-                developers and users, often leading to high-quality, flexible,
-                and free-to-use programs.
-              </p>
-              <h5 id="examples-40">
-                <a class="header" href="#examples-40">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  The Linux <a href="#operating-system-os">operating system</a>
-                </li>
-                <li>The Apache HTTP Server</li>
-                <li>The Python programming language</li>
-              </ul>
-              <hr />
-              <h4 id="operator">
-                <a class="header" href="#operator">Operator</a>
-              </h4>
-              <p>
-                A symbol or function that performs an operation on one or more
-                operands in a programming language. Operators are used to
-                manipulate data, perform calculations, and control the flow of a
-                program.
-              </p>
-              <h5 id="examples-41">
-                <a class="header" href="#examples-41">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  Arithmetic (math) operators like <code>+</code>,
-                  <code>-</code>, <code>*</code>, and <code>/</code>
-                </li>
-                <li>
-                  Comparison operators like <code>==</code>, <code>!=</code>,
-                  <code>&gt;</code>, and <code>&lt;</code>
-                </li>
-                <li>
-                  Logical operators like <code>&amp;&amp;</code>,
-                  <code>||</code>, and <code>!</code>
-                </li>
-              </ul>
-              <hr />
-              <h4 id="operating-system-os">
-                <a class="header" href="#operating-system-os"
-                  >Operating System (OS)</a
-                >
-              </h4>
-              <p>
-                The main <a href="#software">software</a> that runs on a
-                computer, phone, or other device. It manages all the other
-                programs and makes sure everything works together smoothly. The
-                OS controls the hardware, like the screen, keyboard, and
-                storage, and helps you run apps like games, web browsers, and
-                more.
-              </p>
-              <h5 id="examples-42">
-                <a class="header" href="#examples-42">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  Windows: An
-                  <a href="#operating-system-os">operating system</a> used on
-                  many PCs.
-                </li>
-                <li>
-                  macOS: The
-                  <a href="#operating-system-os">operating system</a> used on
-                  Apple computers.
-                </li>
-                <li>
-                  Linux: An <a href="#open-source">open-source</a> operating
-                  system.
-                </li>
-              </ul>
-              <hr />
-              <h4 id="output"><a class="header" href="#output">Output</a></h4>
-              <h5 id="examples-43">
-                <a class="header" href="#examples-43">Examples</a>
-              </h5>
-              <hr />
-              <h3 id="p"><a class="header" href="#p">P</a></h3>
-              <hr />
-              <h4 id="parent-directory">
-                <a class="header" href="#parent-directory">Parent Directory</a>
-              </h4>
-              <p>
-                The <a href="#directory">directory</a> directly above the
-                current <a href="#directory">directory</a>.
-              </p>
-              <h5 id="example-6">
-                <a class="header" href="#example-6">Example</a>
-              </h5>
-              <p>
-                <code>C:\Users\john.smith\Desktop\MyProject</code> where
-                <code>Desktop</code> is the parent directory of
-                <code>MyProject</code>.
-              </p>
-              <hr />
-              <h4 id="parsing">
-                <a class="header" href="#parsing">Parsing</a>
-              </h4>
-              <p>
-                The process of analyzing a string of text or code to extract
-                meaningful information or convert it into a different format.
-                Parsing is commonly used in programming to process user input,
-                read configuration files, or interpret data formats like JSON or
-                XML.
-              </p>
-              <h5 id="examples-44">
-                <a class="header" href="#examples-44">Examples</a>
-              </h5>
-              <ul>
-                <li>Parsing a JSON response from an API</li>
-                <li>Reading and interpreting a CSV file</li>
-                <li>Converting a string into a date object</li>
-              </ul>
-              <hr />
-              <h4 id="pascal-case">
-                <a class="header" href="#pascal-case">Pascal Case</a>
-              </h4>
-              <p>
-                A programming naming convention where the first letter of each
-                compound word in a variable is capitalized.
-              </p>
-              <h5 id="examples-45">
-                <a class="header" href="#examples-45">Examples</a>
-              </h5>
-              <ul>
-                <li><code>ItemNumber</code></li>
-                <li><code>MyVariable</code></li>
-                <li><code>IsFinished</code></li>
-              </ul>
-              <hr />
-              <h4 id="path"><a class="header" href="#path">Path</a></h4>
-              <p>
-                The full set of <a href="#directory">directories</a>, in order,
-                that lead to a certain file or folder.
-              </p>
-              <hr />
-              <h4 id="peripheral">
-                <a class="header" href="#peripheral">Peripheral</a>
-              </h4>
-              <p>
-                An external device connected to a computer that adds
-                functionality or expands its capabilities. Peripherals can be
-                input devices, output devices, or storage devices, and they
-                typically connect via USB, Bluetooth, or other interfaces.
-              </p>
-              <h5 id="examples-46">
-                <a class="header" href="#examples-46">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="pixel"><a class="header" href="#pixel">Pixel</a></h4>
-              <p>
-                The smallest element on a digital display. Often shorted to
-                <code>px</code>.
-              </p>
-              <h5 id="examples-47">
-                <a class="header" href="#examples-47">Examples</a>
-              </h5>
-              <ul>
-                <li>100px by 100px</li>
-                <li>1080p (1920px by 1080px)</li>
-              </ul>
-              <hr />
-              <h4 id="programming-language">
-                <a class="header" href="#programming-language"
-                  >Programming Language</a
-                >
-              </h4>
-              <p>
-                A set of instructions that you use to communicate with a
-                computer. It allows you to write code that tells the computer
-                what to do, like solving problems, creating games, or building
-                apps. Different programming languages have different rules and
-                uses, but they all help you create software.
-              </p>
-              <p>
-                See the section on <a href="./langs.html">languages</a> for more
-                information.
-              </p>
-              <h5 id="examples-48">
-                <a class="header" href="#examples-48">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  <strong>Python:</strong> A beginner-friendly programming
-                  language often used for web development, data analysis, and
-                  automation.
-                </li>
-                <li>
-                  <strong>JavaScript:</strong> A language used to make websites
-                  interactive.
-                </li>
-                <li>
-                  <strong>Java:</strong> A language commonly used in mobile apps
-                  and large systems.
-                </li>
-              </ul>
-              <hr />
-              <h4 id="proxy"><a class="header" href="#proxy">Proxy</a></h4>
-              <p>
-                A server or application that acts as an intermediary between a
-                client and another server. Proxies are used to improve security,
-                control access, and optimize performance by caching content or
-                filtering requests.
-              </p>
-              <h5 id="examples-49">
-                <a class="header" href="#examples-49">Examples</a>
-              </h5>
-              <ul>
-                <li>A web proxy that hides a user's IP address</li>
-                <li>
-                  A reverse proxy that distributes traffic among multiple
-                  servers
-                </li>
-                <li>
-                  A proxy server used in corporate networks for internet access
-                  control
-                </li>
-              </ul>
-              <hr />
-              <h4 id="pull"><a class="header" href="#pull">Pull</a></h4>
-              <h5 id="examples-50">
-                <a class="header" href="#examples-50">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="push"><a class="header" href="#push">Push</a></h4>
-              <h5 id="examples-51">
-                <a class="header" href="#examples-51">Examples</a>
-              </h5>
-              <hr />
-              <h3 id="q"><a class="header" href="#q">Q</a></h3>
-              <hr />
-              <h4 id="queue"><a class="header" href="#queue">Queue</a></h4>
-              <h5 id="examples-52">
-                <a class="header" href="#examples-52">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="query"><a class="header" href="#query">Query</a></h4>
-              <h5 id="examples-53">
-                <a class="header" href="#examples-53">Examples</a>
-              </h5>
-              <hr />
-              <h3 id="r"><a class="header" href="#r">R</a></h3>
-              <hr />
-              <h4 id="random-access-memory-ram">
-                <a class="header" href="#random-access-memory-ram"
-                  >Random Access Memory (RAM)</a
-                >
-              </h4>
-              <p>
-                A type of computer memory that temporarily stores data that the
-                CPU needs quick access to while performing tasks. RAM is
-                volatile memory, meaning it is erased when the computer is
-                turned off. More RAM allows for smoother multitasking and faster
-                performance.
-              </p>
-              <h5 id="examples-54">
-                <a class="header" href="#examples-54">Examples</a>
-              </h5>
-              <ul>
-                <li>8GB RAM in a laptop for running applications</li>
-                <li>16GB RAM in a gaming PC for better performance</li>
-                <li>
-                  RAM modules in a server for handling large
-                  <a href="#database">databases</a>
-                </li>
-              </ul>
-              <hr />
-              <h4 id="repository">
-                <a class="header" href="#repository">Repository</a>
-              </h4>
-              <p>
-                A storage location where code and other project files are kept,
-                typically managed by a version control system like Git.
-                Repositories allow developers to track changes, collaborate on
-                projects, and manage different versions of their codebase.
-              </p>
-              <h5 id="examples-55">
-                <a class="header" href="#examples-55">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  A GitHub repository for an
-                  <a href="#open-source">open-source</a> project
-                </li>
-                <li>A local Git repository for personal code</li>
-                <li>
-                  A private repository for a company's internal
-                  <a href="#software">software</a>
-                </li>
-              </ul>
-              <hr />
-              <h4 id="root-directory">
-                <a class="header" href="#root-directory">Root Directory</a>
-              </h4>
-              <p>The uppermost <a href="#directory">directory</a> in a path.</p>
-              <hr />
-              <h4 id="runtime">
-                <a class="header" href="#runtime">Runtime</a>
-              </h4>
-              <p>
-                The period when a program is executing, as opposed to when it is
-                being compiled or written. Runtime refers to the environment and
-                resources required for a program to run, including the execution
-                of code, memory allocation, and interaction with the operating
-                system.
-              </p>
-              <h5 id="examples-56">
-                <a class="header" href="#examples-56">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  Java Runtime Environment (JRE) for running Java applications
-                </li>
-                <li>Python's interpreter executing a script</li>
-                <li>A web browser running JavaScript code</li>
-              </ul>
-              <hr />
-              <h3 id="s"><a class="header" href="#s">S</a></h3>
-              <hr />
-              <h4 id="sata"><a class="header" href="#sata">SATA</a></h4>
-              <hr />
-              <h4 id="search-engine">
-                <a class="header" href="#search-engine">Search Engine</a>
-              </h4>
-              <p>
-                A tool on the internet that helps you find information. When you
-                type in words or questions, the search engine looks through
-                billions of web pages to find the ones that match what you're
-                looking for. It then shows you a list of results, with the most
-                relevant ones at the top.
-              </p>
-              <h5 id="examples-57">
-                <a class="header" href="#examples-57">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  <strong>Google:</strong> The most widely used search engine.
-                </li>
-                <li><strong>Bing:</strong> Another popular search engine.</li>
-                <li>
-                  <strong>Yahoo:</strong> One of the older search engines still
-                  in use.
-                </li>
-              </ul>
-              <hr />
-              <h4 id="snake-case">
-                <a class="header" href="#snake-case">Snake Case</a>
-              </h4>
-              <p>
-                A naming convention in which each space is replaced with an
-                underscore <code>_</code> character, and words are written in
-                lowercase. It is a commonly used naming convention in computing,
-                for example for variable and subroutine names, and for
-                filenames.
-              </p>
-              <h5 id="examples-58">
-                <a class="header" href="#examples-58">Examples</a>
-              </h5>
-              <ul>
-                <li><code>my_variable</code></li>
-                <li><code>is_finished</code></li>
-                <li><code>high_score</code></li>
-              </ul>
-              <hr />
-              <h4 id="software">
-                <a class="header" href="#software">Software</a>
-              </h4>
-              <p>
-                A collection of instructions, data, or programs that tell a
-                computer how to work. Software is divided into system software,
-                like operating systems, and application software, like word
-                processors or video games.
-              </p>
-              <h5 id="examples-59">
-                <a class="header" href="#examples-59">Examples</a>
-              </h5>
-              <ul>
-                <li>Microsoft Windows (system software)</li>
-                <li>Adobe Photoshop (application software)</li>
-                <li>Firefox web browser (application software)</li>
-              </ul>
-              <hr />
-              <h4 id="solid-state-hard-drive-ssd">
-                <a class="header" href="#solid-state-hard-drive-ssd"
-                  >Solid State Hard Drive (SSD)</a
-                >
-              </h4>
-              <hr />
-              <h4 id="sprite"><a class="header" href="#sprite">Sprite</a></h4>
-              <p>
-                A two-dimensional (2D) image or animation that is integrated
-                into a larger scene within a video game. Sprites are often used
-                to represent characters, objects, or other elements in a game.
-                Unlike 3D models, sprites are flat and are typically drawn from
-                a single perspective. They are used in many classic and modern
-                games, especially in 2D games, to create the visual elements
-                that players interact with.
-              </p>
-              <h5 id="examples-60">
-                <a class="header" href="#examples-60">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="stack"><a class="header" href="#stack">Stack</a></h4>
-              <p>
-                Memory that stores local variables and is
-                <strong>automatically</strong> cleared by the computer.
-              </p>
-              <h5 id="example-7">
-                <a class="header" href="#example-7">Example</a>
-              </h5>
-              <p>
-                The stack is like a to-do list in your brain. It’s a special
-                part of your computer's memory where tasks get stored and
-                removed in the order they come. Think of it as a stack of
-                plates: you add plates (tasks) to the top, and when you're done,
-                you take the top plate off. In programming, the stack holds
-                information like numbers or addresses for quick access, and when
-                you’re done with a task, it disappears.
-              </p>
-              <hr />
-              <h4 id="string"><a class="header" href="#string">String</a></h4>
-              <p>
-                A sequence of characters, like letters, numbers, and symbols,
-                put together in a specific order. Strings are used in
-                programming to represent text, such as words, sentences, or any
-                other combination of characters.
-              </p>
-              <h5 id="examples-61">
-                <a class="header" href="#examples-61">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  <code>"Hello, World!"</code>: A string that contains a common
-                  phrase.
-                </li>
-                <li>
-                  <code>"123 Main Street"</code>: A string that represents an
-                  address.
-                </li>
-              </ul>
-              <hr />
-              <h4 id="stylesheet">
-                <a class="header" href="#stylesheet">Stylesheet</a>
-              </h4>
-              <h5 id="examples-62">
-                <a class="header" href="#examples-62">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="synchronous">
-                <a class="header" href="#synchronous">Synchronous</a>
-              </h4>
-              <hr />
-              <h4 id="syntax"><a class="header" href="#syntax">Syntax</a></h4>
-              <p>
-                The set of rules that define the structure of a programming
-                language. It dictates how code must be written so that the
-                computer can understand and execute it correctly. This includes
-                the order of keywords, the use of punctuation, and the way
-                different elements of the code are combined.
-              </p>
-              <h5 id="examples-63">
-                <a class="header" href="#examples-63">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  The syntax for defining a function requires the def keyword
-                  followed by the function name and parentheses.
-                </li>
-              </ul>
-              <pre><code class="language-python">def my_function():
+<hr />
+<h3 id="f"><a class="header" href="#f">F</a></h3>
+<hr />
+<h4 id="first-in--first-out-fifo"><a class="header" href="#first-in--first-out-fifo">First In / First Out (FIFO)</a></h4>
+<p>A way of organizing and processing data where the first piece of data that is added is also the first one to be used or removed. It's like a line at a movie theater: the first person in line is the first to get a ticket.</p>
+<h5 id="example-2"><a class="header" href="#example-2">Example</a></h5>
+<ul>
+<li>In game development, a queue that processes player actions in the order they were received might use FIFO.</li>
+</ul>
+<hr />
+<h4 id="file"><a class="header" href="#file">File</a></h4>
+<p>A container in a computer system for storing information. Files can contain various types of data, such as text, images, videos, and software. They are identified by a filename and a file extension.</p>
+<h5 id="examples-16"><a class="header" href="#examples-16">Examples</a></h5>
+<hr />
+<h4 id="floating-point-number-float"><a class="header" href="#floating-point-number-float">Floating Point Number (Float)</a></h4>
+<p>A number that contains a decimal point.</p>
+<h5 id="examples-17"><a class="header" href="#examples-17">Examples</a></h5>
+<ul>
+<li>.05</li>
+<li>10.5</li>
+<li>1000.80</li>
+</ul>
+<hr />
+<h4 id="flow-control"><a class="header" href="#flow-control">Flow Control</a></h4>
+<p>The order in which individual statements, instructions, or function calls are executed or evaluated in a program. Flow control allows a program to make decisions, repeat tasks, and choose different paths of execution based on conditions.</p>
+<h5 id="examples-18"><a class="header" href="#examples-18">Examples</a></h5>
+<hr />
+<h4 id="foss-free-and-open-source"><a class="header" href="#foss-free-and-open-source">FOSS (Free and Open-Source)</a></h4>
+<p>An acronym that refers to software that allows users to change, modify, and reuse the source code to improve program functionality in any way they want. The term “free” means the software has no copyright constraints.</p>
+<h5 id="examples-19"><a class="header" href="#examples-19">Examples</a></h5>
+<ul>
+<li><strong>Linux:</strong> An <a href="#operating-system-os">operating system</a>.</li>
+<li><strong>GIMP:</strong> Photo editing software similar to Adobe Photoshop.</li>
+<li><strong>InkScape:</strong> Illustrating software similar to Adobe Illustrator.</li>
+</ul>
+<hr />
+<h4 id="framework"><a class="header" href="#framework">Framework</a></h4>
+<p>A pre-built set of tools and libraries that provides a structure for developing software applications. Frameworks are designed to simplify development by providing reusable code, patterns, and best practices.</p>
+<h5 id="examples-20"><a class="header" href="#examples-20">Examples</a></h5>
+<hr />
+<h4 id="fullstack-developer"><a class="header" href="#fullstack-developer">Fullstack Developer</a></h4>
+<p>A developer who is skilled in both front-end (client-side) and back-end (server-side) development. Fullstack developers can build and maintain all aspects of a web application, from the user interface to the server and database.</p>
+<h5 id="examples-21"><a class="header" href="#examples-21">Examples</a></h5>
+<hr />
+<h4 id="function"><a class="header" href="#function">Function</a></h4>
+<p>A block of code that performs a specific task and can be reused throughout a program. Functions take inputs (called parameters), perform operations, and often return a result.</p>
+<h5 id="examples-22"><a class="header" href="#examples-22">Examples</a></h5>
+<hr />
+<h3 id="g"><a class="header" href="#g">G</a></h3>
+<hr />
+<h4 id="game-design-document"><a class="header" href="#game-design-document">Game Design Document</a></h4>
+<p>A game design document (GDD) is a comprehensive and detailed plan for a video game project. It outlines the game's concept, mechanics, story, art, sound, and other elements. The GDD serves as a roadmap for developers, designers, and other stakeholders, providing clear guidance and ensuring that all aspects of the game are aligned with the project's goals.</p>
+<h5 id="examples-23"><a class="header" href="#examples-23">Examples</a></h5>
+<ul>
+<li>Game mechanics and rules</li>
+<li>Storyline and character development</li>
+<li>Art style and asset requirements</li>
+<li>Sound design and music</li>
+<li><a href="#user-interface-ui">User interface</a> design</li>
+<li>Technical specifications and platform requirements</li>
+</ul>
+<hr />
+<h4 id="game-engine"><a class="header" href="#game-engine">Game Engine</a></h4>
+<p>A special kind of software that helps developers create video games. It provides the basic tools and technology needed to build a game, such as graphics, sound, physics, and controls. Instead of starting from scratch, developers use a game engine to speed up the process and make sure the game works smoothly.</p>
+<h5 id="examples-24"><a class="header" href="#examples-24">Examples</a></h5>
+<ul>
+<li><a href="https://www.unrealengine.com/en-US">Unreal Engine</a> (C++)</li>
+<li><a href="https://godotengine.org/">Godot</a> (GDScript / Python)</li>
+<li><a href="https://unity.com/">Unity</a> (C#)</li>
+<li><a href="https://phaser.io/">PhaserJs</a> (HTML / Javascript)</li>
+<li><a href="https://www.babylonjs.com/">BabylonJs</a> (Javascript)</li>
+</ul>
+<hr />
+<h4 id="game-mechanics"><a class="header" href="#game-mechanics">Game Mechanics</a></h4>
+<p>The rules and systems that define how a game works and how players interact with it. Game mechanics include everything from movement and combat to resource management and puzzle-solving, providing the structure and challenge in a game.</p>
+<h5 id="examples-25"><a class="header" href="#examples-25">Examples</a></h5>
+<ul>
+<li>Health points in an RPG</li>
+<li>Jumping in a platformer</li>
+<li>Collecting resources in a strategy game</li>
+</ul>
+<hr />
+<h4 id="genre"><a class="header" href="#genre">Genre</a></h4>
+<p>A category that describes the type of gameplay. It helps organize games based on how they are played.</p>
+<hr />
+<h4 id="gigabyte"><a class="header" href="#gigabyte">Gigabyte</a></h4>
+<p>A unit of digital information equal to approximately one billion bytes (1,073,741,824 bytes in binary). Gigabytes are commonly used to measure the size of files, storage capacity, and memory.</p>
+<h5 id="examples-26"><a class="header" href="#examples-26">Examples</a></h5>
+<ul>
+<li>A 4GB USB drive</li>
+<li>A 1GB video file</li>
+<li>16GB of RAM in a computer</li>
+</ul>
+<hr />
+<h4 id="graphic-user-interface-gui"><a class="header" href="#graphic-user-interface-gui">Graphic User Interface (GUI)</a></h4>
+<p>Refers to the visual part of an application that users interact with. It includes things like buttons, menus, and icons that make it easier to use the software without needing to type commands.</p>
+<h5 id="examples-27"><a class="header" href="#examples-27">Examples</a></h5>
+<ul>
+<li>The main menu of a game, where you can click on "Start Game" or "Settings," is part of the game's GUI.</li>
+<li>The controls and menus you use to create images in Photoshop.</li>
+</ul>
+<hr />
+<h3 id="h"><a class="header" href="#h">H</a></h3>
+<hr />
+<h4 id="hard-drive-hdd"><a class="header" href="#hard-drive-hdd">Hard Drive (HDD)</a></h4>
+<p>A traditional storage device that uses spinning magnetic disks to store and retrieve digital data. Hard drives are used in computers to store large amounts of data, such as operating systems, software, and personal files.</p>
+<hr />
+<h4 id="heap"><a class="header" href="#heap">Heap</a></h4>
+<p>Dynamic memory that is assigned by a programmer and must be <strong>manually</strong> cleared.</p>
+<h5 id="example-3"><a class="header" href="#example-3">Example</a></h5>
+<p>The heap is more like a big, messy storage box. You can put stuff anywhere inside, but you need to remember where you placed it. Unlike the stack, items in the heap don’t go away when you finish a task right away. You have to manually clean up the items once you’re done with them, or they’ll just sit there and take up space.</p>
+<hr />
+<h4 id="http-hypertext-transfer-protocol"><a class="header" href="#http-hypertext-transfer-protocol">HTTP (Hypertext Transfer Protocol)</a></h4>
+<p>The standard protocol for transferring hypertext documents on the World Wide Web.</p>
+<hr />
+<h4 id="https-hypertext-transfer-protocol-secure"><a class="header" href="#https-hypertext-transfer-protocol-secure">HTTPS (Hypertext Transfer Protocol Secure)</a></h4>
+<p>A secure version of the Hypertext Transfer Protocol.</p>
+<hr />
+<h3 id="i"><a class="header" href="#i">I</a></h3>
+<hr />
+<h4 id="input"><a class="header" href="#input">Input</a></h4>
+<p>Refers to any data or signals that are sent to a computer or game by the user. This could be something like pressing a key, clicking a mouse, or touching a screen. In games, input is what players do to control their characters or make choices.</p>
+<h5 id="examples-28"><a class="header" href="#examples-28">Examples</a></h5>
+<ul>
+<li>Pressing the spacebar to make a character jump in a game is an input.</li>
+<li>Clicking the mouse to perform an attack in a game.</li>
+<li>Typing into a textbox on a website.</li>
+</ul>
+<hr />
+<h4 id="internet-protocol-ip-address"><a class="header" href="#internet-protocol-ip-address">Internet Protocol (IP) Address</a></h4>
+<p>A unique string of numbers that identifies a device on a network, like the internet. It’s like a home address, but for computers, letting them find each other and communicate. In online games, IP addresses help connect players’ devices so they can play together.</p>
+<h5 id="example-4"><a class="header" href="#example-4">Example</a></h5>
+<p>When you play an online game, your device connects to a game server using its IP address.</p>
+<hr />
+<h4 id="integrated-development-environment-ide"><a class="header" href="#integrated-development-environment-ide">Integrated Development Environment (IDE)</a></h4>
+<p>A software application that provides a comprehensive environment for programming. IDEs typically include a code editor, debugger, and build automation tools, making it easier for developers to write, test, and debug code.</p>
+<h5 id="examples-29"><a class="header" href="#examples-29">Examples</a></h5>
+<ul>
+<li>VSCode</li>
+<li>Sublime Text</li>
+<li>Visual Studio</li>
+</ul>
+<hr />
+<h4 id="integer"><a class="header" href="#integer">Integer</a></h4>
+<p>A whole number with <strong>no</strong> decimal point.</p>
+<h5 id="examples-30"><a class="header" href="#examples-30">Examples</a></h5>
+<ul>
+<li>5</li>
+<li>10</li>
+<li>1000</li>
+</ul>
+<hr />
+<h3 id="j"><a class="header" href="#j">J</a></h3>
+<hr />
+<h3 id="k"><a class="header" href="#k">K</a></h3>
+<hr />
+<h4 id="kebab-case"><a class="header" href="#kebab-case">Kebab Case</a></h4>
+<p>A naming convention where multi-word identifiers are formed by removing spaces between words and replacing them with a hyphen <code>-</code>.</p>
+<h5 id="examples-31"><a class="header" href="#examples-31">Examples</a></h5>
+<ul>
+<li><code>my-variable</code></li>
+<li><code>high-score</code></li>
+<li><code>is-finished</code></li>
+</ul>
+<hr />
+<h4 id="kilobyte"><a class="header" href="#kilobyte">Kilobyte</a></h4>
+<p>A unit of digital information equal to 1,024 <a href="#byte">bytes</a>. Kilobytes are commonly used to measure small files or chunks of <a href="#data">data</a>, such as text files or small images.</p>
+<h5 id="examples-32"><a class="header" href="#examples-32">Examples</a></h5>
+<ul>
+<li>A small text file (5KB)</li>
+<li>A tiny image (50KB)</li>
+<li>The size of an email without attachments</li>
+</ul>
+<hr />
+<h3 id="l"><a class="header" href="#l">L</a></h3>
+<hr />
+<h4 id="loop"><a class="header" href="#loop">Loop</a></h4>
+<p>A programming construct that repeats a block of code as long as a specified condition is true. Loops are used to perform repetitive tasks, such as iterating over a list of items or executing a task a set number of times.</p>
+<h5 id="examples-33"><a class="header" href="#examples-33">Examples</a></h5>
+<ul>
+<li>A <code>for</code> loop that iterates through an <a href="#array">array</a></li>
+<li>A <code>while</code> loop that runs until a condition is met</li>
+<li>Looping through user <a href="#input">input</a> until it is valid</li>
+</ul>
+<hr />
+<h3 id="m"><a class="header" href="#m">M</a></h3>
+<hr />
+<h4 id="megabyte"><a class="header" href="#megabyte">Megabyte</a></h4>
+<p>A unit of digital information equal to approximately one million bytes (1,048,576 bytes in binary). Megabytes are commonly used to measure file sizes, such as documents, images, and small software applications.</p>
+<h5 id="examples-34"><a class="header" href="#examples-34">Examples</a></h5>
+<ul>
+<li>A 5MB image <a href="#file">file</a></li>
+<li>A 20MB PDF document</li>
+<li>The size of an MP3 music file</li>
+</ul>
+<hr />
+<h4 id="memory-leak"><a class="header" href="#memory-leak">Memory Leak</a></h4>
+<p>An error that occurs when <a href="#heap">heap</a> memory is not cleared and slowly builds up over time. This can lead to the computer slowing down or cause a crash.</p>
+<h5 id="example-5"><a class="header" href="#example-5">Example</a></h5>
+<hr />
+<h4 id="merge"><a class="header" href="#merge">Merge</a></h4>
+<p>The process of combining changes from two or more branches in a version control system. Merging is commonly used in collaborative software development to integrate different features or fixes into the main codebase.</p>
+<h5 id="examples-35"><a class="header" href="#examples-35">Examples</a></h5>
+<ul>
+<li>Merging a feature branch into the main branch in Git</li>
+<li>Resolving conflicts during a merge</li>
+<li>Combining changes from different developers</li>
+</ul>
+<hr />
+<h4 id="methods"><a class="header" href="#methods">Methods</a></h4>
+<h5 id="examples-36"><a class="header" href="#examples-36">Examples</a></h5>
+<hr />
+<h3 id="n"><a class="header" href="#n">N</a></h3>
+<hr />
+<h4 id="network-attached-storage-nas"><a class="header" href="#network-attached-storage-nas">Network Attached Storage (NAS)</a></h4>
+<p>A dedicated <a href="#file">file</a> storage device that provides centralized <a href="#data">data</a> storage and access to multiple devices on a network. NAS systems are used in homes and businesses to store and share files, backup <a href="#data">data</a>, and stream media.</p>
+<h5 id="examples-37"><a class="header" href="#examples-37">Examples</a></h5>
+<ul>
+<li>A home NAS used for media storage</li>
+<li>A business NAS for centralized file access</li>
+<li>A NAS device for network backups</li>
+</ul>
+<hr />
+<h3 id="o"><a class="header" href="#o">O</a></h3>
+<hr />
+<h4 id="object"><a class="header" href="#object">Object</a></h4>
+<p>A bundle of <a href="#data">data</a> and actions (called <a href="#methods">methods</a>) that you can use to represent something in a program. Objects are used in a style of programming called <a href="#object-oriented-programming-oop">Object-Oriented Programming (OOP)</a>. An object can have properties (like characteristics) and methods (like actions it can perform).</p>
+<h5 id="examples-38"><a class="header" href="#examples-38">Examples</a></h5>
+<ul>
+<li>A <code>car</code> object might have properties like <code>color</code> and <code>model</code>, and methods like <code>drive()</code> or <code>stop()</code>.</li>
+<li>A <code>character</code> object in a game might have properties like <code>health</code> and <code>strength</code>, and methods like <code>attack()</code> or <code>jump()</code>.</li>
+</ul>
+<hr />
+<h4 id="object-oriented-programming-oop"><a class="header" href="#object-oriented-programming-oop">Object Oriented Programming (OOP)</a></h4>
+<p>A programming paradigm that organizes code into objects, which are instances of classes. Objects contain data (attributes) and methods (functions) that operate on the data, allowing for modular, reusable, and scalable code.</p>
+<h5 id="examples-39"><a class="header" href="#examples-39">Examples</a></h5>
+<ul>
+<li>Creating classes like <code>Car</code>, <code>Person</code>, or <code>Book</code> in a program</li>
+<li>Inheritance and polymorphism in OOP</li>
+<li>Using <a href="#object">objects</a> to model real-world entities</li>
+</ul>
+<hr />
+<h4 id="open-source"><a class="header" href="#open-source">Open Source</a></h4>
+<p>Software that is released with a license that allows anyone to view, modify, and distribute the source code. Open source software is developed collaboratively by a community of developers and users, often leading to high-quality, flexible, and free-to-use programs.</p>
+<h5 id="examples-40"><a class="header" href="#examples-40">Examples</a></h5>
+<ul>
+<li>The Linux <a href="#operating-system-os">operating system</a></li>
+<li>The Apache HTTP Server</li>
+<li>The Python programming language</li>
+</ul>
+<hr />
+<h4 id="operator"><a class="header" href="#operator">Operator</a></h4>
+<p>A symbol or function that performs an operation on one or more operands in a programming language. Operators are used to manipulate data, perform calculations, and control the flow of a program.</p>
+<h5 id="examples-41"><a class="header" href="#examples-41">Examples</a></h5>
+<ul>
+<li>Arithmetic (math) operators like <code>+</code>, <code>-</code>, <code>*</code>, and <code>/</code></li>
+<li>Comparison operators like <code>==</code>, <code>!=</code>, <code>&gt;</code>, and <code>&lt;</code></li>
+<li>Logical operators like <code>&amp;&amp;</code>, <code>||</code>, and <code>!</code></li>
+</ul>
+<hr />
+<h4 id="operating-system-os"><a class="header" href="#operating-system-os">Operating System (OS)</a></h4>
+<p>The main <a href="#software">software</a> that runs on a computer, phone, or other device. It manages all the other programs and makes sure everything works together smoothly. The OS controls the hardware, like the screen, keyboard, and storage, and helps you run apps like games, web browsers, and more.</p>
+<h5 id="examples-42"><a class="header" href="#examples-42">Examples</a></h5>
+<ul>
+<li>Windows: An <a href="#operating-system-os">operating system</a> used on many PCs.</li>
+<li>macOS: The <a href="#operating-system-os">operating system</a> used on Apple computers.</li>
+<li>Linux: An <a href="#open-source">open-source</a> operating system.</li>
+</ul>
+<hr />
+<h4 id="output"><a class="header" href="#output">Output</a></h4>
+<h5 id="examples-43"><a class="header" href="#examples-43">Examples</a></h5>
+<hr />
+<h3 id="p"><a class="header" href="#p">P</a></h3>
+<hr />
+<h4 id="parent-directory"><a class="header" href="#parent-directory">Parent Directory</a></h4>
+<p>The <a href="#directory">directory</a> directly above the current <a href="#directory">directory</a>.</p>
+<h5 id="example-6"><a class="header" href="#example-6">Example</a></h5>
+<p><code>C:\Users\john.smith\Desktop\MyProject</code> where <code>Desktop</code> is the parent directory of <code>MyProject</code>.</p>
+<hr />
+<h4 id="parsing"><a class="header" href="#parsing">Parsing</a></h4>
+<p>The process of analyzing a string of text or code to extract meaningful information or convert it into a different format. Parsing is commonly used in programming to process user input, read configuration files, or interpret data formats like JSON or XML.</p>
+<h5 id="examples-44"><a class="header" href="#examples-44">Examples</a></h5>
+<ul>
+<li>Parsing a JSON response from an API</li>
+<li>Reading and interpreting a CSV file</li>
+<li>Converting a string into a date object</li>
+</ul>
+<hr />
+<h4 id="pascal-case"><a class="header" href="#pascal-case">Pascal Case</a></h4>
+<p>A programming naming convention where the first letter of each compound word in a variable is capitalized.</p>
+<h5 id="examples-45"><a class="header" href="#examples-45">Examples</a></h5>
+<ul>
+<li><code>ItemNumber</code></li>
+<li><code>MyVariable</code></li>
+<li><code>IsFinished</code></li>
+</ul>
+<hr />
+<h4 id="path"><a class="header" href="#path">Path</a></h4>
+<p>The full set of <a href="#directory">directories</a>, in order, that lead to a certain file or folder.</p>
+<hr />
+<h4 id="peripheral"><a class="header" href="#peripheral">Peripheral</a></h4>
+<p>An external device connected to a computer that adds functionality or expands its capabilities. Peripherals can be input devices, output devices, or storage devices, and they typically connect via USB, Bluetooth, or other interfaces.</p>
+<h5 id="examples-46"><a class="header" href="#examples-46">Examples</a></h5>
+<hr />
+<h4 id="pixel"><a class="header" href="#pixel">Pixel</a></h4>
+<p>The smallest element on a digital display. Often shorted to <code>px</code>.</p>
+<h5 id="examples-47"><a class="header" href="#examples-47">Examples</a></h5>
+<ul>
+<li>100px by 100px</li>
+<li>1080p (1920px by 1080px)</li>
+</ul>
+<hr />
+<h4 id="programming-language"><a class="header" href="#programming-language">Programming Language</a></h4>
+<p>A set of instructions that you use to communicate with a computer. It allows you to write code that tells the computer what to do, like solving problems, creating games, or building apps. Different programming languages have different rules and uses, but they all help you create software.</p>
+<p>See the section on <a href="./langs.html">languages</a> for more information.</p>
+<h5 id="examples-48"><a class="header" href="#examples-48">Examples</a></h5>
+<ul>
+<li><strong>Python:</strong> A beginner-friendly programming language often used for web development, data analysis, and automation.</li>
+<li><strong>JavaScript:</strong> A language used to make websites interactive.</li>
+<li><strong>Java:</strong> A language commonly used in mobile apps and large systems.</li>
+</ul>
+<hr />
+<h4 id="proxy"><a class="header" href="#proxy">Proxy</a></h4>
+<p>A server or application that acts as an intermediary between a client and another server. Proxies are used to improve security, control access, and optimize performance by caching content or filtering requests.</p>
+<h5 id="examples-49"><a class="header" href="#examples-49">Examples</a></h5>
+<ul>
+<li>A web proxy that hides a user's IP address</li>
+<li>A reverse proxy that distributes traffic among multiple servers</li>
+<li>A proxy server used in corporate networks for internet access control</li>
+</ul>
+<hr />
+<h4 id="pull"><a class="header" href="#pull">Pull</a></h4>
+<h5 id="examples-50"><a class="header" href="#examples-50">Examples</a></h5>
+<hr />
+<h4 id="push"><a class="header" href="#push">Push</a></h4>
+<h5 id="examples-51"><a class="header" href="#examples-51">Examples</a></h5>
+<hr />
+<h3 id="q"><a class="header" href="#q">Q</a></h3>
+<hr />
+<h4 id="queue"><a class="header" href="#queue">Queue</a></h4>
+<h5 id="examples-52"><a class="header" href="#examples-52">Examples</a></h5>
+<hr />
+<h4 id="query"><a class="header" href="#query">Query</a></h4>
+<h5 id="examples-53"><a class="header" href="#examples-53">Examples</a></h5>
+<hr />
+<h3 id="r"><a class="header" href="#r">R</a></h3>
+<hr />
+<h4 id="random-access-memory-ram"><a class="header" href="#random-access-memory-ram">Random Access Memory (RAM)</a></h4>
+<p>A type of computer memory that temporarily stores data that the CPU needs quick access to while performing tasks. RAM is volatile memory, meaning it is erased when the computer is turned off. More RAM allows for smoother multitasking and faster performance.</p>
+<h5 id="examples-54"><a class="header" href="#examples-54">Examples</a></h5>
+<ul>
+<li>8GB RAM in a laptop for running applications</li>
+<li>16GB RAM in a gaming PC for better performance</li>
+<li>RAM modules in a server for handling large <a href="#database">databases</a></li>
+</ul>
+<hr />
+<h4 id="repository"><a class="header" href="#repository">Repository</a></h4>
+<p>A storage location where code and other project files are kept, typically managed by a version control system like Git. Repositories allow developers to track changes, collaborate on projects, and manage different versions of their codebase.</p>
+<h5 id="examples-55"><a class="header" href="#examples-55">Examples</a></h5>
+<ul>
+<li>A GitHub repository for an <a href="#open-source">open-source</a> project</li>
+<li>A local Git repository for personal code</li>
+<li>A private repository for a company's internal <a href="#software">software</a></li>
+</ul>
+<hr />
+<h4 id="root-directory"><a class="header" href="#root-directory">Root Directory</a></h4>
+<p>The uppermost <a href="#directory">directory</a> in a path.</p>
+<hr />
+<h4 id="runtime"><a class="header" href="#runtime">Runtime</a></h4>
+<p>The period when a program is executing, as opposed to when it is being compiled or written. Runtime refers to the environment and resources required for a program to run, including the execution of code, memory allocation, and interaction with the operating system.</p>
+<h5 id="examples-56"><a class="header" href="#examples-56">Examples</a></h5>
+<ul>
+<li>Java Runtime Environment (JRE) for running Java applications</li>
+<li>Python's interpreter executing a script</li>
+<li>A web browser running JavaScript code</li>
+</ul>
+<hr />
+<h3 id="s"><a class="header" href="#s">S</a></h3>
+<hr />
+<h4 id="sata"><a class="header" href="#sata">SATA</a></h4>
+<hr />
+<h4 id="search-engine"><a class="header" href="#search-engine">Search Engine</a></h4>
+<p>A tool on the internet that helps you find information. When you type in words or questions, the search engine looks through billions of web pages to find the ones that match what you're looking for. It then shows you a list of results, with the most relevant ones at the top.</p>
+<h5 id="examples-57"><a class="header" href="#examples-57">Examples</a></h5>
+<ul>
+<li><strong>Google:</strong> The most widely used search engine.</li>
+<li><strong>Bing:</strong> Another popular search engine.</li>
+<li><strong>Yahoo:</strong> One of the older search engines still in use.</li>
+</ul>
+<hr />
+<h4 id="snake-case"><a class="header" href="#snake-case">Snake Case</a></h4>
+<p>A naming convention in which each space is replaced with an underscore <code>_</code> character, and words are written in lowercase. It is a commonly used naming convention in computing, for example for variable and subroutine names, and for filenames.</p>
+<h5 id="examples-58"><a class="header" href="#examples-58">Examples</a></h5>
+<ul>
+<li><code>my_variable</code></li>
+<li><code>is_finished</code></li>
+<li><code>high_score</code></li>
+</ul>
+<hr />
+<h4 id="software"><a class="header" href="#software">Software</a></h4>
+<p>A collection of instructions, data, or programs that tell a computer how to work. Software is divided into system software, like operating systems, and application software, like word processors or video games.</p>
+<h5 id="examples-59"><a class="header" href="#examples-59">Examples</a></h5>
+<ul>
+<li>Microsoft Windows (system software)</li>
+<li>Adobe Photoshop (application software)</li>
+<li>Firefox web browser (application software)</li>
+</ul>
+<hr />
+<h4 id="solid-state-hard-drive-ssd"><a class="header" href="#solid-state-hard-drive-ssd">Solid State Hard Drive (SSD)</a></h4>
+<hr />
+<h4 id="sprite"><a class="header" href="#sprite">Sprite</a></h4>
+<p>A two-dimensional (2D) image or animation that is integrated into a larger scene within a video game. Sprites are often used to represent characters, objects, or other elements in a game. Unlike 3D models, sprites are flat and are typically drawn from a single perspective. They are used in many classic and modern games, especially in 2D games, to create the visual elements that players interact with.</p>
+<h5 id="examples-60"><a class="header" href="#examples-60">Examples</a></h5>
+<hr />
+<h4 id="stack"><a class="header" href="#stack">Stack</a></h4>
+<p>Memory that stores local variables and is <strong>automatically</strong> cleared by the computer.</p>
+<h5 id="example-7"><a class="header" href="#example-7">Example</a></h5>
+<p>The stack is like a to-do list in your brain. It’s a special part of your computer's memory where tasks get stored and removed in the order they come. Think of it as a stack of plates: you add plates (tasks) to the top, and when you're done, you take the top plate off. In programming, the stack holds information like numbers or addresses for quick access, and when you’re done with a task, it disappears.</p>
+<hr />
+<h4 id="string"><a class="header" href="#string">String</a></h4>
+<p>A sequence of characters, like letters, numbers, and symbols, put together in a specific order. Strings are used in programming to represent text, such as words, sentences, or any other combination of characters.</p>
+<h5 id="examples-61"><a class="header" href="#examples-61">Examples</a></h5>
+<ul>
+<li><code>"Hello, World!"</code>: A string that contains a common phrase.</li>
+<li><code>"123 Main Street"</code>: A string that represents an address.</li>
+</ul>
+<hr />
+<h4 id="stylesheet"><a class="header" href="#stylesheet">Stylesheet</a></h4>
+<h5 id="examples-62"><a class="header" href="#examples-62">Examples</a></h5>
+<hr />
+<h4 id="synchronous"><a class="header" href="#synchronous">Synchronous</a></h4>
+<hr />
+<h4 id="syntax"><a class="header" href="#syntax">Syntax</a></h4>
+<p>The set of rules that define the structure of a programming language. It dictates how code must be written so that the computer can understand and execute it correctly. This includes the order of keywords, the use of punctuation, and the way different elements of the code are combined.</p>
+<h5 id="examples-63"><a class="header" href="#examples-63">Examples</a></h5>
+<ul>
+<li>The syntax for defining a function requires the def keyword followed by the function name and parentheses.</li>
+</ul>
+<pre><code class="language-python">def my_function():
     pass
 </code></pre>
-              <ul>
-                <li>
-                  The syntax for a conditional statement requires the if
-                  keyword, followed by a condition, and a colon.
-                </li>
-              </ul>
-              <pre><code class="language-python">if condition:
+<ul>
+<li>The syntax for a conditional statement requires the if keyword, followed by a condition, and a colon.</li>
+</ul>
+<pre><code class="language-python">if condition:
     # Code to execute if the condition is true
 </code></pre>
-              <p>
-                <strong>Note:</strong> Correct syntax is crucial because even a
-                small mistake, like missing a colon or parentheses, can cause
-                errors and prevent the program from running.
-              </p>
-              <hr />
-              <h3 id="t"><a class="header" href="#t">T</a></h3>
-              <hr />
-              <h4 id="target-audience">
-                <a class="header" href="#target-audience">Target Audience</a>
-              </h4>
-              <p>
-                The specific group of people that the game is created for. It’s
-                the group that the game is intended to attract and engage.
-                Identifying the target audience helps designers focus on what
-                will make the game enjoyable for that group.
-              </p>
-              <h5 id="examples-64">
-                <a class="header" href="#examples-64">Examples</a>
-              </h5>
-              <ul>
-                <li>Casual gamers</li>
-                <li>Hardcore gamers</li>
-                <li>Fans of first-person shooters</li>
-                <li>Puzzle enthusiasts</li>
-              </ul>
-              <hr />
-              <h4 id="template">
-                <a class="header" href="#template">Template</a>
-              </h4>
-              <p>
-                A predefined structure or format used as a starting point for
-                creating documents, web pages, code, or other content. Templates
-                save time and ensure consistency by providing a framework that
-                can be customized for specific needs.
-              </p>
-              <h5 id="examples-65">
-                <a class="header" href="#examples-65">Examples</a>
-              </h5>
-              <ul>
-                <li>A resume template in Microsoft Word</li>
-                <li>An HTML template for a website</li>
-                <li>A class template in C++ for creating objects</li>
-              </ul>
-              <hr />
-              <h4 id="terabyte">
-                <a class="header" href="#terabyte">Terabyte</a>
-              </h4>
-              <hr />
-              <h4 id="terminal">
-                <a class="header" href="#terminal">Terminal</a>
-              </h4>
-              <p>
-                A text-based interface that lets you interact with your computer
-                by typing commands. Instead of clicking on icons or using a
-                mouse, you type specific instructions to perform tasks like
-                opening files, running programs, or managing the system.
-              </p>
-              <h5 id="examples-66">
-                <a class="header" href="#examples-66">Examples</a>
-              </h5>
-              <ul>
-                <li>
-                  <strong>Command Prompt:</strong> The terminal used in Windows.
-                </li>
-                <li>
-                  <strong>Bash:</strong> A common terminal in Linux and macOS.
-                </li>
-                <li>
-                  <strong>PowerShell:</strong> A powerful terminal used in
-                  Windows for advanced tasks.
-                </li>
-              </ul>
-              <hr />
-              <h4 id="theme"><a class="header" href="#theme">Theme</a></h4>
-              <p>
-                The main idea or setting of a video game. It creates the story
-                or atmosphere that gives the game its unique feel.
-              </p>
-              <h5 id="examples-67">
-                <a class="header" href="#examples-67">Examples</a>
-              </h5>
-              <ul>
-                <li>Futuristic</li>
-                <li>Modern</li>
-                <li>Historical</li>
-              </ul>
-              <hr />
-              <h3 id="u"><a class="header" href="#u">U</a></h3>
-              <hr />
-              <h4 id="user-interface-ui">
-                <a class="header" href="#user-interface-ui"
-                  >User Interface (UI)</a
-                >
-              </h4>
-              <p>
-                The part of a software application that allows users to interact
-                with the system. The UI includes everything the user can see and
-                interact with, such as buttons, menus, and text fields, and it
-                plays a crucial role in the user experience (UX).
-              </p>
-              <h5 id="examples-68">
-                <a class="header" href="#examples-68">Examples</a>
-              </h5>
-              <ul>
-                <li>The graphical user interface (GUI) of a mobile app</li>
-                <li>
-                  A command-line interface (CLI) for interacting with a computer
-                </li>
-                <li>The layout and design of a website's navigation</li>
-              </ul>
-              <hr />
-              <h3 id="v"><a class="header" href="#v">V</a></h3>
-              <hr />
-              <h4 id="variable">
-                <a class="header" href="#variable">Variable</a>
-              </h4>
-              <hr />
-              <h4 id="vector"><a class="header" href="#vector">Vector</a></h4>
-              <hr />
-              <h4 id="version-control">
-                <a class="header" href="#version-control">Version Control</a>
-              </h4>
-              <p>
-                A system that tracks changes to files and allows multiple users
-                to collaborate on a project by managing revisions. Version
-                control systems enable developers to work on different features
-                simultaneously, revert to previous versions, and resolve
-                conflicts.
-              </p>
-              <h5 id="examples-69">
-                <a class="header" href="#examples-69">Examples</a>
-              </h5>
-              <hr />
-              <h4 id="virtual-machine-vm">
-                <a class="header" href="#virtual-machine-vm"
-                  >Virtual Machine (VM)</a
-                >
-              </h4>
-              <p>
-                A software-based emulation of a physical computer that runs an
-                operating system and applications as if they were running on
-                real hardware. Virtual machines allow for the isolation and
-                management of multiple OS instances on a single physical
-                machine.
-              </p>
-              <h5 id="examples-70">
-                <a class="header" href="#examples-70">Examples</a>
-              </h5>
-              <ul>
-                <li>Oracle VirtualBox</li>
-              </ul>
-              <hr />
-              <h4 id="virtual-reality-vr">
-                <a class="header" href="#virtual-reality-vr"
-                  >Virtual Reality (VR)</a
-                >
-              </h4>
-              <hr />
-              <h3 id="w"><a class="header" href="#w">W</a></h3>
-              <hr />
-              <h4 id="web-browser">
-                <a class="header" href="#web-browser">Web Browser</a>
-              </h4>
-              <p>
-                A software application used to access and view websites on the
-                internet. Web browsers interpret HTML, CSS, JavaScript, and
-                other web technologies to display web pages, allowing users to
-                navigate and interact with the web.
-              </p>
-              <h5 id="examples-71">
-                <a class="header" href="#examples-71">Examples</a>
-              </h5>
-              <ul>
-                <li>Google Chrome</li>
-                <li>Safari</li>
-                <li>Firefox</li>
-              </ul>
-              <hr />
-              <h4 id="word-processor">
-                <a class="header" href="#word-processor">Word Processor</a>
-              </h4>
-              <p>
-                A word processor is a software program capable of creating,
-                storing, and printing text documents.
-              </p>
-              <h5 id="examples-72">
-                <a class="header" href="#examples-72">Examples</a>
-              </h5>
-              <ul>
-                <li>Google Docs</li>
-                <li>Microsoft Word</li>
-                <li>LibreOffice Writer</li>
-              </ul>
-              <hr />
-              <h4 id="widget"><a class="header" href="#widget">Widget</a></h4>
-              <p>
-                A small application or component that provides a specific
-                function or piece of information, often embedded in a larger
-                application or web page. Widgets are commonly used to display
-                data, perform actions, or provide interactive elements.
-              </p>
-              <h5 id="examples-73">
-                <a class="header" href="#examples-73">Examples</a>
-              </h5>
-              <ul>
-                <li>A weather widget showing current conditions</li>
-                <li>A clock widget on a smartphone home screen</li>
-                <li>A search box widget on a website</li>
-              </ul>
-              <hr />
-              <h3 id="x"><a class="header" href="#x">X</a></h3>
-              <hr />
-              <h3 id="y"><a class="header" href="#y">Y</a></h3>
-              <hr />
-              <h3 id="z"><a class="header" href="#z">Z</a></h3>
-              <hr />
-            </main>
+<p><strong>Note:</strong> Correct syntax is crucial because even a small mistake, like missing a colon or parentheses, can cause errors and prevent the program from running.</p>
+<hr />
+<h3 id="t"><a class="header" href="#t">T</a></h3>
+<hr />
+<h4 id="target-audience"><a class="header" href="#target-audience">Target Audience</a></h4>
+<p>The specific group of people that the game is created for. It’s the group that the game is intended to attract and engage. Identifying the target audience helps designers focus on what will make the game enjoyable for that group.</p>
+<h5 id="examples-64"><a class="header" href="#examples-64">Examples</a></h5>
+<ul>
+<li>Casual gamers</li>
+<li>Hardcore gamers</li>
+<li>Fans of first-person shooters</li>
+<li>Puzzle enthusiasts</li>
+</ul>
+<hr />
+<h4 id="template"><a class="header" href="#template">Template</a></h4>
+<p>A predefined structure or format used as a starting point for creating documents, web pages, code, or other content. Templates save time and ensure consistency by providing a framework that can be customized for specific needs.</p>
+<h5 id="examples-65"><a class="header" href="#examples-65">Examples</a></h5>
+<ul>
+<li>A resume template in Microsoft Word</li>
+<li>An HTML template for a website</li>
+<li>A class template in C++ for creating objects</li>
+</ul>
+<hr />
+<h4 id="terabyte"><a class="header" href="#terabyte">Terabyte</a></h4>
+<hr />
+<h4 id="terminal"><a class="header" href="#terminal">Terminal</a></h4>
+<p>A text-based interface that lets you interact with your computer by typing commands. Instead of clicking on icons or using a mouse, you type specific instructions to perform tasks like opening files, running programs, or managing the system.</p>
+<h5 id="examples-66"><a class="header" href="#examples-66">Examples</a></h5>
+<ul>
+<li><strong>Command Prompt:</strong> The terminal used in Windows.</li>
+<li><strong>Bash:</strong> A common terminal in Linux and macOS.</li>
+<li><strong>PowerShell:</strong> A powerful terminal used in Windows for advanced tasks.</li>
+</ul>
+<hr />
+<h4 id="theme"><a class="header" href="#theme">Theme</a></h4>
+<p>The main idea or setting of a video game. It creates the story or atmosphere that gives the game its unique feel.</p>
+<h5 id="examples-67"><a class="header" href="#examples-67">Examples</a></h5>
+<ul>
+<li>Futuristic</li>
+<li>Modern</li>
+<li>Historical</li>
+</ul>
+<hr />
+<h3 id="u"><a class="header" href="#u">U</a></h3>
+<hr />
+<h4 id="user-interface-ui"><a class="header" href="#user-interface-ui">User Interface (UI)</a></h4>
+<p>The part of a software application that allows users to interact with the system. The UI includes everything the user can see and interact with, such as buttons, menus, and text fields, and it plays a crucial role in the user experience (UX).</p>
+<h5 id="examples-68"><a class="header" href="#examples-68">Examples</a></h5>
+<ul>
+<li>The graphical user interface (GUI) of a mobile app</li>
+<li>A command-line interface (CLI) for interacting with a computer</li>
+<li>The layout and design of a website's navigation</li>
+</ul>
+<hr />
+<h3 id="v"><a class="header" href="#v">V</a></h3>
+<hr />
+<h4 id="variable"><a class="header" href="#variable">Variable</a></h4>
+<hr />
+<h4 id="vector"><a class="header" href="#vector">Vector</a></h4>
+<hr />
+<h4 id="version-control"><a class="header" href="#version-control">Version Control</a></h4>
+<p>A system that tracks changes to files and allows multiple users to collaborate on a project by managing revisions. Version control systems enable developers to work on different features simultaneously, revert to previous versions, and resolve conflicts.</p>
+<h5 id="examples-69"><a class="header" href="#examples-69">Examples</a></h5>
+<hr />
+<h4 id="virtual-machine-vm"><a class="header" href="#virtual-machine-vm">Virtual Machine (VM)</a></h4>
+<p>A software-based emulation of a physical computer that runs an operating system and applications as if they were running on real hardware. Virtual machines allow for the isolation and management of multiple OS instances on a single physical machine.</p>
+<h5 id="examples-70"><a class="header" href="#examples-70">Examples</a></h5>
+<ul>
+<li>Oracle VirtualBox</li>
+</ul>
+<hr />
+<h4 id="virtual-reality-vr"><a class="header" href="#virtual-reality-vr">Virtual Reality (VR)</a></h4>
+<hr />
+<h3 id="w"><a class="header" href="#w">W</a></h3>
+<hr />
+<h4 id="web-browser"><a class="header" href="#web-browser">Web Browser</a></h4>
+<p>A software application used to access and view websites on the internet. Web browsers interpret HTML, CSS, JavaScript, and other web technologies to display web pages, allowing users to navigate and interact with the web.</p>
+<h5 id="examples-71"><a class="header" href="#examples-71">Examples</a></h5>
+<ul>
+<li>Google Chrome</li>
+<li>Safari</li>
+<li>Firefox</li>
+</ul>
+<hr />
+<h4 id="word-processor"><a class="header" href="#word-processor">Word Processor</a></h4>
+<p>A word processor is a software program capable of creating, storing, and printing text documents.</p>
+<h5 id="examples-72"><a class="header" href="#examples-72">Examples</a></h5>
+<ul>
+<li>Google Docs</li>
+<li>Microsoft Word</li>
+<li>LibreOffice Writer</li>
+</ul>
+<hr />
+<h4 id="widget"><a class="header" href="#widget">Widget</a></h4>
+<p>A small application or component that provides a specific function or piece of information, often embedded in a larger application or web page. Widgets are commonly used to display data, perform actions, or provide interactive elements.</p>
+<h5 id="examples-73"><a class="header" href="#examples-73">Examples</a></h5>
+<ul>
+<li>A weather widget showing current conditions</li>
+<li>A clock widget on a smartphone home screen</li>
+<li>A search box widget on a website</li>
+</ul>
+<hr />
+<h3 id="x"><a class="header" href="#x">X</a></h3>
+<hr />
+<h3 id="y"><a class="header" href="#y">Y</a></h3>
+<hr />
+<h3 id="z"><a class="header" href="#z">Z</a></h3>
+<hr />
 
-            <nav class="nav-wrapper" aria-label="Page navigation">
-              <!-- Mobile navigation buttons -->
-              <a
-                rel="prev"
-                href="lessons/gpd/activities/boardgame/quest1_gdd.html"
-                class="mobile-nav-chapters previous"
-                title="Previous chapter"
-                aria-label="Previous chapter"
-                aria-keyshortcuts="Left"
-              >
-                <i class="fa fa-angle-left"></i>
-              </a>
+                    </main>
 
-              <a
-                rel="next prefetch"
-                href="langs.html"
-                class="mobile-nav-chapters next"
-                title="Next chapter"
-                aria-label="Next chapter"
-                aria-keyshortcuts="Right"
-              >
-                <i class="fa fa-angle-right"></i>
-              </a>
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="lessons/gpd/activities/boardgame/quest1_gdd.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
-              <div style="clear: both"></div>
+                            <a rel="next prefetch" href="langs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="lessons/gpd/activities/boardgame/quest1_gdd.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="langs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
-          </div>
+
         </div>
 
-        <nav class="nav-wide-wrapper" aria-label="Page navigation">
-          <a
-            rel="prev"
-            href="lessons/gpd/activities/boardgame/quest1_gdd.html"
-            class="nav-chapters previous"
-            title="Previous chapter"
-            aria-label="Previous chapter"
-            aria-keyshortcuts="Left"
-          >
-            <i class="fa fa-angle-left"></i>
-          </a>
 
-          <a
-            rel="next prefetch"
-            href="langs.html"
-            class="nav-chapters next"
-            title="Next chapter"
-            aria-label="Next chapter"
-            aria-keyshortcuts="Right"
-          >
-            <i class="fa fa-angle-right"></i>
-          </a>
-        </nav>
-      </div>
 
-      <script>
-        window.playground_copyable = true;
-      </script>
 
-      <script src="elasticlunr.min.js"></script>
-      <script src="mark.min.js"></script>
-      <script src="searcher.js"></script>
+        <script>
+            window.playground_copyable = true;
+        </script>
 
-      <script src="clipboard.min.js"></script>
-      <script src="highlight.js"></script>
-      <script src="book.js"></script>
 
-      <!-- Hints -->
-      <script src="https://unpkg.com/@popperjs/core@2"></script>
-      <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-      <!-- Custom JS scripts -->
-      <script src="./theme/hints.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Hints -->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./theme/hints.js"></script>
+
+
     </div>
-  </body>
+    </body>
 </html>
