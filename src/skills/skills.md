@@ -7,7 +7,8 @@
   - [Creating a Folder](./basic_skills/create_folder.md)
   - [Renaming Files](./basic_skills/renaming_files.md)
   - [Deleting Files](./basic_skills/deleting_files.md)
-  - [Navigating Directories]()
+  - [Navigating Directories](../lessons/fcs/lesson_4_directories.md)
+  - [File Extensions](../lessons/fcs/lesson_5_file_extensions.md)
 
 ---
 

@@ -191,6 +191,17 @@ A structured collection of data that is stored and accessed electronically. Data
 
 ---
 
+#### DAW (Digital Audio Workstation)
+
+##### Examples
+
+- AVID Pro Tools
+- Adobe Audition
+- Presonus Studio One
+- FL Studio
+
+---
+
 #### Demographic
 
 Refers to the specific characteristics of the group of people that the game is aimed at. This can include factors like age, gender, income level, education, and interests. Understanding the demographic helps game designers create content that appeals to the intended players.

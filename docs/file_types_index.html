@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>File Extensions - Index - Computer Science and Game Design: The Comprehensive Pathway</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./theme/hints.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="home.html">Home</a></li><li class="chapter-item "><a href="lessons.html">Lessons</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>Fundamentals of Computer Science</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="lessons/fcs/lesson_1.html">Lesson 1 - Parts of a Computer</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_2.html">Lesson 2 - Parts of an Operating System</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_3.html">Lesson 3 - Managing Files and the Filesystem</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_4_directories.html">Lesson 4 - Directories</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_5_file_extensions.html">Lesson 5 - File Extensions</a></li><li class="chapter-item "><div>Activities</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="lessons/fcs/activities/space_shooter/space_shooter_overview.html">Space Arcade Game</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="lessons/fcs/activities/space_shooter/quest1_file_structure.html">Quest 1 - File Structure</a></li><li class="chapter-item "><a href="lessons/fcs/activities/space_shooter/quest2_sprites.html">Quest 2 - Creating Sprites</a></li><li class="chapter-item "><a href="lessons/fcs/activities/space_shooter/quest3_creating_project.html">Quest 3 - Creating the Project</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><div>Game Design</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="lessons/gpd/lesson_1.html">Lesson 1 - What is a Game Design Document (GDD)?</a></li><li class="chapter-item "><a href="lessons/gpd/lesson_2.html">Lesson 2 - Genre vs. Theme</a></li><li class="chapter-item "><a href="lessons/gpd/lesson_3.html">Lesson 3 - Understanding Demographics and Target Audiences in Game Design</a></li><li class="chapter-item "><a href="lessons/gpd/lesson_4.html">Lesson 4 - Types of Players</a></li><li class="chapter-item "><a href="lessons/gpd/lesson_5.html">Lesson 5 - Nonlinear Storytelling</a></li><li class="chapter-item "><div>Activities</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="lessons/gpd/activities/boardgame/board_game_overview.html">Board Game Design</a></li><li class="chapter-item "><a href="lessons/gpd/activities/boardgame/quest1_gdd.html">Quest 1 - Game Design Document</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="vocabulary.html">Vocabulary</a></li><li class="chapter-item "><a href="langs.html">Coding Languages</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="langs/lua.html">Lua</a></li><li class="chapter-item "><a href="langs/python.html">Python</a></li></ol></li><li class="chapter-item "><a href="templates.html">Templates</a></li><li class="chapter-item expanded "><a href="skills/skills.html">Skills</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><div>Basic Skills</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><div>File Management</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="skills/basic_skills/create_folder.html">Creating a Folder</a></li><li class="chapter-item "><a href="skills/basic_skills/renaming_files.html">Renaming Files</a></li><li class="chapter-item "><a href="skills/basic_skills/deleting_files.html">Deleting Files</a></li><li class="chapter-item "><a href="lessons/fcs/lesson_4_directories.html">Navigating Directories</a></li><li class="chapter-item expanded "><a href="lessons/fcs/lesson_5_file_extensions.html">File Extensions</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="file_types_index.html" class="active">File Extensions - Index</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><div>PixilArt</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="skills/how_to/pixilart/download_a_drawing.html">Download a Drawing</a></li></ol></li></ol></li><li class="chapter-item "><a href="standards.html">Standards</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="standards/vertical_alignment.html">Vertical Alignment</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Computer Science and Game Design: The Comprehensive Pathway</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="index-of-file-extensions"><a class="header" href="#index-of-file-extensions">Index of File Extensions</a></h1>
+<div class="table-wrapper"><table><thead><tr><th>File Extension</th><th>File Type</th><th>Description</th><th>Common Programs</th></tr></thead><tbody>
+<tr><td>.txt</td><td>Text File</td><td>Plain text file without formatting.</td><td>Notepad, TextEdit</td></tr>
+<tr><td>.docx</td><td>Document File</td><td>Microsoft Word document with text formatting, images, and more.</td><td>Microsoft Word, Google Docs</td></tr>
+<tr><td>.pdf</td><td>Portable Document Format</td><td>Preserves the layout and formatting of documents for easy sharing.</td><td>Adobe Acrobat, Preview</td></tr>
+<tr><td>.jpg / .jpeg</td><td>Image File</td><td>Compressed image format commonly used for photos.</td><td>Adobe Photoshop, Windows Photos</td></tr>
+<tr><td>.png</td><td>Image File</td><td>Image format with support for transparency.</td><td>Adobe Photoshop, GIMP</td></tr>
+<tr><td>.gif</td><td>Image File</td><td>A format for simple animations and images with limited colors.</td><td>Adobe Photoshop, GIMP</td></tr>
+<tr><td>.bmp</td><td>Image File</td><td>Uncompressed raster image format.</td><td>Microsoft Paint, Adobe Photoshop</td></tr>
+<tr><td>.mp3</td><td>Audio File</td><td>Compressed audio format used for music and sound.</td><td>iTunes, Windows Media Player</td></tr>
+<tr><td>.wav</td><td>Audio File</td><td>Uncompressed, high-quality audio format.</td><td>Audacity, FL Studio</td></tr>
+<tr><td>.aac</td><td>Audio File</td><td>Compressed audio format, used in iTunes and YouTube.</td><td>iTunes, Adobe Audition</td></tr>
+<tr><td>.mp4</td><td>Video File</td><td>Compressed video format widely used for streaming and sharing.</td><td>VLC Media Player, Adobe Premiere Pro</td></tr>
+<tr><td>.mov</td><td>Video File</td><td>High-quality video format developed by Apple.</td><td>QuickTime Player, Final Cut Pro</td></tr>
+<tr><td>.avi</td><td>Video File</td><td>Uncompressed video format with large file sizes.</td><td>Windows Media Player, Adobe Premiere Pro</td></tr>
+<tr><td>.flv</td><td>Flash Video File</td><td>Video format for Adobe Flash, used for streaming video content.</td><td>Adobe Flash Player, VLC Media Player</td></tr>
+<tr><td>.zip</td><td>Compressed Archive</td><td>Compressed file format for storing multiple files.</td><td>WinRAR, 7-Zip</td></tr>
+<tr><td>.rar</td><td>Compressed Archive</td><td>Another popular compressed file format.</td><td>WinRAR, 7-Zip</td></tr>
+<tr><td>.psd</td><td>Adobe Photoshop Document</td><td>Layered image file created by Adobe Photoshop.</td><td>Adobe Photoshop</td></tr>
+<tr><td>.ai</td><td>Adobe Illustrator File</td><td>Vector graphic file used by Adobe Illustrator.</td><td>Adobe Illustrator</td></tr>
+<tr><td>.eps</td><td>Encapsulated PostScript</td><td>Vector file format for high-resolution graphics.</td><td>Adobe Illustrator, CorelDRAW</td></tr>
+<tr><td>.svg</td><td>Scalable Vector Graphics</td><td>Vector image format for web use, supports scaling without losing quality.</td><td>Adobe Illustrator, Inkscape</td></tr>
+<tr><td>.aep</td><td>After Effects Project</td><td>Project file for Adobe After Effects with animations and video effects.</td><td>Adobe After Effects</td></tr>
+<tr><td>.prproj</td><td>Premiere Pro Project</td><td>Project file for Adobe Premiere Pro used in video editing.</td><td>Adobe Premiere Pro</td></tr>
+<tr><td>.blend</td><td>Blender Project</td><td>Project file for Blender, used in 3D modeling and animation.</td><td>Blender</td></tr>
+<tr><td>.obj</td><td>3D Model File</td><td>Standard format for 3D object files used in various 3D software.</td><td>Blender, Autodesk Maya</td></tr>
+<tr><td>.fbx</td><td>3D Model File</td><td>Widely used 3D format for game engines and animations.</td><td>Unity, Autodesk Maya</td></tr>
+<tr><td>.exe</td><td>Executable File</td><td>File that executes a program or application.</td><td>Windows OS, Various Games and Applications</td></tr>
+<tr><td>.iso</td><td>Disk Image</td><td>Copy of a CD/DVD that can be mounted as a virtual drive.</td><td>Daemon Tools, Windows OS</td></tr>
+<tr><td>.html</td><td>Hypertext Markup Language</td><td>Webpage format containing code for websites.</td><td>Google Chrome, Firefox, Sublime Text</td></tr>
+<tr><td>.css</td><td>Cascading Style Sheets</td><td>File used to style web pages created in HTML.</td><td>Sublime Text, VS Code</td></tr>
+<tr><td>.js</td><td>JavaScript File</td><td>A script file used for adding dynamic behavior to websites.</td><td>Sublime Text, VS Code</td></tr>
+<tr><td>.ts</td><td>TypeScript File</td><td>A script file used similarily to JavaScript files but implements static types.</td><td>Sublime Text, VS Code</td></tr>
+<tr><td>.py</td><td>Python File</td><td>A script file that contains Python script.</td><td>Sublime Text, VS Code</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="lessons/fcs/lesson_5_file_extensions.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="skills/how_to/pixilart/download_a_drawing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="lessons/fcs/lesson_5_file_extensions.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="skills/how_to/pixilart/download_a_drawing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Hints -->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./theme/hints.js"></script>
+
+
+    </div>
+    </body>
+</html>
