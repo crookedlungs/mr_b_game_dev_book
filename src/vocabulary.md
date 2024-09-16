@@ -410,13 +410,27 @@ Refers to the visual part of an application that users interact with. It include
 
 A traditional storage device that uses spinning magnetic disks to store and retrieve digital data. Hard drives are used in computers to store large amounts of data, such as operating systems, software, and personal files.
 
-##### Examples
-
 ---
 
 #### Heap
 
+Dynamic memory that is assigned by a programmer and must be **manually** cleared.
+
 ##### Example
+
+The heap is more like a big, messy storage box. You can put stuff anywhere inside, but you need to remember where you placed it. Unlike the stack, items in the heap don’t go away when you finish a task right away. You have to manually clean up the items once you’re done with them, or they’ll just sit there and take up space.
+
+---
+
+#### HTTP (Hypertext Transfer Protocol)
+
+The standard protocol for transferring hypertext documents on the World Wide Web.
+
+---
+
+#### HTTPS (Hypertext Transfer Protocol Secure)
+
+A secure version of the Hypertext Transfer Protocol.
 
 ---
 
@@ -451,6 +465,10 @@ When you play an online game, your device connects to a game server using its IP
 A software application that provides a comprehensive environment for programming. IDEs typically include a code editor, debugger, and build automation tools, making it easier for developers to write, test, and debug code.
 
 ##### Examples
+
+- VSCode
+- Sublime Text
+- Visual Studio
 
 ---
 
@@ -527,6 +545,14 @@ A unit of digital information equal to approximately one million bytes (1,048,57
 - A 5MB image [file](#file)
 - A 20MB PDF document
 - The size of an MP3 music file
+
+---
+
+#### Memory Leak
+
+An error that occurs when [heap](#heap) memory is not cleared and slowly builds up over time. This can lead to the computer slowing down or cause a crash.
+
+##### Example
 
 ---
 
@@ -854,7 +880,11 @@ A two-dimensional (2D) image or animation that is integrated into a larger scene
 
 #### Stack
 
+Memory that stores local variables and is **automatically** cleared by the computer.
+
 ##### Example
+
+The stack is like a to-do list in your brain. It’s a special part of your computer's memory where tasks get stored and removed in the order they come. Think of it as a stack of plates: you add plates (tasks) to the top, and when you're done, you take the top plate off. In programming, the stack holds information like numbers or addresses for quick access, and when you’re done with a task, it disappears.
 
 ---
 
